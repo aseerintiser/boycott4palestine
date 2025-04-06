@@ -42,7 +42,7 @@ const BrandDetailPage: React.FC = () => {
         <div className="mb-6">
           <div className="flex flex-wrap items-center gap-2 mb-2">
             <h1 className="text-2xl md:text-3xl font-bold">{brand.name}</h1>
-            <Badge variant="outline">{brand.category}</Badge>
+            <Badge variant="palestinian">{brand.category}</Badge>
           </div>
           <p className="text-lg text-muted-foreground">{brand.description}</p>
         </div>

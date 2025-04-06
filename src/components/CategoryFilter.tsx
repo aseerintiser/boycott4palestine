@@ -20,10 +20,10 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({
         <button
           onClick={() => onSelectCategory('all')}
           className={cn(
-            "px-3 py-2 text-sm font-medium rounded-full whitespace-nowrap",
+            "px-3 py-2 text-sm font-medium rounded-full whitespace-nowrap transition-colors",
             selectedCategory === 'all'
-              ? "bg-primary text-white"
-              : "bg-secondary text-foreground hover:bg-secondary/80"
+              ? "bg-palestinian-red text-white"
+              : "bg-gray-100 text-gray-800 hover:bg-gray-200"
           )}
         >
           All
@@ -34,10 +34,10 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({
             key={category}
             onClick={() => onSelectCategory(category)}
             className={cn(
-              "px-3 py-2 text-sm font-medium rounded-full whitespace-nowrap",
+              "px-3 py-2 text-sm font-medium rounded-full whitespace-nowrap transition-colors",
               selectedCategory === category
-                ? "bg-primary text-white"
-                : "bg-secondary text-foreground hover:bg-secondary/80"
+                ? "bg-palestinian-red text-white"
+                : "bg-gray-100 text-gray-800 hover:bg-gray-200"
             )}
           >
             {category}
