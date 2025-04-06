@@ -62,6 +62,12 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				palestinian: {
+					red: '#E4312B',
+					green: '#149954',
+					black: '#000000',
+					white: '#FFFFFF'
 				}
 			},
 			borderRadius: {

@@ -8,13 +8,13 @@ const AboutPage: React.FC = () => {
   return (
     <div className="container mx-auto px-4 py-6">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-2xl md:text-3xl font-bold mb-6">About Boycott4Palestine</h1>
+        <h1 className="text-2xl md:text-3xl font-bold mb-6 text-palestinian-red">About Boycott4Palestine</h1>
         
-        <Card className="mb-8">
+        <Card className="mb-8 border-l-4 border-l-palestinian-red">
           <CardContent className="pt-6">
             <div className="flex items-start mb-4">
-              <Info className="h-5 w-5 text-red-600 mt-1 mr-2 flex-shrink-0" />
-              <h2 className="text-xl font-semibold">Our Mission</h2>
+              <Info className="h-5 w-5 text-palestinian-red mt-1 mr-2 flex-shrink-0" />
+              <h2 className="text-xl font-bold text-palestinian-black">Our Mission</h2>
             </div>
             <p className="mb-6">
               Boycott4Palestine aims to support the Palestinian cause by empowering consumers with 
@@ -24,8 +24,8 @@ const AboutPage: React.FC = () => {
             </p>
             
             <div className="flex items-start mb-4">
-              <HandHeart className="h-5 w-5 text-red-600 mt-1 mr-2 flex-shrink-0" />
-              <h2 className="text-xl font-semibold">How It Works</h2>
+              <HandHeart className="h-5 w-5 text-palestinian-red mt-1 mr-2 flex-shrink-0" />
+              <h2 className="text-xl font-bold text-palestinian-black">How It Works</h2>
             </div>
             <p className="mb-4">
               Our database includes companies and brands that have been identified as having ties to 
@@ -40,8 +40,8 @@ const AboutPage: React.FC = () => {
             </ul>
             
             <div className="flex items-start mb-4">
-              <Star className="h-5 w-5 text-red-600 mt-1 mr-2 flex-shrink-0" />
-              <h2 className="text-xl font-semibold">Why Boycott?</h2>
+              <Star className="h-5 w-5 text-palestinian-red mt-1 mr-2 flex-shrink-0" />
+              <h2 className="text-xl font-bold text-palestinian-black">Why Boycott?</h2>
             </div>
             <p className="mb-6">
               Economic pressure through boycotts has historically been an effective non-violent method 
@@ -50,8 +50,8 @@ const AboutPage: React.FC = () => {
               their fundamental human rights.
             </p>
             
-            <div className="bg-gray-50 p-4 rounded-md border border-gray-200">
-              <h2 className="text-xl font-semibold mb-2">Disclaimer</h2>
+            <div className="bg-gray-50 p-4 rounded-md border-l-4 border-l-palestinian-green">
+              <h2 className="text-xl font-bold mb-2 text-palestinian-black">Disclaimer</h2>
               <p>
                 The information provided on this app is for educational purposes only. We strive for accuracy, 
                 but circumstances and company practices may change. We encourage users to conduct their own 
@@ -61,13 +61,13 @@ const AboutPage: React.FC = () => {
           </CardContent>
         </Card>
         
-        <Card>
+        <Card className="border-l-4 border-l-palestinian-green">
           <CardContent className="pt-6">
-            <h2 className="text-xl font-semibold mb-4">Contact Us</h2>
+            <h2 className="text-xl font-bold mb-4 text-palestinian-black">Contact Us</h2>
             <p>
               If you have suggestions for additional companies to add to our database, corrections to existing 
               information, or any other feedback, please reach out to us at 
-              <a href="mailto:contact@boycott4palestine.org" className="text-red-600 hover:underline ml-1">
+              <a href="mailto:contact@boycott4palestine.org" className="text-palestinian-red hover:underline ml-1">
                 contact@boycott4palestine.org
               </a>
             </p>
