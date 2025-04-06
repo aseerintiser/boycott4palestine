@@ -56,7 +56,7 @@ const HomePage: React.FC = () => {
         <div className="mb-8 text-center">
           <h1 className="text-2xl md:text-3xl font-bold mb-2 text-palestinian-black">Boycott4Palestine</h1>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            Discover which brands to avoid and find ethical alternatives that don't support occupation
+            Discover which brands to avoid and find ethical alternatives
           </p>
         </div>
         
