@@ -10,8 +10,8 @@ const MainLayout: React.FC = () => {
       <main className="flex-1">
         <Outlet />
       </main>
-      <footer className="py-4 bg-white shadow-sm mt-auto">
-        <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
+      <footer className="py-5 bg-white shadow-md mt-auto border-t border-gray-200">
+        <div className="container mx-auto px-4 text-center text-sm font-medium">
           © {new Date().getFullYear()} Boycott4Palestine. Information provided for educational purposes.
         </div>
       </footer>
