@@ -24,10 +24,10 @@ const formSchema = z.object({
 
 type FormValues = z.infer<typeof formSchema>;
 
-// Simple direct configuration - replace with your own values
-const EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID"; // Replace with your Service ID
-const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID"; // Replace with your Template ID
-const EMAILJS_USER_ID = "YOUR_USER_ID"; // Replace with your User ID
+// EmailJS credentials
+const EMAILJS_SERVICE_ID = "service_y9e4hrq";
+const EMAILJS_TEMPLATE_ID = "template_tzhle3w";
+const EMAILJS_USER_ID = "O_pxAKKL-fpUTzN6v"; // This is the public key
 
 const SuggestBrandForm = () => {
   const { toast } = useToast();
@@ -59,15 +59,17 @@ const SuggestBrandForm = () => {
         submission_date: new Date().toLocaleString()
       };
       
+      console.log('Sending email with params:', templateParams);
+      
       // Send the email using EmailJS
-      await emailjs.send(
+      const response = await emailjs.send(
         EMAILJS_SERVICE_ID,
         EMAILJS_TEMPLATE_ID,
         templateParams,
         EMAILJS_USER_ID
       );
       
-      console.log('Email sent successfully');
+      console.log('Email sent successfully:', response);
       
       toast({
         title: "Suggestion Sent!",
@@ -80,7 +82,7 @@ const SuggestBrandForm = () => {
       console.error("Error submitting form:", error);
       toast({
         title: "Submission Failed",
-        description: "Unable to submit your suggestion. Please replace the EmailJS IDs with your own values.",
+        description: "There was a problem sending your suggestion. Please try again later.",
         variant: "destructive",
       });
     } finally {
