@@ -5,7 +5,7 @@ import { Flag, Ban, Shield } from 'lucide-react';
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-white shadow-sm border-b-2 border-palestinian-red">
+    <header className="bg-white shadow-sm border-b-2 border-palestinian-red sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link to="/" className="flex items-center space-x-2 group">
           <div className="flex items-center p-1.5 transition-all">
