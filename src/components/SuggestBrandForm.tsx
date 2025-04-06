@@ -25,10 +25,10 @@ const formSchema = z.object({
 
 type FormValues = z.infer<typeof formSchema>;
 
-// You'll need to replace these with your actual EmailJS service, template, and user IDs
-const EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID";
-const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";
-const EMAILJS_USER_ID = "YOUR_USER_ID";
+// EmailJS configuration
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID || "YOUR_SERVICE_ID";
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "YOUR_TEMPLATE_ID";
+const EMAILJS_USER_ID = import.meta.env.VITE_EMAILJS_USER_ID || "YOUR_USER_ID";
 
 const SuggestBrandForm = () => {
   const { toast } = useToast();
@@ -53,6 +53,13 @@ const SuggestBrandForm = () => {
       setError(null);
       
       console.log('Form data submitted:', data);
+      
+      // Check if EmailJS credentials are configured
+      if (EMAILJS_SERVICE_ID === "YOUR_SERVICE_ID" || 
+          EMAILJS_TEMPLATE_ID === "YOUR_TEMPLATE_ID" || 
+          EMAILJS_USER_ID === "YOUR_USER_ID") {
+        throw new Error("EmailJS is not properly configured. Please set up your EmailJS credentials.");
+      }
       
       // Format data for EmailJS
       const templateParams = {
@@ -87,7 +94,8 @@ const SuggestBrandForm = () => {
       
     } catch (error) {
       console.error("Error submitting form:", error);
-      setError("There was an error sending your suggestion. Please try again later.");
+      const errorMessage = error instanceof Error ? error.message : "There was an error sending your suggestion. Please try again later.";
+      setError(errorMessage);
       toast({
         title: "Submission Failed",
         description: "Unable to submit your suggestion at this time. Please try again later.",
