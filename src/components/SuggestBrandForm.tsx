@@ -10,6 +10,7 @@ import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
 import { SendIcon, CheckCircle2, Loader2, AlertTriangle } from 'lucide-react';
 import { Alert, AlertTitle, AlertDescription } from '@/components/ui/alert';
+import emailjs from 'emailjs-com';
 
 const formSchema = z.object({
   brandName: z.string().min(2, {
@@ -23,6 +24,11 @@ const formSchema = z.object({
 });
 
 type FormValues = z.infer<typeof formSchema>;
+
+// You'll need to replace these with your actual EmailJS service, template, and user IDs
+const EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID";
+const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";
+const EMAILJS_USER_ID = "YOUR_USER_ID";
 
 const SuggestBrandForm = () => {
   const { toast } = useToast();
@@ -48,21 +54,27 @@ const SuggestBrandForm = () => {
       
       console.log('Form data submitted:', data);
       
-      // Create a formatted message for email body
-      const messageBody = `
-Brand Name: ${data.brandName}
-Reason for Boycott: ${data.reason}
-Supporting Link: ${data.link || "Not provided"}
-Contact Email: ${data.email || "Not provided"}
-Submitted on: ${new Date().toLocaleString()}
-      `;
+      // Format data for EmailJS
+      const templateParams = {
+        brand_name: data.brandName,
+        reason: data.reason,
+        supporting_link: data.link || "Not provided",
+        contact_email: data.email || "Not provided",
+        submission_date: new Date().toLocaleString()
+      };
       
-      // Instead of using EmailJS directly, use a more reliable approach - submit to server or use fetch
-      // For now, simulate a successful submission after a short delay
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Send the email using EmailJS
+      const response = await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        templateParams,
+        EMAILJS_USER_ID
+      );
+      
+      console.log('Email sent successfully:', response);
       
       toast({
-        title: "Suggestion Received!",
+        title: "Suggestion Sent!",
         description: "Thank you for your suggestion. Our team will review it soon.",
       });
       

@@ -2,6 +2,8 @@
 import React from 'react';
 import SuggestBrandForm from '@/components/SuggestBrandForm';
 import { AlertCircle } from 'lucide-react';
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '@/components/ui/dialog';
+import { Button } from '@/components/ui/button';
 
 const SuggestBrandPage: React.FC = () => {
   return (
@@ -19,7 +21,7 @@ const SuggestBrandPage: React.FC = () => {
           <div>
             <h3 className="font-medium text-amber-800">How suggestion submissions work</h3>
             <p className="text-amber-700 text-sm mt-1">
-              Your suggestion is sent to our review team. Each submission is carefully evaluated
+              Your suggestion is sent to our review team via email. Each submission is carefully evaluated
               before being added to our database. Please provide detailed information to help with verification.
             </p>
           </div>
