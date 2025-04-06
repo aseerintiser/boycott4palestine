@@ -1,9 +1,15 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Flag, Ban, Shield } from 'lucide-react';
 
 const Header: React.FC = () => {
+  const location = useLocation();
+  
+  const isActive = (path: string) => {
+    return location.pathname === path;
+  };
+  
   return (
     <header className="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
@@ -21,20 +27,34 @@ const Header: React.FC = () => {
         </Link>
         <nav>
           <ul className="flex space-x-8">
-            <li>
+            <li className="relative">
               <Link 
                 to="/about" 
-                className="font-medium text-palestinian-black hover:text-palestinian-red px-2 py-1 transition-colors"
+                className={`font-medium px-2 py-1 transition-colors ${
+                  isActive('/about') 
+                    ? 'text-palestinian-red' 
+                    : 'text-palestinian-black hover:text-palestinian-red'
+                }`}
               >
                 About
+                {isActive('/about') && (
+                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-palestinian-red rounded-full"></span>
+                )}
               </Link>
             </li>
-            <li>
+            <li className="relative">
               <Link 
                 to="/suggest" 
-                className="font-medium text-palestinian-black hover:text-palestinian-green px-2 py-1 transition-colors"
+                className={`font-medium px-2 py-1 transition-colors ${
+                  isActive('/suggest') 
+                    ? 'text-palestinian-green' 
+                    : 'text-palestinian-black hover:text-palestinian-green'
+                }`}
               >
                 Suggest a Brand
+                {isActive('/suggest') && (
+                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-palestinian-green rounded-full"></span>
+                )}
               </Link>
             </li>
           </ul>

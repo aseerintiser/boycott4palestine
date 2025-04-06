@@ -14,23 +14,32 @@ const HomePage: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<Category | 'all'>('all');
   const [filteredBrands, setFilteredBrands] = useState(getAllBrands());
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    let result = getAllBrands();
+    // Simulate a loading delay for data fetching
+    setIsLoading(true);
+    
+    const timer = setTimeout(() => {
+      let result = getAllBrands();
 
-    // Apply category filter if not 'all'
-    if (selectedCategory !== 'all') {
-      result = getBrandsByCategory(selectedCategory);
-    }
+      // Apply category filter if not 'all'
+      if (selectedCategory !== 'all') {
+        result = getBrandsByCategory(selectedCategory);
+      }
 
-    // Apply search filter if there is a query
-    if (searchQuery) {
-      result = searchBrands(searchQuery).filter(brand => 
-        selectedCategory === 'all' || brand.category === selectedCategory
-      );
-    }
+      // Apply search filter if there is a query
+      if (searchQuery) {
+        result = searchBrands(searchQuery).filter(brand => 
+          selectedCategory === 'all' || brand.category === selectedCategory
+        );
+      }
 
-    setFilteredBrands(result);
+      setFilteredBrands(result);
+      setIsLoading(false);
+    }, 300); // Short delay to show loading state
+    
+    return () => clearTimeout(timer);
   }, [searchQuery, selectedCategory]);
 
   const handleSearch = (query: string) => {
@@ -46,8 +55,8 @@ const HomePage: React.FC = () => {
       <div className="max-w-4xl mx-auto">
         <div className="mb-8 text-center">
           <h1 className="text-2xl md:text-3xl font-bold mb-2 text-palestinian-black">Boycott4Palestine</h1>
-          <p className="text-muted-foreground">
-            Discover which brands to avoid and find ethical alternatives
+          <p className="text-muted-foreground max-w-xl mx-auto">
+            Discover which brands to avoid and find ethical alternatives that don't support occupation
           </p>
         </div>
         
@@ -61,16 +70,20 @@ const HomePage: React.FC = () => {
         />
         
         <div className="flex justify-between items-center mb-4">
-          <p className="text-sm text-palestinian-black">
-            {filteredBrands.length} {filteredBrands.length === 1 ? 'brand' : 'brands'} found
-          </p>
-          
-          <p className="text-sm text-muted-foreground">
-            Total: {getAllBrands().length} brands
-          </p>
+          {!isLoading && (
+            <>
+              <p className="text-sm text-palestinian-black">
+                {filteredBrands.length} {filteredBrands.length === 1 ? 'brand' : 'brands'} found
+              </p>
+              
+              <p className="text-sm text-muted-foreground">
+                Total: {getAllBrands().length} brands
+              </p>
+            </>
+          )}
         </div>
         
-        <BrandList brands={filteredBrands} />
+        <BrandList brands={filteredBrands} isLoading={isLoading} />
       </div>
     </div>
   );

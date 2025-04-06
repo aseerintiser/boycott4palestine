@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { z } from 'zod';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -8,7 +8,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
-import { SendIcon } from 'lucide-react';
+import { SendIcon, CheckCircle2, Loader2 } from 'lucide-react';
 import emailjs from 'emailjs-com';
 
 const formSchema = z.object({
@@ -19,13 +19,15 @@ const formSchema = z.object({
     message: "Please provide a reason with at least 10 characters.",
   }),
   link: z.string().url({ message: "Please enter a valid URL." }).optional().or(z.literal('')),
-  email: z.string().email({ message: "Optional: Provide your email if you'd like updates" }).optional().or(z.literal('')),
+  email: z.string().email({ message: "Please provide a valid email address" }).optional().or(z.literal('')),
 });
 
 type FormValues = z.infer<typeof formSchema>;
 
 const SuggestBrandForm = () => {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitSuccess, setSubmitSuccess] = useState(false);
   
   // Initialize EmailJS once when component mounts
   useEffect(() => {
@@ -40,10 +42,12 @@ const SuggestBrandForm = () => {
       link: '',
       email: '',
     },
+    mode: 'onChange', // Enable real-time validation
   });
 
   const onSubmit = async (data: FormValues) => {
     try {
+      setIsSubmitting(true);
       // Log form submission
       console.log('Form data submitted:', data);
       
@@ -66,7 +70,11 @@ const SuggestBrandForm = () => {
         description: "Thank you for your suggestion. We'll review it soon.",
       });
       
-      form.reset();
+      setSubmitSuccess(true);
+      setTimeout(() => {
+        form.reset();
+        setSubmitSuccess(false);
+      }, 3000);
     } catch (error) {
       console.error("Error submitting form:", error);
       toast({
@@ -74,6 +82,8 @@ const SuggestBrandForm = () => {
         description: "There was an error submitting your suggestion. Please try again.",
         variant: "destructive",
       });
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -148,9 +158,28 @@ const SuggestBrandForm = () => {
             )}
           />
           
-          <Button type="submit" className="w-full" variant="default">
-            <SendIcon className="mr-2 h-4 w-4" />
-            Submit Suggestion
+          <Button 
+            type="submit" 
+            className="w-full" 
+            variant="default"
+            disabled={isSubmitting || submitSuccess}
+          >
+            {isSubmitting ? (
+              <>
+                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                Submitting...
+              </>
+            ) : submitSuccess ? (
+              <>
+                <CheckCircle2 className="mr-2 h-4 w-4" />
+                Submitted Successfully!
+              </>
+            ) : (
+              <>
+                <SendIcon className="mr-2 h-4 w-4" />
+                Submit Suggestion
+              </>
+            )}
           </Button>
         </form>
       </Form>

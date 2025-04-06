@@ -10,18 +10,29 @@ import {
   PaginationNext, 
   PaginationPrevious 
 } from "@/components/ui/pagination";
+import { Loader2 } from 'lucide-react';
 
 interface BrandListProps {
   brands: Brand[];
+  isLoading?: boolean;
 }
 
-const BrandList: React.FC<BrandListProps> = ({ brands }) => {
+const BrandList: React.FC<BrandListProps> = ({ brands, isLoading = false }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 9; // Show 9 brands per page for a 3x3 grid
   
+  if (isLoading) {
+    return (
+      <div className="flex items-center justify-center p-12">
+        <Loader2 className="h-10 w-10 text-palestinian-red animate-spin" />
+        <span className="ml-3 text-muted-foreground">Loading brands...</span>
+      </div>
+    );
+  }
+  
   if (brands.length === 0) {
     return (
-      <div className="text-center p-8">
+      <div className="text-center p-8 border border-dashed border-gray-200 rounded-lg bg-gray-50">
         <p className="text-muted-foreground">No brands found. Try a different search.</p>
       </div>
     );
@@ -74,7 +85,9 @@ const BrandList: React.FC<BrandListProps> = ({ brands }) => {
     <div className="space-y-6">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {currentBrands.map((brand) => (
-          <BrandCard key={brand.id} brand={brand} />
+          <div key={brand.id} className="h-full">
+            <BrandCard brand={brand} />
+          </div>
         ))}
       </div>
       
@@ -88,7 +101,7 @@ const BrandList: React.FC<BrandListProps> = ({ brands }) => {
                   onClick={(e) => {
                     e.preventDefault();
                     setCurrentPage(currentPage - 1);
-                    window.scrollTo(0, 0);
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
                   }} 
                 />
               </PaginationItem>
@@ -111,7 +124,7 @@ const BrandList: React.FC<BrandListProps> = ({ brands }) => {
                     onClick={(e) => {
                       e.preventDefault();
                       setCurrentPage(number as number);
-                      window.scrollTo(0, 0);
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
                     }}
                   >
                     {number}
@@ -127,7 +140,7 @@ const BrandList: React.FC<BrandListProps> = ({ brands }) => {
                   onClick={(e) => {
                     e.preventDefault();
                     setCurrentPage(currentPage + 1);
-                    window.scrollTo(0, 0);
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
                   }} 
                 />
               </PaginationItem>

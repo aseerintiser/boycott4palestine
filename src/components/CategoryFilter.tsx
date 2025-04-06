@@ -15,12 +15,12 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({
   const categories = getCategories();
   
   return (
-    <div className="w-full overflow-x-auto pb-2 mb-4">
-      <div className="flex space-x-2 min-w-max">
+    <div className="w-full overflow-x-auto pb-2 mb-4 scrollbar-thin">
+      <div className="flex space-x-2 min-w-max pb-1">
         <button
           onClick={() => onSelectCategory('all')}
           className={cn(
-            "px-3 py-2 text-sm font-medium rounded-full whitespace-nowrap transition-colors",
+            "px-3 py-1.5 text-sm font-medium rounded-full whitespace-nowrap transition-colors focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-palestinian-red",
             selectedCategory === 'all'
               ? "bg-palestinian-red text-white shadow-sm"
               : "bg-white border border-gray-200 text-palestinian-black hover:bg-palestinian-gray hover:border-palestinian-green"
@@ -34,15 +34,18 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({
             key={category}
             onClick={() => onSelectCategory(category)}
             className={cn(
-              "px-3 py-2 text-sm font-medium rounded-full whitespace-nowrap transition-colors",
+              "px-3 py-1.5 text-sm font-medium rounded-full whitespace-nowrap transition-colors focus:outline-none focus:ring-2 focus:ring-offset-1",
               selectedCategory === category
-                ? "bg-palestinian-red text-white shadow-sm"
-                : "bg-white border border-gray-200 text-palestinian-black hover:bg-palestinian-gray hover:border-palestinian-green"
+                ? "bg-palestinian-red text-white shadow-sm focus:ring-palestinian-red"
+                : "bg-white border border-gray-200 text-palestinian-black hover:bg-palestinian-gray hover:border-palestinian-green focus:ring-palestinian-green"
             )}
           >
             {category}
           </button>
         ))}
+      </div>
+      <div className="mt-1 text-xs text-muted-foreground text-center md:text-left">
+        <span className="md:hidden">← Scroll to see more categories →</span>
       </div>
     </div>
   );
