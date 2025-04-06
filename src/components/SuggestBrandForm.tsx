@@ -47,11 +47,12 @@ const SuggestBrandForm = () => {
       // Log form submission
       console.log('Form data submitted:', data);
       
-      // Send email notification
+      // Send email notification to the admin
       await emailjs.send(
         "YOUR_SERVICE_ID", // Replace with your EmailJS service ID
         "YOUR_TEMPLATE_ID", // Replace with your EmailJS template ID
         {
+          to_email: "aseerniloy@gmail.com", // Your email address
           brand_name: data.brandName,
           reason: data.reason,
           link: data.link || "No link provided",
