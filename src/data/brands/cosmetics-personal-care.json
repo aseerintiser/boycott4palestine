@@ -191,5 +191,53 @@
         "link": "https://example.com/pai"
       }
     ]
+  },
+  {
+    "id": "59",
+    "name": "Johnson & Johnson",
+    "category": "Cosmetics & Personal Care",
+    "description": "Personal care products company with operations in Israel.",
+    "reasons": [
+      "R&D center in Rehovot, Israel",
+      "Manufacturing ties to contested regions"
+    ],
+    "alternatives": [
+      {
+        "id": "a117",
+        "name": "Dr. Bronner's",
+        "description": "Organic and fair trade personal care products",
+        "link": "https://example.com/drbronners"
+      },
+      {
+        "id": "a118",
+        "name": "EO Products",
+        "description": "Organic and ethical personal care items",
+        "link": "https://example.com/eoproducts"
+      }
+    ]
+  },
+  {
+    "id": "60",
+    "name": "Maybelline",
+    "category": "Cosmetics & Personal Care",
+    "description": "Cosmetics brand owned by L'Oréal with operations in Israel.",
+    "reasons": [
+      "Parent company L'Oréal has significant presence in Israel",
+      "Products sold in retail stores in settlements"
+    ],
+    "alternatives": [
+      {
+        "id": "a119",
+        "name": "Honest Beauty",
+        "description": "Clean beauty brand with ethical practices",
+        "link": "https://example.com/honestbeauty"
+      },
+      {
+        "id": "a120",
+        "name": "Ilia Beauty",
+        "description": "Clean makeup with sustainable packaging",
+        "link": "https://example.com/iliabeauty"
+      }
+    ]
   }
 ]

@@ -167,5 +167,77 @@
         "link": "https://example.com/ethicalbeans"
       }
     ]
+  },
+  {
+    "id": "44",
+    "name": "PepsiCo",
+    "category": "Food & Beverage",
+    "description": "Beverage company with extensive operations in Israel.",
+    "reasons": [
+      "Major business operations throughout Israel",
+      "Owns SodaStream which has a factory in the West Bank"
+    ],
+    "alternatives": [
+      {
+        "id": "a87",
+        "name": "GuS Soda",
+        "description": "Grown-up Soda with ethical sourcing practices",
+        "link": "https://example.com/gus"
+      },
+      {
+        "id": "a88",
+        "name": "Spindrift",
+        "description": "Sparkling water made with real fruit",
+        "link": "https://example.com/spindrift"
+      }
+    ]
+  },
+  {
+    "id": "45",
+    "name": "Danone",
+    "category": "Food & Beverage",
+    "description": "Food company with manufacturing operations in Israel.",
+    "reasons": [
+      "Factory in the Galilee region of Israel",
+      "Joint ventures with Israeli companies"
+    ],
+    "alternatives": [
+      {
+        "id": "a89",
+        "name": "Forager Project",
+        "description": "Plant-based dairy alternatives",
+        "link": "https://example.com/forager"
+      },
+      {
+        "id": "a90",
+        "name": "Califia Farms",
+        "description": "Plant-based milk and yogurt alternatives",
+        "link": "https://example.com/califia"
+      }
+    ]
+  },
+  {
+    "id": "46",
+    "name": "Unilever",
+    "category": "Food & Beverage",
+    "description": "Consumer goods company with multiple factories in Israel.",
+    "reasons": [
+      "Factories in Haifa and Arad",
+      "Continued business operations despite ethical concerns"
+    ],
+    "alternatives": [
+      {
+        "id": "a91",
+        "name": "Dr. Bronner's",
+        "description": "Ethical food and household products company",
+        "link": "https://example.com/drbronners"
+      },
+      {
+        "id": "a92",
+        "name": "Seventh Generation",
+        "description": "Sustainable and ethical consumer goods",
+        "link": "https://example.com/seventhgeneration"
+      }
+    ]
   }
 ]

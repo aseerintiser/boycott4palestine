@@ -143,5 +143,77 @@
         "link": "https://example.com/outerknown"
       }
     ]
+  },
+  {
+    "id": "56",
+    "name": "Adidas",
+    "category": "Fashion & Apparel",
+    "description": "Sportswear company with operations in Israel.",
+    "reasons": [
+      "Stores in contested territories",
+      "Sponsorships of Israeli sports events"
+    ],
+    "alternatives": [
+      {
+        "id": "a111",
+        "name": "New Balance",
+        "description": "Athletic footwear with some manufacturing in the US",
+        "link": "https://example.com/newbalance"
+      },
+      {
+        "id": "a112",
+        "name": "Asics",
+        "description": "Sports equipment with better ethical standards",
+        "link": "https://example.com/asics"
+      }
+    ]
+  },
+  {
+    "id": "57",
+    "name": "Tommy Hilfiger",
+    "category": "Fashion & Apparel",
+    "description": "Fashion brand with retail operations in Israel.",
+    "reasons": [
+      "Stores in malls in contested territories",
+      "Parent company PVH's operations in Israel"
+    ],
+    "alternatives": [
+      {
+        "id": "a113",
+        "name": "Nudie Jeans",
+        "description": "Organic denim with transparent supply chain",
+        "link": "https://example.com/nudiejeans"
+      },
+      {
+        "id": "a114",
+        "name": "Everlane",
+        "description": "Clothing brand with ethical factories and radical transparency",
+        "link": "https://example.com/everlane"
+      }
+    ]
+  },
+  {
+    "id": "58",
+    "name": "Under Armour",
+    "category": "Fashion & Apparel",
+    "description": "Sportswear company with operations in Israel.",
+    "reasons": [
+      "Retail presence in Israeli malls built on contested land",
+      "Collaborations with Israeli sports organizations"
+    ],
+    "alternatives": [
+      {
+        "id": "a115",
+        "name": "Icebreaker",
+        "description": "Merino wool athletic wear with ethical sourcing",
+        "link": "https://example.com/icebreaker"
+      },
+      {
+        "id": "a116",
+        "name": "Pact",
+        "description": "Organic cotton athletic and casual wear",
+        "link": "https://example.com/pact"
+      }
+    ]
   }
 ]

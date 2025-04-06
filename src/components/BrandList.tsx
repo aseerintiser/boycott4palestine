@@ -33,11 +33,42 @@ const BrandList: React.FC<BrandListProps> = ({ brands }) => {
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentBrands = brands.slice(indexOfFirstItem, indexOfLastItem);
 
-  // Generate page numbers
-  const pageNumbers = [];
-  for (let i = 1; i <= totalPages; i++) {
-    pageNumbers.push(i);
-  }
+  // Generate page numbers with ellipsis for many pages
+  const getPageNumbers = () => {
+    const pageNumbers = [];
+    
+    if (totalPages <= 7) {
+      // Show all pages if there are 7 or fewer
+      for (let i = 1; i <= totalPages; i++) {
+        pageNumbers.push(i);
+      }
+    } else {
+      // Show first page, last page, current page, and pages around current
+      pageNumbers.push(1);
+      
+      if (currentPage > 3) {
+        pageNumbers.push("ellipsis1");
+      }
+      
+      // Pages around current
+      const start = Math.max(2, currentPage - 1);
+      const end = Math.min(totalPages - 1, currentPage + 1);
+      
+      for (let i = start; i <= end; i++) {
+        pageNumbers.push(i);
+      }
+      
+      if (currentPage < totalPages - 2) {
+        pageNumbers.push("ellipsis2");
+      }
+      
+      pageNumbers.push(totalPages);
+    }
+    
+    return pageNumbers;
+  };
+
+  const pageNumbers = getPageNumbers();
 
   return (
     <div className="space-y-6">
@@ -63,21 +94,31 @@ const BrandList: React.FC<BrandListProps> = ({ brands }) => {
               </PaginationItem>
             )}
             
-            {pageNumbers.map(number => (
-              <PaginationItem key={number}>
-                <PaginationLink 
-                  href="#"
-                  isActive={currentPage === number}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setCurrentPage(number);
-                    window.scrollTo(0, 0);
-                  }}
-                >
-                  {number}
-                </PaginationLink>
-              </PaginationItem>
-            ))}
+            {pageNumbers.map((number, index) => {
+              if (number === "ellipsis1" || number === "ellipsis2") {
+                return (
+                  <PaginationItem key={`ellipsis-${index}`}>
+                    <span className="px-3 py-2">...</span>
+                  </PaginationItem>
+                );
+              }
+              
+              return (
+                <PaginationItem key={`page-${number}`}>
+                  <PaginationLink 
+                    href="#"
+                    isActive={currentPage === number}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setCurrentPage(number as number);
+                      window.scrollTo(0, 0);
+                    }}
+                  >
+                    {number}
+                  </PaginationLink>
+                </PaginationItem>
+              );
+            })}
             
             {currentPage < totalPages && (
               <PaginationItem>

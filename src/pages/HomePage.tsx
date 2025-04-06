@@ -64,6 +64,10 @@ const HomePage: React.FC = () => {
           <p className="text-sm text-muted-foreground">
             {filteredBrands.length} {filteredBrands.length === 1 ? 'brand' : 'brands'} found
           </p>
+          
+          <p className="text-sm text-muted-foreground">
+            Total: {getAllBrands().length} brands
+          </p>
         </div>
         
         <BrandList brands={filteredBrands} />

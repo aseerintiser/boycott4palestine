@@ -191,5 +191,53 @@
         "link": "https://example.com/midea"
       }
     ]
+  },
+  {
+    "id": "51",
+    "name": "Whirlpool",
+    "category": "Household",
+    "description": "Appliance manufacturer with operations in Israel.",
+    "reasons": [
+      "Sales and distribution network in Israel",
+      "Products sold in settlements in occupied territories"
+    ],
+    "alternatives": [
+      {
+        "id": "a101",
+        "name": "Fisher & Paykel",
+        "description": "Appliance manufacturer with ethical business standards",
+        "link": "https://example.com/fisherpaykel"
+      },
+      {
+        "id": "a102",
+        "name": "Bosch Home",
+        "description": "Home appliances with better ethical practices",
+        "link": "https://example.com/boschhome"
+      }
+    ]
+  },
+  {
+    "id": "52",
+    "name": "Lowe's",
+    "category": "Household",
+    "description": "Home improvement retailer selling products from companies in Israeli settlements.",
+    "reasons": [
+      "Sells products from companies operating in settlements",
+      "Business ties with companies involved in occupation"
+    ],
+    "alternatives": [
+      {
+        "id": "a103",
+        "name": "Local Co-op Hardware",
+        "description": "Community-owned hardware stores with ethical sourcing",
+        "link": "https://example.com/coop"
+      },
+      {
+        "id": "a104",
+        "name": "Menards",
+        "description": "Family-owned hardware chain with better ethical standards",
+        "link": "https://example.com/menards"
+      }
+    ]
   }
 ]

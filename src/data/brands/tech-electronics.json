@@ -167,5 +167,101 @@
         "link": "https://example.com/framework"
       }
     ]
+  },
+  {
+    "id": "47",
+    "name": "Cisco",
+    "category": "Tech & Electronics",
+    "description": "Networking company with significant investments in Israel.",
+    "reasons": [
+      "R&D centers in Israel",
+      "Technologies used in surveillance infrastructure"
+    ],
+    "alternatives": [
+      {
+        "id": "a93",
+        "name": "Netgear",
+        "description": "Networking equipment with fewer controversial ties",
+        "link": "https://example.com/netgear"
+      },
+      {
+        "id": "a94",
+        "name": "TP-Link",
+        "description": "Affordable networking equipment with ethical manufacturing",
+        "link": "https://example.com/tplink"
+      }
+    ]
+  },
+  {
+    "id": "48",
+    "name": "IBM",
+    "category": "Tech & Electronics",
+    "description": "Technology company with R&D centers and investments in Israel.",
+    "reasons": [
+      "Major R&D center in Haifa",
+      "Contracts with Israeli defense establishments"
+    ],
+    "alternatives": [
+      {
+        "id": "a95",
+        "name": "Open Source Servers",
+        "description": "Self-hosted server solutions with community support",
+        "link": "https://example.com/opensource"
+      },
+      {
+        "id": "a96",
+        "name": "Ethical Cloud Providers",
+        "description": "Cloud computing from companies with ethical practices",
+        "link": "https://example.com/ethicalcloud"
+      }
+    ]
+  },
+  {
+    "id": "49",
+    "name": "Oracle",
+    "category": "Tech & Electronics",
+    "description": "Software company with R&D centers in Israel.",
+    "reasons": [
+      "Major R&D centers in Tel Aviv and Petah Tikva",
+      "Collaboration with Israeli military institutions"
+    ],
+    "alternatives": [
+      {
+        "id": "a97",
+        "name": "PostgreSQL",
+        "description": "Open-source database system with community governance",
+        "link": "https://example.com/postgresql"
+      },
+      {
+        "id": "a98",
+        "name": "MariaDB",
+        "description": "Open-source database with transparent policies",
+        "link": "https://example.com/mariadb"
+      }
+    ]
+  },
+  {
+    "id": "50",
+    "name": "Samsung",
+    "category": "Tech & Electronics",
+    "description": "Electronics company with investments and operations in Israel.",
+    "reasons": [
+      "R&D center in Israel",
+      "Investments in Israeli tech startups"
+    ],
+    "alternatives": [
+      {
+        "id": "a99",
+        "name": "LG Electronics",
+        "description": "Electronics manufacturer with better ethical practices",
+        "link": "https://example.com/lg"
+      },
+      {
+        "id": "a100",
+        "name": "Sony",
+        "description": "Electronics company with fewer controversial ties",
+        "link": "https://example.com/sony"
+      }
+    ]
   }
 ]

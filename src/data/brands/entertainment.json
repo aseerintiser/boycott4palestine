@@ -167,5 +167,77 @@
         "link": "https://example.com/expedia"
       }
     ]
+  },
+  {
+    "id": "53",
+    "name": "Universal Music Group",
+    "category": "Entertainment",
+    "description": "Music company with operations in Israel.",
+    "reasons": [
+      "Office in Tel Aviv",
+      "Investments in Israeli music industry"
+    ],
+    "alternatives": [
+      {
+        "id": "a105",
+        "name": "Independent Record Labels",
+        "description": "Support small indie labels with ethical practices",
+        "link": "https://example.com/indielabels"
+      },
+      {
+        "id": "a106",
+        "name": "Bandcamp",
+        "description": "Platform for directly supporting artists",
+        "link": "https://example.com/bandcamp"
+      }
+    ]
+  },
+  {
+    "id": "54",
+    "name": "Expedia",
+    "category": "Entertainment",
+    "description": "Travel booking site listing accommodations in occupied territories.",
+    "reasons": [
+      "Lists properties in illegal settlements",
+      "Classifies occupied Palestinian territories as Israel"
+    ],
+    "alternatives": [
+      {
+        "id": "a107",
+        "name": "Responsible Travel",
+        "description": "Ethical travel booking with clear territorial designations",
+        "link": "https://example.com/responsibletravel"
+      },
+      {
+        "id": "a108",
+        "name": "Green Suitcase Travel",
+        "description": "Sustainable travel planning with ethical considerations",
+        "link": "https://example.com/greensuitcase"
+      }
+    ]
+  },
+  {
+    "id": "55",
+    "name": "Sony Pictures",
+    "category": "Entertainment",
+    "description": "Film studio with operations in Israel.",
+    "reasons": [
+      "Distribution network in Israel",
+      "Productions that normalize occupation"
+    ],
+    "alternatives": [
+      {
+        "id": "a109",
+        "name": "Independent Cinema",
+        "description": "Support films from independent Palestinian filmmakers",
+        "link": "https://example.com/indiepalestinancinema"
+      },
+      {
+        "id": "a110",
+        "name": "Film Movement",
+        "description": "Independent and international film distributor",
+        "link": "https://example.com/filmmovement"
+      }
+    ]
   }
 ]
