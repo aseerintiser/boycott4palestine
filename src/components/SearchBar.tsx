@@ -1,21 +1,23 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { Input } from "@/components/ui/input";
-import { Search, X, Loader2 } from "lucide-react";
+import { Search, X, Loader2, Clock } from "lucide-react";
 import { useNavigate } from 'react-router-dom';
 import { searchBrands } from '@/data/brands/index';
 import { Brand } from '@/data/brands/types';
 
 interface SearchBarProps {
   onSearch: (query: string) => void;
+  recentSearches?: string[];
 }
 
-const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
+const SearchBar: React.FC<SearchBarProps> = ({ onSearch, recentSearches = [] }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [isOpen, setIsOpen] = useState(false);
   const [suggestions, setSuggestions] = useState<Brand[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [isFocused, setIsFocused] = useState(false);
+  const [showRecent, setShowRecent] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const navigate = useNavigate();
 
@@ -29,6 +31,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
         setSuggestions(results.slice(0, 5)); // Limit to 5 suggestions
         setIsLoading(false);
         setIsOpen(true);
+        setShowRecent(false);
       }, 300);
       
       return () => clearTimeout(timer);
@@ -55,6 +58,22 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
     navigate(`/brand/${brandId}`);
   };
 
+  const handleSelectRecent = (query: string) => {
+    setSearchQuery(query);
+    onSearch(query);
+    setShowRecent(false);
+    inputRef.current?.focus();
+  };
+
+  const handleFocus = () => {
+    setIsFocused(true);
+    if (searchQuery.length > 1) {
+      setIsOpen(true);
+    } else if (recentSearches.length > 0) {
+      setShowRecent(true);
+    }
+  };
+
   return (
     <div className="relative w-full max-w-md mx-auto">
       <div className="relative">
@@ -69,13 +88,13 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
           value={searchQuery}
           onChange={handleSearch}
           className={`pl-10 pr-10 w-full border-0 ${isFocused ? 'ring-2 ring-palestinian-red/50' : 'border border-input'} transition-all`}
-          onFocus={() => {
-            setIsFocused(true);
-            if (searchQuery.length > 1) setIsOpen(true);
-          }}
+          onFocus={handleFocus}
           onBlur={() => {
             setIsFocused(false);
-            setTimeout(() => setIsOpen(false), 200);
+            setTimeout(() => {
+              setIsOpen(false);
+              setShowRecent(false);
+            }, 200);
           }}
         />
         
@@ -95,6 +114,24 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
           </div>
         )}
       </div>
+      
+      {showRecent && recentSearches.length > 0 && !isOpen && (
+        <div className="absolute w-full mt-1.5 bg-white rounded-md shadow-lg z-10 border border-gray-200 overflow-hidden">
+          <div className="px-4 py-2 bg-gray-50 text-xs font-medium text-gray-500">Recent searches</div>
+          <ul className="py-1 divide-y divide-gray-100">
+            {recentSearches.map((query, index) => (
+              <li 
+                key={index}
+                className="px-4 py-2 hover:bg-gray-50 cursor-pointer transition-colors flex items-center gap-2"
+                onClick={() => handleSelectRecent(query)}
+              >
+                <Clock className="h-3.5 w-3.5 text-gray-400" />
+                <span className="text-sm text-palestinian-black">{query}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
       
       {isOpen && suggestions.length > 0 && (
         <div className="absolute w-full mt-1.5 bg-white rounded-md shadow-lg z-10 border border-gray-200 overflow-hidden">
