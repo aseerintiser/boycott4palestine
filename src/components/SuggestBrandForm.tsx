@@ -60,18 +60,24 @@ const SuggestBrandForm = () => {
       // Log form submission
       console.log('Form data submitted:', data);
       
-      // Send email notification to the admin
+      // Prepare template parameters based on the EmailJS template variables
+      // From the screenshots, we can see the template is using variables like {{name}}, {{title}}, etc.
+      const templateParams = {
+        name: data.email || "Anonymous Submitter", // For the recipient name greeting
+        title: `New brand boycott suggestion: ${data.brandName}`, // For the request subject/title
+        email: data.email || "Not provided", // Submitter's email
+        brand_name: data.brandName, // Brand name for boycott
+        reason: data.reason, // Reason for boycott
+        link: data.link || "No link provided", // Supporting evidence link
+        submitter_email: data.email || "Not provided", // Email for notification
+        date: new Date().toLocaleString(), // Submission date
+      };
+      
+      // Send email notification using EmailJS
       const result = await emailjs.send(
-        "service_y9e4hrq", // EmailJS service ID provided by user
-        "template_boycott4palestine", // EmailJS template ID
-        {
-          to_email: "aseerniloy@gmail.com", // Your email address
-          brand_name: data.brandName,
-          reason: data.reason,
-          link: data.link || "No link provided",
-          submitter_email: data.email || "Not provided",
-          date: new Date().toLocaleString(),
-        }
+        "service_y9e4hrq", // EmailJS service ID 
+        "template_boycott4palestine", // EmailJS template ID from your screenshots
+        templateParams
       );
       
       console.log('EmailJS result:', result);
@@ -88,7 +94,7 @@ const SuggestBrandForm = () => {
       }, 3000);
     } catch (error) {
       console.error("Error submitting form:", error);
-      setError("There was an error submitting your suggestion. Please make sure you have created the EmailJS template 'template_boycott4palestine' in your EmailJS account.");
+      setError("There was an error submitting your suggestion. Please verify your EmailJS template setup is correct.");
       toast({
         title: "Error",
         description: "There was an error submitting your suggestion. Please try again.",

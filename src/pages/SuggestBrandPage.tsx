@@ -28,11 +28,19 @@ const SuggestBrandPage: React.FC = () => {
         <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6 flex items-start gap-3">
           <Info className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
           <div>
-            <h3 className="font-medium text-blue-800">Important Setup Required</h3>
+            <h3 className="font-medium text-blue-800">EmailJS Template Setup</h3>
             <p className="text-blue-700 text-sm mt-1">
-              To make the form fully functional, you need to create an EmailJS template with ID 
+              In your EmailJS account, create a template with ID 
               <code className="mx-1 p-1 bg-blue-100 rounded">template_boycott4palestine</code>
-              in your EmailJS account. This template should include the variables: brand_name, reason, link, submitter_email, and date.
+              and ensure it contains these variables in the template: 
+              <code className="mx-1 p-1 bg-blue-100 rounded">{{name}}</code>
+              <code className="mx-1 p-1 bg-blue-100 rounded">{{title}}</code>
+              <code className="mx-1 p-1 bg-blue-100 rounded">{{email}}</code>
+              <code className="mx-1 p-1 bg-blue-100 rounded">{{brand_name}}</code>
+              <code className="mx-1 p-1 bg-blue-100 rounded">{{reason}}</code>
+              <code className="mx-1 p-1 bg-blue-100 rounded">{{link}}</code>
+              <code className="mx-1 p-1 bg-blue-100 rounded">{{submitter_email}}</code>
+              <code className="mx-1 p-1 bg-blue-100 rounded">{{date}}</code>
             </p>
           </div>
         </div>
