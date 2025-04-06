@@ -60,6 +60,12 @@ const HomePage: React.FC = () => {
           onSelectCategory={handleSelectCategory} 
         />
         
+        <div className="flex justify-between items-center mb-4">
+          <p className="text-sm text-muted-foreground">
+            {filteredBrands.length} {filteredBrands.length === 1 ? 'brand' : 'brands'} found
+          </p>
+        </div>
+        
         <BrandList brands={filteredBrands} />
       </div>
     </div>

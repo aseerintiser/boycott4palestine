@@ -23,5 +23,125 @@
         "link": "https://example.com/etiko"
       }
     ]
+  },
+  {
+    "id": "20",
+    "name": "H&M",
+    "category": "Fashion & Apparel",
+    "description": "Fashion retailer with stores in Israel including contested areas.",
+    "reasons": [
+      "Multiple retail locations in Israel including mall on occupied land",
+      "Continued expansion despite human rights concerns"
+    ],
+    "alternatives": [
+      {
+        "id": "a39",
+        "name": "People Tree",
+        "description": "Fair trade and sustainable fashion retailer",
+        "link": "https://example.com/peopletree"
+      },
+      {
+        "id": "a40",
+        "name": "Thought Clothing",
+        "description": "Sustainable fashion with transparent supply chain",
+        "link": "https://example.com/thought"
+      }
+    ]
+  },
+  {
+    "id": "21",
+    "name": "Zara",
+    "category": "Fashion & Apparel",
+    "description": "Clothing retailer with significant presence in Israel.",
+    "reasons": [
+      "Multiple stores in Israeli settlements",
+      "Parent company Inditex's continued expansion despite ethical concerns"
+    ],
+    "alternatives": [
+      {
+        "id": "a41",
+        "name": "Kotn",
+        "description": "Ethical cotton clothing with direct-trade model",
+        "link": "https://example.com/kotn"
+      },
+      {
+        "id": "a42",
+        "name": "Reformation",
+        "description": "Sustainable fashion brand with ethical manufacturing",
+        "link": "https://example.com/reformation"
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "name": "Victoria's Secret",
+    "category": "Fashion & Apparel",
+    "description": "Lingerie retailer with operations in Israel.",
+    "reasons": [
+      "Stores in contested areas and settlements",
+      "Products made with raw materials from disputed territories"
+    ],
+    "alternatives": [
+      {
+        "id": "a43",
+        "name": "ThirdLove",
+        "description": "Inclusive lingerie brand with ethical manufacturing",
+        "link": "https://example.com/thirdlove"
+      },
+      {
+        "id": "a44",
+        "name": "Organic Basics",
+        "description": "Sustainable underwear with transparent supply chain",
+        "link": "https://example.com/organicbasics"
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "name": "Nike",
+    "category": "Fashion & Apparel",
+    "description": "Sportswear company with stores and operations in Israel.",
+    "reasons": [
+      "Flagship stores in Tel Aviv and Jerusalem",
+      "Sponsorships of Israeli sports teams including in settlements"
+    ],
+    "alternatives": [
+      {
+        "id": "a45",
+        "name": "Veja",
+        "description": "Sustainable sneakers with ethical production",
+        "link": "https://example.com/veja"
+      },
+      {
+        "id": "a46",
+        "name": "Allbirds",
+        "description": "Eco-friendly footwear with sustainable materials",
+        "link": "https://example.com/allbirds"
+      }
+    ]
+  },
+  {
+    "id": "24",
+    "name": "Calvin Klein",
+    "category": "Fashion & Apparel",
+    "description": "Fashion brand with retail operations in Israel.",
+    "reasons": [
+      "Stores in malls built on disputed territories",
+      "Parent company PVH's continued expansion in the region"
+    ],
+    "alternatives": [
+      {
+        "id": "a47",
+        "name": "Patagonia",
+        "description": "Environmentally and socially responsible outdoor clothing",
+        "link": "https://example.com/patagonia"
+      },
+      {
+        "id": "a48",
+        "name": "Outerknown",
+        "description": "Sustainable fashion brand with fair labor practices",
+        "link": "https://example.com/outerknown"
+      }
+    ]
   }
 ]

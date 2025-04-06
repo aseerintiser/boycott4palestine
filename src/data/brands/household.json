@@ -23,5 +23,173 @@
         "link": "https://example.com/johndeere"
       }
     ]
+  },
+  {
+    "id": "37",
+    "name": "Electrolux",
+    "category": "Household",
+    "description": "Appliance manufacturer with operations in Israel.",
+    "reasons": [
+      "Manufacturing facilities in Israel",
+      "Purchases from suppliers in illegal settlements"
+    ],
+    "alternatives": [
+      {
+        "id": "a73",
+        "name": "Miele",
+        "description": "Family-owned appliance manufacturer with ethical business practices",
+        "link": "https://example.com/miele"
+      },
+      {
+        "id": "a74",
+        "name": "Speed Queen",
+        "description": "Appliance manufacturer with transparent supply chain",
+        "link": "https://example.com/speedqueen"
+      }
+    ]
+  },
+  {
+    "id": "38",
+    "name": "Home Depot",
+    "category": "Household",
+    "description": "Home improvement retailer selling products from companies operating in Israeli settlements.",
+    "reasons": [
+      "Sells products from companies with operations in settlements",
+      "Corporate ties to pro-occupation investment groups"
+    ],
+    "alternatives": [
+      {
+        "id": "a75",
+        "name": "Local Hardware Stores",
+        "description": "Support independent local hardware businesses",
+        "link": "https://example.com/localhardware"
+      },
+      {
+        "id": "a76",
+        "name": "Ace Hardware",
+        "description": "Cooperative business model with more ethical sourcing",
+        "link": "https://example.com/ace"
+      }
+    ]
+  },
+  {
+    "id": "39",
+    "name": "Bed Bath & Beyond",
+    "category": "Household",
+    "description": "Retailer selling SodaStream and other products made in occupied territories.",
+    "reasons": [
+      "Sells products manufactured in occupied territories",
+      "Partnerships with companies operating in settlements"
+    ],
+    "alternatives": [
+      {
+        "id": "a77",
+        "name": "Local Home Goods Stores",
+        "description": "Support local independent retailers with ethical sourcing",
+        "link": "https://example.com/localhomegoods"
+      },
+      {
+        "id": "a78",
+        "name": "The Container Store",
+        "description": "Home organization products with better ethical standards",
+        "link": "https://example.com/containerstore"
+      }
+    ]
+  },
+  {
+    "id": "40",
+    "name": "Ikea",
+    "category": "Household",
+    "description": "Furniture retailer with stores and operations in Israel.",
+    "reasons": [
+      "Multiple stores in Israel including delivery to settlements",
+      "Sources from manufacturers in contested territories"
+    ],
+    "alternatives": [
+      {
+        "id": "a79",
+        "name": "Local Furniture Makers",
+        "description": "Support local independent furniture craftspeople",
+        "link": "https://example.com/localfurniture"
+      },
+      {
+        "id": "a80",
+        "name": "West Elm",
+        "description": "Furniture retailer with fair trade and sustainable collections",
+        "link": "https://example.com/westelm"
+      }
+    ]
+  },
+  {
+    "id": "41",
+    "name": "Black & Decker",
+    "category": "Household",
+    "description": "Power tool company with manufacturing in Israel and connections to military contracts.",
+    "reasons": [
+      "Manufacturing facilities in Israel with military connections",
+      "Corporate ties to defense contractors"
+    ],
+    "alternatives": [
+      {
+        "id": "a81",
+        "name": "Bosch",
+        "description": "Tool manufacturer with better ethical standards",
+        "link": "https://example.com/bosch"
+      },
+      {
+        "id": "a82",
+        "name": "Makita",
+        "description": "Power tool company with transparent manufacturing",
+        "link": "https://example.com/makita"
+      }
+    ]
+  },
+  {
+    "id": "42",
+    "name": "Procter & Gamble",
+    "category": "Household",
+    "description": "Consumer goods company with operations and R&D centers in Israel.",
+    "reasons": [
+      "Major R&D facility in Israel focused on military technology applications",
+      "Partnerships with Israeli tech companies in settlements"
+    ],
+    "alternatives": [
+      {
+        "id": "a83",
+        "name": "Seventh Generation",
+        "description": "Eco-friendly household products with ethical practices",
+        "link": "https://example.com/seventhgeneration"
+      },
+      {
+        "id": "a84",
+        "name": "Method",
+        "description": "Environmentally friendly cleaning products with ethical manufacturing",
+        "link": "https://example.com/method"
+      }
+    ]
+  },
+  {
+    "id": "43",
+    "name": "Siemens",
+    "category": "Household",
+    "description": "Industrial manufacturing company with significant operations in Israel.",
+    "reasons": [
+      "Major contracts with Israeli government for infrastructure in settlements",
+      "Technology used in checkpoint and surveillance systems"
+    ],
+    "alternatives": [
+      {
+        "id": "a85",
+        "name": "LG Electronics",
+        "description": "Appliance manufacturer with better ethical standards",
+        "link": "https://example.com/lg"
+      },
+      {
+        "id": "a86",
+        "name": "Midea",
+        "description": "Home appliance manufacturer with transparent supply chain",
+        "link": "https://example.com/midea"
+      }
+    ]
   }
 ]

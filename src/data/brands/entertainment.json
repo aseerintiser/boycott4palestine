@@ -23,5 +23,149 @@
         "link": "https://example.com/booking"
       }
     ]
+  },
+  {
+    "id": "31",
+    "name": "Disney",
+    "category": "Entertainment",
+    "description": "Media conglomerate with investments and operations in Israel.",
+    "reasons": [
+      "Major investments in Israeli startup companies",
+      "Productions filmed in contested territories"
+    ],
+    "alternatives": [
+      {
+        "id": "a61",
+        "name": "Independent Films",
+        "description": "Support independent filmmakers and studios",
+        "link": "https://example.com/independentfilm"
+      },
+      {
+        "id": "a62",
+        "name": "Criterion Channel",
+        "description": "Curated streaming service featuring global independent cinema",
+        "link": "https://example.com/criterion"
+      }
+    ]
+  },
+  {
+    "id": "32",
+    "name": "Netflix",
+    "category": "Entertainment",
+    "description": "Streaming service with investments in Israeli content and operations.",
+    "reasons": [
+      "Production of shows that normalize occupation",
+      "Investments in Israeli media companies and studios"
+    ],
+    "alternatives": [
+      {
+        "id": "a63",
+        "name": "MUBI",
+        "description": "Art house and international film streaming service",
+        "link": "https://example.com/mubi"
+      },
+      {
+        "id": "a64",
+        "name": "Kanopy",
+        "description": "Free streaming service through public libraries",
+        "link": "https://example.com/kanopy"
+      }
+    ]
+  },
+  {
+    "id": "33",
+    "name": "Warner Bros",
+    "category": "Entertainment",
+    "description": "Film studio with productions in Israel.",
+    "reasons": [
+      "Productions filmed in contested territories",
+      "Partnerships with Israeli media companies tied to settlements"
+    ],
+    "alternatives": [
+      {
+        "id": "a65",
+        "name": "A24 Films",
+        "description": "Independent film studio with ethical production practices",
+        "link": "https://example.com/a24"
+      },
+      {
+        "id": "a66",
+        "name": "Neon",
+        "description": "Independent distributor focusing on diverse voices",
+        "link": "https://example.com/neon"
+      }
+    ]
+  },
+  {
+    "id": "34",
+    "name": "TripAdvisor",
+    "category": "Entertainment",
+    "description": "Travel website listing attractions in occupied territories as 'Israel'.",
+    "reasons": [
+      "Lists attractions in occupied territories under Israeli jurisdiction",
+      "Normalizes illegal settlements through tourism promotion"
+    ],
+    "alternatives": [
+      {
+        "id": "a67",
+        "name": "Responsible Travel",
+        "description": "Ethical travel booking platform with transparent policies",
+        "link": "https://example.com/responsibletravel"
+      },
+      {
+        "id": "a68",
+        "name": "Culture Trip",
+        "description": "Travel content platform with ethical travel guides",
+        "link": "https://example.com/culturetrip"
+      }
+    ]
+  },
+  {
+    "id": "35",
+    "name": "LiveNation",
+    "category": "Entertainment",
+    "description": "Concert promoter with significant operations in Israel.",
+    "reasons": [
+      "Organizes concerts in Israel despite cultural boycott calls",
+      "Partners with Israeli companies in contested territories"
+    ],
+    "alternatives": [
+      {
+        "id": "a69",
+        "name": "Local Music Venues",
+        "description": "Support independent music venues and promoters",
+        "link": "https://example.com/localvenues"
+      },
+      {
+        "id": "a70",
+        "name": "Bandcamp",
+        "description": "Platform for directly supporting independent musicians",
+        "link": "https://example.com/bandcamp"
+      }
+    ]
+  },
+  {
+    "id": "36",
+    "name": "Booking.com",
+    "category": "Entertainment",
+    "description": "Travel booking platform listing accommodations in Israeli settlements.",
+    "reasons": [
+      "Continues to list properties in illegal settlements",
+      "Marks disputed territories as part of Israel"
+    ],
+    "alternatives": [
+      {
+        "id": "a71",
+        "name": "Fairhotel",
+        "description": "Ethical hotel booking supporting worker rights",
+        "link": "https://example.com/fairhotel"
+      },
+      {
+        "id": "a72",
+        "name": "Expedia",
+        "description": "Travel booking with more transparent location listings",
+        "link": "https://example.com/expedia"
+      }
+    ]
   }
 ]

@@ -47,5 +47,149 @@
         "link": "https://example.com/elate"
       }
     ]
+  },
+  {
+    "id": "25",
+    "name": "Estée Lauder",
+    "category": "Cosmetics & Personal Care",
+    "description": "Cosmetics company with investments and operations in Israel.",
+    "reasons": [
+      "Chairman Ronald Lauder is president of the World Jewish Congress",
+      "R&D operations in Israel with government partnerships"
+    ],
+    "alternatives": [
+      {
+        "id": "a49",
+        "name": "100% Pure",
+        "description": "Natural cosmetics with ethical sourcing practices",
+        "link": "https://example.com/100percentpure"
+      },
+      {
+        "id": "a50",
+        "name": "Axiology",
+        "description": "Vegan and cruelty-free lipsticks with ethical manufacturing",
+        "link": "https://example.com/axiology"
+      }
+    ]
+  },
+  {
+    "id": "26",
+    "name": "Garnier",
+    "category": "Cosmetics & Personal Care",
+    "description": "Hair and skin care brand owned by L'Oréal with operations in Israel.",
+    "reasons": [
+      "Part of L'Oréal group with significant presence in Israel",
+      "Manufacturing in contested regions"
+    ],
+    "alternatives": [
+      {
+        "id": "a51",
+        "name": "Acure",
+        "description": "Affordable natural skin and hair care products",
+        "link": "https://example.com/acure"
+      },
+      {
+        "id": "a52",
+        "name": "Innersense",
+        "description": "Organic hair care with ethical practices",
+        "link": "https://example.com/innersense"
+      }
+    ]
+  },
+  {
+    "id": "27",
+    "name": "Revlon",
+    "category": "Cosmetics & Personal Care",
+    "description": "Makeup brand with manufacturing in Israel.",
+    "reasons": [
+      "Operations in Israel despite ethical concerns",
+      "Continued sales in territories with human rights issues"
+    ],
+    "alternatives": [
+      {
+        "id": "a53",
+        "name": "Alima Pure",
+        "description": "Mineral makeup with ethical sourcing",
+        "link": "https://example.com/alimapure"
+      },
+      {
+        "id": "a54",
+        "name": "Lily Lolo",
+        "description": "Natural mineral cosmetics with transparent supply chain",
+        "link": "https://example.com/lilylolo"
+      }
+    ]
+  },
+  {
+    "id": "28",
+    "name": "Vichy",
+    "category": "Cosmetics & Personal Care",
+    "description": "Skincare brand owned by L'Oréal with sales in Israel.",
+    "reasons": [
+      "Subsidiary of L'Oréal with manufacturing ties to Israel",
+      "Products sold in settlements in occupied territories"
+    ],
+    "alternatives": [
+      {
+        "id": "a55",
+        "name": "Osea",
+        "description": "Vegan skincare with sustainable ocean-sourced ingredients",
+        "link": "https://example.com/osea"
+      },
+      {
+        "id": "a56",
+        "name": "Mad Hippie",
+        "description": "Natural skincare with ethical ingredient sourcing",
+        "link": "https://example.com/madhippie"
+      }
+    ]
+  },
+  {
+    "id": "29",
+    "name": "Neutrogena",
+    "category": "Cosmetics & Personal Care",
+    "description": "Skincare brand owned by Johnson & Johnson with operations in Israel.",
+    "reasons": [
+      "Parent company has significant R&D and manufacturing in Israel",
+      "Products marketed and sold in contested territories"
+    ],
+    "alternatives": [
+      {
+        "id": "a57",
+        "name": "Cocokind",
+        "description": "Clean skincare with sustainable and transparent practices",
+        "link": "https://example.com/cocokind"
+      },
+      {
+        "id": "a58",
+        "name": "Earth Harbor",
+        "description": "Ocean-friendly vegan skincare with ethical sourcing",
+        "link": "https://example.com/earthharbor"
+      }
+    ]
+  },
+  {
+    "id": "30",
+    "name": "Clinique",
+    "category": "Cosmetics & Personal Care",
+    "description": "Skincare brand owned by Estée Lauder with presence in Israel.",
+    "reasons": [
+      "Parent company has significant operations in Israel",
+      "Products sold in stores in contested territories"
+    ],
+    "alternatives": [
+      {
+        "id": "a59",
+        "name": "Herbivore Botanicals",
+        "description": "Natural skincare with ethical production methods",
+        "link": "https://example.com/herbivore"
+      },
+      {
+        "id": "a60",
+        "name": "Pai Skincare",
+        "description": "Organic skincare for sensitive skin with ethical practices",
+        "link": "https://example.com/pai"
+      }
+    ]
   }
 ]

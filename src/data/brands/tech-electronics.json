@@ -47,5 +47,125 @@
         "link": "https://example.com/fairphone"
       }
     ]
+  },
+  {
+    "id": "15",
+    "name": "Intel",
+    "category": "Tech & Electronics",
+    "description": "Semiconductor manufacturer with major investments in Israel.",
+    "reasons": [
+      "Major R&D facilities in Haifa and Jerusalem",
+      "$10+ billion investment in chip manufacturing in Israel"
+    ],
+    "alternatives": [
+      {
+        "id": "a29",
+        "name": "AMD",
+        "description": "Semiconductor company with less involvement in contested regions",
+        "link": "https://example.com/amd"
+      },
+      {
+        "id": "a30",
+        "name": "MediaTek",
+        "description": "Taiwanese chip manufacturer with ethical business practices",
+        "link": "https://example.com/mediatek"
+      }
+    ]
+  },
+  {
+    "id": "16",
+    "name": "Microsoft",
+    "category": "Tech & Electronics",
+    "description": "Technology giant with R&D centers and investments in Israel.",
+    "reasons": [
+      "Major R&D center in Herzliya employing thousands",
+      "$1+ billion investment in Israeli cybersecurity companies"
+    ],
+    "alternatives": [
+      {
+        "id": "a31",
+        "name": "Linux-based Systems",
+        "description": "Open-source operating systems with community ownership",
+        "link": "https://example.com/linux"
+      },
+      {
+        "id": "a32",
+        "name": "LibreOffice",
+        "description": "Free and open-source office suite",
+        "link": "https://example.com/libreoffice"
+      }
+    ]
+  },
+  {
+    "id": "17",
+    "name": "Apple",
+    "category": "Tech & Electronics",
+    "description": "Technology company with R&D centers in Israel.",
+    "reasons": [
+      "R&D center in Herzliya focusing on chip development",
+      "Acquisitions of multiple Israeli tech startups"
+    ],
+    "alternatives": [
+      {
+        "id": "a33",
+        "name": "Fairphone",
+        "description": "Ethical smartphone with modular design and fair labor practices",
+        "link": "https://example.com/fairphone"
+      },
+      {
+        "id": "a34",
+        "name": "Purism Librem",
+        "description": "Privacy-focused hardware with ethical supply chains",
+        "link": "https://example.com/purism"
+      }
+    ]
+  },
+  {
+    "id": "18",
+    "name": "Google",
+    "category": "Tech & Electronics",
+    "description": "Tech giant with significant operations and acquisitions in Israel.",
+    "reasons": [
+      "Tel Aviv R&D center employing hundreds",
+      "Multiple acquisitions of Israeli startups including Waze"
+    ],
+    "alternatives": [
+      {
+        "id": "a35",
+        "name": "DuckDuckGo",
+        "description": "Privacy-focused search engine with ethical business model",
+        "link": "https://example.com/duckduckgo"
+      },
+      {
+        "id": "a36",
+        "name": "ProtonMail",
+        "description": "Privacy-oriented email service based in Switzerland",
+        "link": "https://example.com/protonmail"
+      }
+    ]
+  },
+  {
+    "id": "19",
+    "name": "Dell",
+    "category": "Tech & Electronics",
+    "description": "Computer manufacturer with R&D centers in Israel.",
+    "reasons": [
+      "R&D center in Herzliya",
+      "Government contracts with Israeli military institutions"
+    ],
+    "alternatives": [
+      {
+        "id": "a37",
+        "name": "System76",
+        "description": "Linux computer manufacturer with transparent supply chain",
+        "link": "https://example.com/system76"
+      },
+      {
+        "id": "a38",
+        "name": "Framework Laptop",
+        "description": "Ethically designed modular laptop with right to repair",
+        "link": "https://example.com/framework"
+      }
+    ]
   }
 ]

@@ -71,5 +71,101 @@
         "link": "https://example.com/kingarthur"
       }
     ]
+  },
+  {
+    "id": "11",
+    "name": "Coca-Cola",
+    "category": "Food & Beverage",
+    "description": "Beverage company with operations and investments in Israel.",
+    "reasons": [
+      "Major operations in Israel including a bottling plant in Ashkelon",
+      "Substantial investments in Israeli markets despite human rights concerns"
+    ],
+    "alternatives": [
+      {
+        "id": "a21",
+        "name": "Boylan Bottling",
+        "description": "Independent craft soda producer with ethical sourcing",
+        "link": "https://example.com/boylan"
+      },
+      {
+        "id": "a22",
+        "name": "Fever-Tree",
+        "description": "Premium mixer company with transparent supply chains",
+        "link": "https://example.com/fevertree"
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "name": "Nestlé",
+    "category": "Food & Beverage",
+    "description": "Food conglomerate with significant operations in Israel.",
+    "reasons": [
+      "Major factory near Sderot in Israel",
+      "Continued expansion of operations in contested regions"
+    ],
+    "alternatives": [
+      {
+        "id": "a23",
+        "name": "Equal Exchange",
+        "description": "Worker-owned fair trade food company",
+        "link": "https://example.com/equalexchange"
+      },
+      {
+        "id": "a24",
+        "name": "Newman's Own",
+        "description": "Food company that donates profits to charity",
+        "link": "https://example.com/newmansown"
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "name": "McDonald's",
+    "category": "Food & Beverage",
+    "description": "Fast food chain with significant presence in Israel.",
+    "reasons": [
+      "Franchises operating in contested territories",
+      "Support for Israeli military operations through meal donations"
+    ],
+    "alternatives": [
+      {
+        "id": "a25",
+        "name": "Local Vegan Restaurants",
+        "description": "Support local vegan and ethical food establishments",
+        "link": "https://example.com/localvegan"
+      },
+      {
+        "id": "a26",
+        "name": "Falafel King",
+        "description": "Ethical Mediterranean fast food alternative",
+        "link": "https://example.com/falafelking"
+      }
+    ]
+  },
+  {
+    "id": "14",
+    "name": "Starbucks",
+    "category": "Food & Beverage",
+    "description": "Coffee chain with connections to Israeli investments.",
+    "reasons": [
+      "CEO Howard Schultz's public support for Israeli policies",
+      "Financial ties to pro-occupation investment groups"
+    ],
+    "alternatives": [
+      {
+        "id": "a27",
+        "name": "Local Coffee Shops",
+        "description": "Support local independent coffee businesses",
+        "link": "https://example.com/localcoffee"
+      },
+      {
+        "id": "a28",
+        "name": "Ethical Bean Coffee",
+        "description": "Fair trade and ethically sourced coffee company",
+        "link": "https://example.com/ethicalbeans"
+      }
+    ]
   }
 ]
