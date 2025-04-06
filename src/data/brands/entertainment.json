@@ -21,6 +21,24 @@
         "name": "Vrbo",
         "description": "Vacation rental platform with less controversial policies",
         "link": "https://example.com/vrbo"
+      },
+      {
+        "id": "a18b",
+        "name": "Homestay",
+        "description": "Ethical accommodation with local hosts",
+        "link": "https://example.com/homestay"
+      },
+      {
+        "id": "a18c",
+        "name": "Hipcamp",
+        "description": "Outdoor stays with ethical landowner partnerships",
+        "link": "https://example.com/hipcamp"
+      },
+      {
+        "id": "a18d",
+        "name": "Local B&Bs",
+        "description": "Support locally-owned accommodations directly",
+        "link": "https://example.com/localbbs"
       }
     ]
   },
@@ -45,6 +63,24 @@
         "name": "Criterion Channel",
         "description": "Curated streaming service featuring global independent cinema",
         "link": "https://example.com/criterion"
+      },
+      {
+        "id": "a62b",
+        "name": "MUBI",
+        "description": "Curated selection of independent and classic films",
+        "link": "https://example.com/mubi"
+      },
+      {
+        "id": "a62c",
+        "name": "Kanopy",
+        "description": "Streaming service with a focus on documentaries and indie films",
+        "link": "https://example.com/kanopy"
+      },
+      {
+        "id": "a62d",
+        "name": "Kino Lorber",
+        "description": "Distributor of art-house, international, and documentary films",
+        "link": "https://example.com/kinolorber"
       }
     ]
   },
@@ -69,6 +105,24 @@
         "name": "Kanopy",
         "description": "Free streaming service through public libraries",
         "link": "https://example.com/kanopy"
+      },
+      {
+        "id": "a64b",
+        "name": "Criterion Channel",
+        "description": "Classic and contemporary films from around the world",
+        "link": "https://example.com/criterionchannel"
+      },
+      {
+        "id": "a64c",
+        "name": "OVID.tv",
+        "description": "Streaming service for independent and documentary films",
+        "link": "https://example.com/ovidtv"
+      },
+      {
+        "id": "a64d",
+        "name": "The Film Detective",
+        "description": "Classic films and TV shows",
+        "link": "https://example.com/thefilmdetective"
       }
     ]
   },
@@ -93,6 +147,24 @@
         "name": "Neon",
         "description": "Independent distributor focusing on diverse voices",
         "link": "https://example.com/neon"
+      },
+      {
+        "id": "a66b",
+        "name": "Bleecker Street",
+        "description": "Independent film distributor",
+        "link": "https://example.com/bleeckerstreet"
+      },
+      {
+        "id": "a66c",
+        "name": "IFC Films",
+        "description": "Independent film distributor",
+        "link": "https://example.com/ifcfilms"
+      },
+      {
+        "id": "a66d",
+        "name": "Magnolia Pictures",
+        "description": "Independent film distributor",
+        "link": "https://example.com/magnoliapictures"
       }
     ]
   },
@@ -117,6 +189,24 @@
         "name": "WikiVoyage",
         "description": "Free, community-driven travel guide with accurate territorial designations",
         "link": "https://example.com/wikivoyage"
+      },
+      {
+        "id": "a68b",
+        "name": "Culture Trip",
+        "description": "Travel guide with a focus on local culture",
+        "link": "https://example.com/culturetrip"
+      },
+      {
+        "id": "a68c",
+        "name": "Lonely Planet",
+        "description": "Travel guide with detailed maps and information",
+        "link": "https://example.com/lonelyplanet"
+      },
+      {
+        "id": "a68d",
+        "name": "Rough Guides",
+        "description": "Travel guide with a focus on budget travel",
+        "link": "https://example.com/roughguides"
       }
     ]
   },
@@ -141,6 +231,24 @@
         "name": "Bandcamp",
         "description": "Platform for directly supporting independent musicians",
         "link": "https://example.com/bandcamp"
+      },
+      {
+        "id": "a70b",
+        "name": "See Tickets",
+        "description": "Independent ticket vendor",
+        "link": "https://example.com/seetickets"
+      },
+      {
+        "id": "a70c",
+        "name": "Resident Advisor",
+        "description": "Electronic music events and tickets",
+        "link": "https://example.com/residentadvisor"
+      },
+      {
+        "id": "a70d",
+        "name": "Songkick",
+        "description": "Concert tracking and ticket vendor",
+        "link": "https://example.com/songkick"
       }
     ]
   },
@@ -165,6 +273,24 @@
         "name": "Agoda",
         "description": "Travel booking with more transparent location policies",
         "link": "https://example.com/agoda"
+      },
+      {
+        "id": "a72b",
+        "name": "Hostelworld",
+        "description": "Budget travel and hostel booking",
+        "link": "https://example.com/hostelworld"
+      },
+      {
+        "id": "a72c",
+        "name": "Couchsurfing",
+        "description": "Community-based travel and accommodation",
+        "link": "https://example.com/couchsurfing"
+      },
+      {
+        "id": "a72d",
+        "name": "Direct Bookings",
+        "description": "Book directly with hotels and accommodations",
+        "link": "https://example.com/directbookings"
       }
     ]
   },
@@ -189,6 +315,24 @@
         "name": "Bandcamp",
         "description": "Platform for directly supporting artists",
         "link": "https://example.com/bandcamp"
+      },
+      {
+        "id": "a106b",
+        "name": "SoundCloud",
+        "description": "Platform for independent artists",
+        "link": "https://example.com/soundcloud"
+      },
+      {
+        "id": "a106c",
+        "name": "DistroKid",
+        "description": "Music distribution service for independent artists",
+        "link": "https://example.com/distrokid"
+      },
+      {
+        "id": "a106d",
+        "name": "CD Baby",
+        "description": "Music distribution service for independent artists",
+        "link": "https://example.com/cdbaby"
       }
     ]
   },
@@ -213,6 +357,24 @@
         "name": "Direct Bookings",
         "description": "Bypass middlemen by booking directly with locally-owned accommodations",
         "link": "https://example.com/directbookings"
+      },
+      {
+        "id": "a108b",
+        "name": "Local Travel Agencies",
+        "description": "Support local travel businesses",
+        "link": "https://example.com/localtravelagencies"
+      },
+      {
+        "id": "a108c",
+        "name": "Culture Trip",
+        "description": "Travel guide with a focus on local culture",
+        "link": "https://example.com/culturetrip"
+      },
+      {
+        "id": "a108d",
+        "name": "Intrepid Travel",
+        "description": "Small group adventure tours",
+        "link": "https://example.com/intrepidtravel"
       }
     ]
   },
@@ -237,6 +399,24 @@
         "name": "Film Movement",
         "description": "Independent and international film distributor",
         "link": "https://example.com/filmmovement"
+      },
+      {
+        "id": "a110b",
+        "name": "Janus Films",
+        "description": "Distributor of classic and art-house films",
+        "link": "https://example.com/janusfilms"
+      },
+      {
+        "id": "a110c",
+        "name": "Kino Lorber",
+        "description": "Distributor of art-house, international, and documentary films",
+        "link": "https://example.com/kinolorber"
+      },
+      {
+        "id": "a110d",
+        "name": "Grasshopper Film",
+        "description": "Distributor of independent and documentary films",
+        "link": "https://example.com/grasshopperfilm"
       }
     ]
   },
@@ -261,6 +441,24 @@
         "name": "Eventbrite",
         "description": "Event platform with better ethical standards",
         "link": "https://example.com/eventbrite"
+      },
+      {
+        "id": "a172b",
+        "name": "See Tickets",
+        "description": "Independent ticket vendor",
+        "link": "https://example.com/seetickets"
+      },
+      {
+        "id": "a172c",
+        "name": "Resident Advisor",
+        "description": "Electronic music events and tickets",
+        "link": "https://example.com/residentadvisor"
+      },
+      {
+        "id": "a172d",
+        "name": "Billetto",
+        "description": "Event ticketing platform",
+        "link": "https://example.com/billetto"
       }
     ]
   },
@@ -285,6 +483,24 @@
         "name": "Tidal",
         "description": "Music streaming service with better artist compensation",
         "link": "https://example.com/tidal"
+      },
+      {
+        "id": "a174b",
+        "name": "Qobuz",
+        "description": "High-quality music streaming service",
+        "link": "https://example.com/qobuz"
+      },
+      {
+        "id": "a174c",
+        "name": "Deezer",
+        "description": "Music streaming service",
+        "link": "https://example.com/deezer"
+      },
+      {
+        "id": "a174d",
+        "name": "Plex",
+        "description": "Media server and streaming platform",
+        "link": "https://example.com/plex"
       }
     ]
   },
@@ -309,6 +525,24 @@
         "name": "MUBI",
         "description": "Curated film platform with ethical standards",
         "link": "https://example.com/mubi"
+      },
+      {
+        "id": "a176b",
+        "name": "The Criterion Channel",
+        "description": "Classic and contemporary films",
+        "link": "https://example.com/criterionchannel"
+      },
+      {
+        "id": "a176c",
+        "name": "Kino Lorber",
+        "description": "Art-house and international films",
+        "link": "https://example.com/kinolorber"
+      },
+      {
+        "id": "a176d",
+        "name": "OVID.tv",
+        "description": "Independent and documentary films",
+        "link": "https://example.com/ovidtv"
       }
     ]
   },
@@ -333,6 +567,24 @@
         "name": "Local Guesthouses",
         "description": "Support locally-owned accommodations",
         "link": "https://example.com/localguesthouses"
+      },
+      {
+        "id": "a178b",
+        "name": "Airbnb Alternatives",
+        "description": "Ethical home-sharing platforms",
+        "link": "https://example.com/airbnb-alternatives"
+      },
+      {
+        "id": "a178c",
+        "name": "World Wide Opportunities on Organic Farms (WWOOF)",
+        "description": "Volunteer on organic farms",
+        "link": "https://example.com/wwoof"
+      },
+      {
+        "id": "a178d",
+        "name": "Couchsurfing",
+        "description": "Community-based travel",
+        "link": "https://example.com/couchsurfing"
       }
     ]
   },
@@ -357,6 +609,24 @@
         "name": "Culture Trip",
         "description": "Travel content with focus on local cultural experiences",
         "link": "https://example.com/culturetrip"
+      },
+      {
+        "id": "a180b",
+        "name": "WikiVoyage",
+        "description": "Free travel guide with accurate information",
+        "link": "https://example.com/wikivoyage"
+      },
+      {
+        "id": "a180c",
+        "name": "Rough Guides",
+        "description": "Travel guides with a focus on budget travel",
+        "link": "https://example.com/roughguides"
+      },
+      {
+        "id": "a180d",
+        "name": "Atlas Obscura",
+        "description": "Travel guide with unique and unusual destinations",
+        "link": "https://example.com/atlasobscura"
       }
     ]
   }

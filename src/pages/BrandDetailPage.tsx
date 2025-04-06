@@ -77,7 +77,7 @@ const BrandDetailPage: React.FC = () => {
             ))}
           </div>
           
-          {brand.alternatives.length > 2 && (
+          {brand.alternatives.length > 4 && (
             <p className="mt-4 text-sm text-muted-foreground">
               We've provided several ethical alternatives. If you know of more options that should be added, 
               please use our "Suggest" form to let us know.

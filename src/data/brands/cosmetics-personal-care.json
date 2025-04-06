@@ -1,4 +1,3 @@
-
 [
   {
     "id": "4",
@@ -22,6 +21,24 @@
         "name": "Lush",
         "description": "Handmade cosmetics with ethical ingredient sourcing and manufacturing",
         "link": "https://example.com/lush"
+      },
+      {
+        "id": "a8b",
+        "name": "100% Pure",
+        "description": "Natural cosmetics with ethical ingredient sourcing",
+        "link": "https://example.com/100percentpure"
+      },
+      {
+        "id": "a8c",
+        "name": "Herbivore Botanicals",
+        "description": "Natural skincare products with sustainable sourcing",
+        "link": "https://example.com/herbivore"
+      },
+      {
+        "id": "a8d",
+        "name": "Osea",
+        "description": "Seaweed-based skincare with sustainable harvesting",
+        "link": "https://example.com/osea"
       }
     ]
   },
@@ -47,6 +64,24 @@
         "name": "Elate Cosmetics",
         "description": "Sustainable makeup with ethical manufacturing",
         "link": "https://example.com/elate"
+      },
+      {
+        "id": "a16b",
+        "name": "RMS Beauty",
+        "description": "Organic beauty products with ethical sourcing",
+        "link": "https://example.com/rmsbeauty"
+      },
+      {
+        "id": "a16c",
+        "name": "Kjaer Weis",
+        "description": "Luxury organic makeup with refillable packaging",
+        "link": "https://example.com/kjaerweis"
+      },
+      {
+        "id": "a16d",
+        "name": "Ilia Beauty",
+        "description": "Clean makeup with transparent supply chain",
+        "link": "https://example.com/iliabeauty"
       }
     ]
   },
@@ -71,6 +106,24 @@
         "name": "Axiology",
         "description": "Vegan and cruelty-free lipsticks with ethical manufacturing",
         "link": "https://example.com/axiology"
+      },
+      {
+        "id": "a50b",
+        "name": "ILIA",
+        "description": "Clean beauty brand with sustainable practices",
+        "link": "https://example.com/iliabeauty"
+      },
+      {
+        "id": "a50c",
+        "name": "RMS Beauty",
+        "description": "Organic makeup with natural ingredients",
+        "link": "https://example.com/rmsbeauty"
+      },
+      {
+        "id": "a50d",
+        "name": "Kosas",
+        "description": "Clean and skin-loving makeup products",
+        "link": "https://example.com/kosas"
       }
     ]
   },
@@ -95,6 +148,24 @@
         "name": "Innersense",
         "description": "Organic hair care with ethical practices",
         "link": "https://example.com/innersense"
+      },
+      {
+        "id": "a52b",
+        "name": "Avalon Organics",
+        "description": "Certified organic hair and skin care",
+        "link": "https://example.com/avalonorganics"
+      },
+      {
+        "id": "a52c",
+        "name": "Shea Moisture",
+        "description": "Natural hair and skin care with fair trade ingredients",
+        "link": "https://example.com/sheamoisture"
+      },
+      {
+        "id": "a52d",
+        "name": "Pacifica",
+        "description": "Vegan and cruelty-free beauty products",
+        "link": "https://example.com/pacifica"
       }
     ]
   },
@@ -119,6 +190,24 @@
         "name": "Lily Lolo",
         "description": "Natural mineral cosmetics with transparent supply chain",
         "link": "https://example.com/lilylolo"
+      },
+      {
+        "id": "a54b",
+        "name": "Zuzu Luxe",
+        "description": "Vegan and gluten-free makeup",
+        "link": "https://example.com/zuzuluxe"
+      },
+      {
+        "id": "a54c",
+        "name": "Ecco Bella",
+        "description": "Organic and vegan makeup",
+        "link": "https://example.com/eccobella"
+      },
+      {
+        "id": "a54d",
+        "name": "Au Naturale",
+        "description": "Organic and ethically sourced makeup",
+        "link": "https://example.com/aunaturale"
       }
     ]
   },
@@ -143,6 +232,24 @@
         "name": "Mad Hippie",
         "description": "Natural skincare with ethical ingredient sourcing",
         "link": "https://example.com/madhippie"
+      },
+      {
+        "id": "a56b",
+        "name": "Pai Skincare",
+        "description": "Organic skincare for sensitive skin",
+        "link": "https://example.com/paiskincare"
+      },
+      {
+        "id": "a56c",
+        "name": "Herbivore Botanicals",
+        "description": "Natural skincare with plant-based ingredients",
+        "link": "https://example.com/herbivorebotanicals"
+      },
+      {
+        "id": "a56d",
+        "name": "Cocokind",
+        "description": "Clean and affordable skincare",
+        "link": "https://example.com/cocokind"
       }
     ]
   },
@@ -167,6 +274,24 @@
         "name": "Earth Harbor",
         "description": "Ocean-friendly vegan skincare with ethical sourcing",
         "link": "https://example.com/earthharbor"
+      },
+      {
+        "id": "a58b",
+        "name": "Acure",
+        "description": "Natural and affordable skincare",
+        "link": "https://example.com/acure"
+      },
+      {
+        "id": "a58c",
+        "name": "Mad Hippie",
+        "description": "Natural skincare with active ingredients",
+        "link": "https://example.com/madhippie"
+      },
+      {
+        "id": "a58d",
+        "name": "Andalou Naturals",
+        "description": "Fruit stem cell science skincare",
+        "link": "https://example.com/andalounaturals"
       }
     ]
   },
@@ -191,6 +316,24 @@
         "name": "Pai Skincare",
         "description": "Organic skincare for sensitive skin with ethical practices",
         "link": "https://example.com/pai"
+      },
+      {
+        "id": "a60b",
+        "name": "Osea",
+        "description": "Seaweed-based skincare with sustainable practices",
+        "link": "https://example.com/osea"
+      },
+      {
+        "id": "a60c",
+        "name": "Tata Harper",
+        "description": "Luxury natural skincare",
+        "link": "https://example.com/tataharper"
+      },
+      {
+        "id": "a60d",
+        "name": "True Botanicals",
+        "description": "Luxury organic skincare",
+        "link": "https://example.com/truebotanicals"
       }
     ]
   },
@@ -215,6 +358,24 @@
         "name": "EO Products",
         "description": "Organic and ethical personal care items",
         "link": "https://example.com/eoproducts"
+      },
+      {
+        "id": "a118b",
+        "name": "Alaffia",
+        "description": "Fair Trade and natural personal care",
+        "link": "https://example.com/alaffia"
+      },
+      {
+        "id": "a118c",
+        "name": "Weleda",
+        "description": "Natural and organic skincare",
+        "link": "https://example.com/weleda"
+      },
+      {
+        "id": "a118d",
+        "name": "Burt's Bees",
+        "description": "Natural personal care products",
+        "link": "https://example.com/burtsbees"
       }
     ]
   },
@@ -239,6 +400,24 @@
         "name": "Ilia Beauty",
         "description": "Clean makeup with sustainable packaging",
         "link": "https://example.com/iliabeauty"
+      },
+      {
+        "id": "a120b",
+        "name": "RMS Beauty",
+        "description": "Organic and natural makeup",
+        "link": "https://example.com/rmsbeauty"
+      },
+      {
+        "id": "a120c",
+        "name": "Kosas",
+        "description": "Clean and skin-loving makeup",
+        "link": "https://example.com/kosas"
+      },
+      {
+        "id": "a120d",
+        "name": "Pacifica",
+        "description": "Vegan and cruelty-free makeup",
+        "link": "https://example.com/pacifica"
       }
     ]
   },
@@ -263,6 +442,24 @@
         "name": "Alaffia",
         "description": "Fair trade personal care with social mission",
         "link": "https://example.com/alaffia"
+      },
+      {
+        "id": "a152b",
+        "name": "Dr. Bronner's",
+        "description": "Organic and fair trade soaps",
+        "link": "https://example.com/drbronners"
+      },
+      {
+        "id": "a152c",
+        "name": "Plaine Products",
+        "description": "Refillable personal care products",
+        "link": "https://example.com/plaineproducts"
+      },
+       {
+        "id": "a152d",
+        "name": "Lush",
+        "description": "Handmade and ethical cosmetics",
+        "link": "https://example.com/lush"
       }
     ]
   },
@@ -287,6 +484,24 @@
         "name": "Giovanni",
         "description": "Eco-friendly hair care with ethical manufacturing",
         "link": "https://example.com/giovanni"
+      },
+      {
+        "id": "a154b",
+        "name": "Innersense Organic Beauty",
+        "description": "Organic and clean hair care",
+        "link": "https://example.com/innersense"
+      },
+      {
+        "id": "a154c",
+        "name": "Avalon Organics",
+        "description": "Certified organic hair care",
+        "link": "https://example.com/avalonorganics"
+      },
+      {
+        "id": "a154d",
+        "name": "Shea Moisture",
+        "description": "Natural and fair trade hair products",
+        "link": "https://example.com/sheamoisture"
       }
     ]
   },
@@ -311,6 +526,24 @@
         "name": "Kjaer Weis",
         "description": "Luxury organic makeup with sustainable packaging",
         "link": "https://example.com/kjaerweis"
+      },
+      {
+        "id": "a156b",
+        "name": "RMS Beauty",
+        "description": "Organic and natural makeup products",
+        "link": "https://example.com/rmsbeauty"
+      },
+      {
+        "id": "a156c",
+        "name": "ILIA Beauty",
+        "description": "Clean and sustainable makeup",
+        "link": "https://example.com/iliabeauty"
+      },
+      {
+        "id": "a156d",
+        "name": "Au Naturale Cosmetics",
+        "description": "Organic and ethically made makeup",
+        "link": "https://example.com/aunaturalecosmetics"
       }
     ]
   },
@@ -335,6 +568,24 @@
         "name": "Dr. Hauschka",
         "description": "Biodynamic skin care with ethical sourcing",
         "link": "https://example.com/drhauschka"
+      },
+      {
+        "id": "a158b",
+        "name": "Pai Skincare",
+        "description": "Organic skincare for sensitive skin",
+        "link": "https://example.com/paiskincare"
+      },
+      {
+        "id": "a158c",
+        "name": "Osea",
+        "description": "Seaweed-based skincare with ethical sourcing",
+        "link": "https://example.com/osea"
+      },
+      {
+        "id": "a158d",
+        "name": "Mad Hippie",
+        "description": "Natural skincare with ethical practices",
+        "link": "https://example.com/madhippie"
       }
     ]
   },
@@ -359,6 +610,24 @@
         "name": "Ilia Beauty",
         "description": "Clean makeup with transparent supply chain",
         "link": "https://example.com/iliabeauty"
+      },
+      {
+        "id": "a160b",
+        "name": "RMS Beauty",
+        "description": "Organic and natural makeup",
+        "link": "https://example.com/rmsbeauty"
+      },
+      {
+        "id": "a160c",
+        "name": "Kosas",
+        "description": "Clean and skin-loving makeup products",
+        "link": "https://example.com/kosas"
+      },
+      {
+        "id": "a160d",
+        "name": "Elate Cosmetics",
+        "description": "Sustainable and ethical makeup",
+        "link": "https://example.com/elatecosmetics"
       }
     ]
   }

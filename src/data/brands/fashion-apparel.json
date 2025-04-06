@@ -1,4 +1,3 @@
-
 [
   {
     "id": "5",
@@ -22,6 +21,24 @@
         "name": "Etiko",
         "description": "Fair trade certified athletic wear and footwear",
         "link": "https://example.com/etiko"
+      },
+      {
+        "id": "a10b",
+        "name": "Organic Basics",
+        "description": "Eco-friendly activewear with sustainable production",
+        "link": "https://example.com/organicbasics"
+      },
+      {
+        "id": "a10c",
+        "name": "Patagonia",
+        "description": "Ethical and environmentally responsible athletic wear",
+        "link": "https://example.com/patagonia"
+      },
+      {
+        "id": "a10d",
+        "name": "Vivobarefoot",
+        "description": "Sustainable footwear with ethical manufacturing practices",
+        "link": "https://example.com/vivobarefoot"
       }
     ]
   },
@@ -47,6 +64,24 @@
         "name": "Thought Clothing",
         "description": "Sustainable fashion with transparent supply chain",
         "link": "https://example.com/thought"
+      },
+      {
+        "id": "a40b",
+        "name": "Patagonia",
+        "description": "Ethical outdoor and casual clothing",
+        "link": "https://example.com/patagonia"
+      },
+      {
+        "id": "a40c",
+        "name": "Kotn",
+        "description": "Ethical basics with direct trade cotton",
+        "link": "https://example.com/kotn"
+      },
+      {
+        "id": "a40d",
+        "name": "Everlane",
+        "description": "Transparent pricing and ethical factories",
+        "link": "https://example.com/everlane"
       }
     ]
   },
@@ -72,6 +107,24 @@
         "name": "Reformation",
         "description": "Sustainable fashion brand with ethical manufacturing",
         "link": "https://example.com/reformation"
+      },
+      {
+        "id": "a42b",
+        "name": "Armedangels",
+        "description": "Fair fashion with organic materials",
+        "link": "https://example.com/armedangels"
+      },
+      {
+        "id": "a42c",
+        "name": "Vetta",
+        "description": "Sustainable capsule wardrobe pieces",
+        "link": "https://example.com/vetta"
+      },
+      {
+        "id": "a42d",
+        "name": "Nudie Jeans",
+        "description": "Ethical denim with fair labor practices",
+        "link": "https://example.com/nudiejeans"
       }
     ]
   },
@@ -97,6 +150,24 @@
         "name": "Organic Basics",
         "description": "Sustainable underwear with transparent supply chain",
         "link": "https://example.com/organicbasics"
+      },
+      {
+        "id": "a44b",
+        "name": "Parade",
+        "description": "Inclusive, sustainable underwear brand",
+        "link": "https://example.com/parade"
+      },
+      {
+        "id": "a44c",
+        "name": "Naja",
+        "description": "Eco-friendly lingerie that empowers women",
+        "link": "https://example.com/naja"
+      },
+      {
+        "id": "a44d",
+        "name": "Proclaim",
+        "description": "Ethical basics made from eco-friendly materials",
+        "link": "https://example.com/proclaim"
       }
     ]
   },
@@ -122,6 +193,24 @@
         "name": "Allbirds",
         "description": "Eco-friendly footwear with sustainable materials",
         "link": "https://example.com/allbirds"
+      },
+      {
+        "id": "a46b",
+        "name": "Ethletic",
+        "description": "Fair trade certified athletic wear",
+        "link": "https://example.com/ethletic"
+      },
+      {
+        "id": "a46c",
+        "name": "Adidas",
+        "description": "Athletic wear with recycling and sustainability programs",
+        "link": "https://example.com/adidas"
+      },
+      {
+        "id": "a46d",
+        "name": "Nothing New",
+        "description": "Sustainable sneakers made from recycled materials",
+        "link": "https://example.com/nothingnew"
       }
     ]
   },
@@ -147,6 +236,24 @@
         "name": "Outerknown",
         "description": "Sustainable fashion brand with fair labor practices",
         "link": "https://example.com/outerknown"
+      },
+      {
+        "id": "a48b",
+        "name": "Eileen Fisher",
+        "description": "Sustainable clothing with ethical production",
+        "link": "https://example.com/eileenfisher"
+      },
+      {
+        "id": "a48c",
+        "name": "People Tree",
+        "description": "Fair trade fashion pioneer",
+        "link": "https://example.com/peopletree"
+      },
+      {
+        "id": "a48d",
+        "name": "Armedangels",
+        "description": "Eco-friendly and fair fashion",
+        "link": "https://example.com/armedangels"
       }
     ]
   },
@@ -172,6 +279,24 @@
         "name": "Asics",
         "description": "Sports equipment with better ethical standards",
         "link": "https://example.com/asics"
+      },
+      {
+        "id": "a112b",
+        "name": "Brooks",
+        "description": "Running shoes with ethical production practices",
+        "link": "https://example.com/brooks"
+      },
+      {
+        "id": "a112c",
+        "name": "Saucony",
+        "description": "Performance footwear with sustainability initiatives",
+        "link": "https://example.com/saucony"
+      },
+      {
+        "id": "a112d",
+        "name": "Mizuno",
+        "description": "Sportswear with environmental focus",
+        "link": "https://example.com/mizuno"
       }
     ]
   },
@@ -197,6 +322,24 @@
         "name": "Everlane",
         "description": "Clothing brand with ethical factories and radical transparency",
         "link": "https://example.com/everlane"
+      },
+      {
+        "id": "a114b",
+        "name": "People Tree",
+        "description": "Fair trade and organic clothing",
+        "link": "https://example.com/peopletree"
+      },
+      {
+        "id": "a114c",
+        "name": "Armedangels",
+        "description": "Sustainable and fair fashion brand",
+        "link": "https://example.com/armedangels"
+      },
+      {
+        "id": "a114d",
+        "name": "Reformation",
+        "description": "Sustainable fashion with ethical manufacturing",
+        "link": "https://example.com/reformation"
       }
     ]
   },
@@ -222,6 +365,24 @@
         "name": "Pact",
         "description": "Organic cotton athletic and casual wear",
         "link": "https://example.com/pact"
+      },
+      {
+        "id": "a116b",
+        "name": "Patagonia",
+        "description": "Ethical and sustainable outdoor clothing",
+        "link": "https://example.com/patagonia"
+      },
+      {
+        "id": "a116c",
+        "name": "BAM (Bamboo Clothing)",
+        "description": "Sustainable activewear made from bamboo",
+        "link": "https://example.com/bamboclothing"
+      },
+      {
+        "id": "a116d",
+        "name": "Girlfriend Collective",
+        "description": "Eco-friendly activewear made from recycled materials",
+        "link": "https://example.com/girlfriendcollective"
       }
     ]
   },
@@ -247,6 +408,24 @@
         "name": "Kotn",
         "description": "Ethical cotton essentials with transparent supply chain",
         "link": "https://example.com/kotn"
+      },
+      {
+        "id": "a142b",
+        "name": "People Tree",
+        "description": "Fair trade and organic clothing",
+        "link": "https://example.com/peopletree"
+      },
+      {
+        "id": "a142c",
+        "name": "Everlane",
+        "description": "Ethical and transparent clothing brand",
+        "link": "https://example.com/everlane"
+      },
+      {
+        "id": "a142d",
+        "name": "PACT",
+        "description": "Organic cotton clothing with ethical production",
+        "link": "https://example.com/pact"
       }
     ]
   },
@@ -272,6 +451,24 @@
         "name": "Vetta",
         "description": "Sustainable capsule wardrobes with ethical manufacturing",
         "link": "https://example.com/vetta"
+      },
+      {
+        "id": "a144b",
+        "name": "Reformation",
+        "description": "Sustainable and trendy clothing",
+        "link": "https://example.com/reformation"
+      },
+      {
+        "id": "a144c",
+        "name": "ABLE",
+        "description": "Ethical fashion brand empowering women",
+        "link": "https://example.com/livefashionable"
+      },
+      {
+        "id": "a144d",
+        "name": "Fair Indigo",
+        "description": "Fair trade and organic clothing",
+        "link": "https://example.com/fairindigo"
       }
     ]
   },
@@ -297,6 +494,24 @@
         "name": "Mud Jeans",
         "description": "Circular economy denim with ethical manufacturing",
         "link": "https://example.com/mudjeans"
+      },
+      {
+        "id": "a146b",
+        "name": "Outland Denim",
+        "description": "Ethical denim brand providing employment to women",
+        "link": "https://example.com/outlanddenim"
+      },
+      {
+        "id": "a146c",
+        "name": "Kings of Indigo",
+        "description": "Sustainable denim with innovative materials",
+        "link": "https://example.com/kingsofindigo"
+      },
+      {
+        "id": "a146d",
+        "name": "Triarchy",
+        "description": "Sustainable denim with water conservation practices",
+        "link": "https://example.com/triarchy"
       }
     ]
   },
@@ -322,6 +537,24 @@
         "name": "Outerknown",
         "description": "Sustainable clothing with fair labor practices",
         "link": "https://example.com/outerknown"
+      },
+      {
+        "id": "a148b",
+        "name": "PACT",
+        "description": "Organic cotton clothing with ethical production",
+        "link": "https://example.com/pactclothing"
+      },
+      {
+        "id": "a148c",
+        "name": "People Tree",
+        "description": "Fair trade and sustainable clothing",
+        "link": "https://example.com/peopletree"
+      },
+      {
+        "id": "a148d",
+        "name": "Thought",
+        "description": "Sustainable clothing made from natural and recycled fabrics",
+        "link": "https://example.com/wearethought"
       }
     ]
   },
@@ -347,6 +580,24 @@
         "name": "Cotopaxi",
         "description": "Outdoor gear with ethical manufacturing and social mission",
         "link": "https://example.com/cotopaxi"
+      },
+      {
+        "id": "a150b",
+        "name": "United By Blue",
+        "description": "Sustainable outdoor apparel removing trash from oceans",
+        "link": "https://example.com/unitedbyblue"
+      },
+      {
+        "id": "a150c",
+        "name": "prAna",
+        "description": "Sustainable and versatile clothing",
+        "link": "https://example.com/prana"
+      },
+      {
+        "id": "a150d",
+        "name": "REI Co-op",
+        "description": "Outdoor gear with sustainability initiatives",
+        "link": "https://example.com/rei"
       }
     ]
   }

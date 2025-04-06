@@ -45,7 +45,9 @@ const BrandCard: React.FC<BrandCardProps> = ({ brand }) => {
             </p>
             <p className="text-sm text-palestinian-black">
               {brand.alternatives[0].name}
-              {alternativesCount > 1 && ` +${alternativesCount - 1} more`}
+              {alternativesCount > 1 && 
+                <span>, {brand.alternatives[1].name}{alternativesCount > 2 ? ` +${alternativesCount - 2} more` : ''}</span>
+              }
             </p>
           </div>
         )}
