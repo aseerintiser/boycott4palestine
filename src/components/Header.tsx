@@ -9,7 +9,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link to="/" className="flex items-center space-x-2">
           <Flag className="h-7 w-7 text-palestinian-red" strokeWidth={2.5} />
-          <span className="font-bold text-xl tracking-tight text-palestinian-black">Boycott4Palestine</span>
+          <span className="font-heading font-bold text-xl tracking-tight text-palestinian-black">Boycott4Palestine</span>
         </Link>
         <nav>
           <ul className="flex space-x-6">

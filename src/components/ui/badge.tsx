@@ -12,12 +12,16 @@ const badgeVariants = cva(
         default:
           "border-transparent bg-primary text-primary-foreground hover:bg-primary/80",
         secondary:
-          "border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80",
+          "border-transparent bg-palestinian-green text-white hover:bg-palestinian-green/80",
         destructive:
           "border-transparent bg-destructive text-destructive-foreground hover:bg-destructive/80",
         outline: "text-foreground",
         palestinian:
           "border-transparent bg-palestinian-gray text-palestinian-black",
+        black:
+          "border-transparent bg-palestinian-black text-white",
+        green:
+          "border-transparent bg-palestinian-green text-white",
       },
     },
     defaultVariants: {

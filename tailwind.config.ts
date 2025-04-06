@@ -65,11 +65,15 @@ export default {
 				},
 				palestinian: {
 					red: '#D62828',
-					green: '#149954',
+					green: '#007A3D',
 					black: '#111111',
 					white: '#FFFFFF',
 					gray: '#F4F4F4'
 				}
+			},
+			fontFamily: {
+				sans: ['Inter', 'system-ui', 'sans-serif'],
+				heading: ['Montserrat', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -102,4 +106,3 @@ export default {
 	},
 	plugins: [require("tailwindcss-animate")],
 } satisfies Config;
-
