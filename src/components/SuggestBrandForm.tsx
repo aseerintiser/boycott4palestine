@@ -49,7 +49,7 @@ const SuggestBrandForm = () => {
       link: '',
       email: '',
     },
-    mode: 'onChange', // Enable real-time validation
+    mode: 'onChange',
   });
 
   const onSubmit = async (data: FormValues) => {
@@ -59,27 +59,20 @@ const SuggestBrandForm = () => {
       
       console.log('Form data submitted:', data);
       
-      // Create a simpler format to ensure compatibility with any EmailJS template
+      // Use a very simple flat structure for the email data
       const emailData = {
-        to_name: "Admin", // Default recipient name
-        from_name: data.email || "Anonymous User",
+        from_name: data.email || "Anonymous",
         brand_name: data.brandName,
         reason: data.reason,
-        link: data.link || "No link provided",
-        email: data.email || "Not provided",
-        message: `
-Brand: ${data.brandName}
-Reason: ${data.reason}
-Link: ${data.link || "None provided"}
-Submitter: ${data.email || "Anonymous"}
-Date: ${new Date().toLocaleString()}
-        `
+        link: data.link || "None",
+        email: data.email || "None",
+        message: `A new brand suggestion has been submitted!\n\nBrand: ${data.brandName}\nReason: ${data.reason}\nLink: ${data.link || "None"}\nSubmitter: ${data.email || "Anonymous"}\nDate: ${new Date().toLocaleString()}`
       };
       
-      // Send email notification using EmailJS with the template ID
+      // Send email using EmailJS
       const result = await emailjs.send(
-        "service_y9e4hrq", // EmailJS service ID 
-        "template_tzhle3w", // Template ID
+        "service_y9e4hrq", 
+        "template_tzhle3w", 
         emailData
       );
       
