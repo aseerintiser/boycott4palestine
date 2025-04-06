@@ -18,6 +18,7 @@ const HomePage: React.FC = () => {
   const [filteredBrands, setFilteredBrands] = useState(getAllBrands());
   const [isLoading, setIsLoading] = useState(true);
   const [previousSearches, setPreviousSearches] = useState<string[]>([]);
+  const [categoryToastsShown, setCategoryToastsShown] = useState<Set<string>>(new Set(['all']));
 
   useEffect(() => {
     // Simulate a loading delay for data fetching
@@ -69,19 +70,26 @@ const HomePage: React.FC = () => {
   const handleSelectCategory = (category: Category | 'all') => {
     setSelectedCategory(category);
     
-    // Show toast when changing categories
-    if (category !== 'all') {
-      toast({
-        title: `Filtered by ${category}`,
-        description: `Showing only ${category} brands`,
-        duration: 2000,
-      });
-    } else {
-      toast({
-        title: "All categories",
-        description: "Showing brands from all categories",
-        duration: 2000,
-      });
+    // Only show toast if this category hasn't had a toast shown yet
+    if (!categoryToastsShown.has(category)) {
+      const newToastsShown = new Set(categoryToastsShown);
+      newToastsShown.add(category);
+      setCategoryToastsShown(newToastsShown);
+      
+      // Show toast only on first selection of this category
+      if (category !== 'all') {
+        toast({
+          title: `Filtered by ${category}`,
+          description: `Showing only ${category} brands`,
+          duration: 2000,
+        });
+      } else {
+        toast({
+          title: "All categories",
+          description: "Showing brands from all categories",
+          duration: 2000,
+        });
+      }
     }
   };
 
