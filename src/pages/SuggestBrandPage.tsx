@@ -1,7 +1,7 @@
 
 import React from 'react';
 import SuggestBrandForm from '@/components/SuggestBrandForm';
-import { AlertCircle, Info } from 'lucide-react';
+import { AlertCircle } from 'lucide-react';
 
 const SuggestBrandPage: React.FC = () => {
   return (
@@ -21,26 +21,6 @@ const SuggestBrandPage: React.FC = () => {
             <p className="text-amber-700 text-sm mt-1">
               When you submit this form, your suggestion will be sent directly to our review team via email. 
               If approved, the brand will be added to our database. If you provide your email, we'll notify you when your suggestion is reviewed.
-            </p>
-          </div>
-        </div>
-        
-        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6 flex items-start gap-3">
-          <Info className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
-          <div>
-            <h3 className="font-medium text-blue-800">EmailJS Template Setup</h3>
-            <p className="text-blue-700 text-sm mt-1">
-              In your EmailJS account, create a template with ID 
-              <code className="mx-1 p-1 bg-blue-100 rounded">template_tzhle3w</code>
-              and ensure it contains these variables:
-              <code className="mx-1 p-1 bg-blue-100 rounded">&#123;&#123;name&#125;&#125;</code>
-              <code className="mx-1 p-1 bg-blue-100 rounded">&#123;&#123;title&#125;&#125;</code>
-              <code className="mx-1 p-1 bg-blue-100 rounded">&#123;&#123;email&#125;&#125;</code>
-              <code className="mx-1 p-1 bg-blue-100 rounded">&#123;&#123;brand_name&#125;&#125;</code>
-              <code className="mx-1 p-1 bg-blue-100 rounded">&#123;&#123;reason&#125;&#125;</code>
-              <code className="mx-1 p-1 bg-blue-100 rounded">&#123;&#123;link&#125;&#125;</code>
-              <code className="mx-1 p-1 bg-blue-100 rounded">&#123;&#123;submitter_email&#125;&#125;</code>
-              <code className="mx-1 p-1 bg-blue-100 rounded">&#123;&#123;date&#125;&#125;</code>
             </p>
           </div>
         </div>

@@ -57,26 +57,30 @@ const SuggestBrandForm = () => {
       setIsSubmitting(true);
       setError(null);
       
-      // Log form submission
       console.log('Form data submitted:', data);
       
-      // Prepare template parameters based on the EmailJS template variables
-      const templateParams = {
-        name: data.email || "Anonymous Submitter", // For the recipient name greeting
-        title: `New brand boycott suggestion: ${data.brandName}`, // For the request subject/title
-        email: data.email || "Not provided", // Submitter's email
-        brand_name: data.brandName, // Brand name for boycott
-        reason: data.reason, // Reason for boycott
-        link: data.link || "No link provided", // Supporting evidence link
-        submitter_email: data.email || "Not provided", // Email for notification
-        date: new Date().toLocaleString(), // Submission date
+      // Simply send all data from the form directly
+      const emailData = {
+        brand_name: data.brandName,
+        reason: data.reason,
+        link: data.link || "No link provided",
+        submitter_email: data.email || "Not provided",
+        date: new Date().toLocaleString(),
+        // Include all data in a single field for easier viewing
+        submission_details: `
+          Brand: ${data.brandName}
+          Reason: ${data.reason}
+          Link: ${data.link || "None provided"}
+          Submitter: ${data.email || "Anonymous"}
+          Date: ${new Date().toLocaleString()}
+        `
       };
       
-      // Send email notification using EmailJS with the correct template ID
+      // Send email notification using EmailJS with the template ID
       const result = await emailjs.send(
         "service_y9e4hrq", // EmailJS service ID 
-        "template_tzhle3w", // Using the correct template ID from user
-        templateParams
+        "template_tzhle3w", // Template ID
+        emailData
       );
       
       console.log('EmailJS result:', result);
@@ -93,7 +97,7 @@ const SuggestBrandForm = () => {
       }, 3000);
     } catch (error) {
       console.error("Error submitting form:", error);
-      setError("There was an error submitting your suggestion. Please verify your EmailJS template setup is correct.");
+      setError("There was an error sending your suggestion. Please try again later.");
       toast({
         title: "Error",
         description: "There was an error submitting your suggestion. Please try again.",
