@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import SearchBar from '@/components/SearchBar';
 import CategoryFilter from '@/components/CategoryFilter';
 import BrandList from '@/components/BrandList';
-import ImpactSummary from '@/components/ImpactSummary';
 import { 
   getAllBrands, 
   getBrandsByCategory, 
@@ -93,9 +92,6 @@ const HomePage: React.FC = () => {
           selectedCategory={selectedCategory} 
           onSelectCategory={handleSelectCategory} 
         />
-
-        {/* Impact Summary Component */}
-        <ImpactSummary />
         
         {filteredBrands.length === 0 && !isLoading && (
           <div className="my-6 p-4 bg-amber-50 border border-amber-200 rounded-lg flex items-start gap-3 animate-fade-in">
