@@ -2,6 +2,7 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import Header from '@/components/Header';
+import ScrollToTopButton from '@/components/ScrollToTopButton';
 
 const MainLayout: React.FC = () => {
   return (
@@ -16,12 +17,13 @@ const MainLayout: React.FC = () => {
             © {new Date().getFullYear()} Boycott4Palestine. Information provided for educational purposes.
           </div>
           <div className="mt-3 md:mt-0 flex gap-4">
-            <a href="#" className="hover:text-palestinian-red transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-palestinian-red transition-colors">Terms of Use</a>
-            <a href="#" className="hover:text-palestinian-red transition-colors">Contact</a>
+            <a href="/about" className="hover:text-palestinian-red transition-colors">About</a>
+            <a href="/suggest" className="hover:text-palestinian-red transition-colors">Suggest a Brand</a>
+            <a href="/about" className="hover:text-palestinian-red transition-colors">Contact</a>
           </div>
         </div>
       </footer>
+      <ScrollToTopButton />
     </div>
   );
 };
