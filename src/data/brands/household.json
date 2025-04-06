@@ -1,4 +1,3 @@
-
 [
   {
     "id": "10",
@@ -22,6 +21,18 @@
         "name": "John Deere",
         "description": "Equipment manufacturer with transparent supply chain",
         "link": "https://example.com/johndeere"
+      },
+      {
+        "id": "a20b",
+        "name": "Bobcat",
+        "description": "Construction equipment with responsible corporate practices",
+        "link": "https://example.com/bobcat"
+      },
+      {
+        "id": "a20c",
+        "name": "Hitachi Construction",
+        "description": "Equipment manufacturer with sustainability commitment",
+        "link": "https://example.com/hitachi"
       }
     ]
   },
@@ -46,6 +57,18 @@
         "name": "Speed Queen",
         "description": "Appliance manufacturer with transparent supply chain",
         "link": "https://example.com/speedqueen"
+      },
+      {
+        "id": "a74b",
+        "name": "LG Electronics",
+        "description": "Appliance manufacturer with strong sustainability initiatives",
+        "link": "https://example.com/lg"
+      },
+      {
+        "id": "a74c",
+        "name": "Asko",
+        "description": "Scandinavian appliance brand with environmental focus",
+        "link": "https://example.com/asko"
       }
     ]
   },
@@ -70,6 +93,18 @@
         "name": "Ace Hardware",
         "description": "Cooperative business model with more ethical sourcing",
         "link": "https://example.com/ace"
+      },
+      {
+        "id": "a76b",
+        "name": "True Value",
+        "description": "Retailer-owned hardware cooperative with local focus",
+        "link": "https://example.com/truevalue"
+      },
+      {
+        "id": "a76c",
+        "name": "Do It Best",
+        "description": "Member-owned hardware cooperative with community involvement",
+        "link": "https://example.com/doitbest"
       }
     ]
   },

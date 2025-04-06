@@ -62,7 +62,12 @@ const BrandDetailPage: React.FC = () => {
         </Card>
 
         <div>
-          <h2 className="text-xl font-semibold mb-4 text-palestinian-green">Ethical Alternatives</h2>
+          <h2 className="text-xl font-semibold mb-4 text-palestinian-green">
+            Ethical Alternatives 
+            <span className="text-sm font-normal ml-2 text-muted-foreground">
+              ({brand.alternatives.length} options available)
+            </span>
+          </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {brand.alternatives.map((alternative) => (
               <AlternativeCard 
@@ -71,6 +76,13 @@ const BrandDetailPage: React.FC = () => {
               />
             ))}
           </div>
+          
+          {brand.alternatives.length > 2 && (
+            <p className="mt-4 text-sm text-muted-foreground">
+              We've provided several ethical alternatives. If you know of more options that should be added, 
+              please use our "Suggest" form to let us know.
+            </p>
+          )}
         </div>
       </div>
     </div>

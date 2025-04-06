@@ -21,6 +21,24 @@
         "name": "Aarke",
         "description": "Swedish-designed carbonator with ethical manufacturing",
         "link": "https://example.com/aarke"
+      },
+      {
+        "id": "a2b",
+        "name": "MySoda",
+        "description": "Finnish sparkling water maker with sustainable production",
+        "link": "https://example.com/mysoda"
+      },
+      {
+        "id": "a2c",
+        "name": "Spärkel",
+        "description": "Carbonator that doesn't require CO2 cylinders, environmentally friendly",
+        "link": "https://example.com/sparkel"
+      },
+      {
+        "id": "a2d",
+        "name": "Twenty39",
+        "description": "Eco-friendly carbonation solution with ethical supply chain",
+        "link": "https://example.com/twenty39"
       }
     ]
   },
@@ -46,6 +64,24 @@
         "name": "Ithaca Hummus",
         "description": "Small-batch hummus with transparent supply chain",
         "link": "https://example.com/ithaca"
+      },
+      {
+        "id": "a4b",
+        "name": "Hope Hummus",
+        "description": "Organic hummus brand with ethical business practices",
+        "link": "https://example.com/hope"
+      },
+      {
+        "id": "a4c",
+        "name": "Boar's Head",
+        "description": "Quality hummus with straightforward supply chain",
+        "link": "https://example.com/boarshead"
+      },
+      {
+        "id": "a4d",
+        "name": "Homemade",
+        "description": "Make your own hummus with locally sourced ingredients",
+        "link": "https://example.com/homemade"
       }
     ]
   },

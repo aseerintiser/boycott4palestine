@@ -1,4 +1,3 @@
-
 [
   {
     "id": "3",
@@ -22,6 +21,24 @@
         "name": "ASUS",
         "description": "Computer and phone manufacturer with ethical manufacturing",
         "link": "https://example.com/asus"
+      },
+      {
+        "id": "a6b",
+        "name": "Acer",
+        "description": "Computer manufacturer with sustainability initiatives",
+        "link": "https://example.com/acer"
+      },
+      {
+        "id": "a6c",
+        "name": "System76",
+        "description": "Open-source focused computer manufacturer with transparent practices",
+        "link": "https://example.com/system76"
+      },
+      {
+        "id": "a6d",
+        "name": "Framework",
+        "description": "Modular, repairable laptop designed with sustainability in mind",
+        "link": "https://example.com/framework"
       }
     ]
   },
@@ -47,6 +64,24 @@
         "name": "Fairphone",
         "description": "Ethical smartphone made with fair materials and labor practices",
         "link": "https://example.com/fairphone"
+      },
+      {
+        "id": "a14b",
+        "name": "Sony",
+        "description": "Electronics manufacturer with clearer ethics policies",
+        "link": "https://example.com/sony"
+      },
+      {
+        "id": "a14c",
+        "name": "Nokia",
+        "description": "Phone manufacturer with transparent business practices",
+        "link": "https://example.com/nokia"
+      },
+      {
+        "id": "a14d",
+        "name": "Teracube",
+        "description": "Sustainable smartphone with 4-year warranty and ethical production",
+        "link": "https://example.com/teracube"
       }
     ]
   },

@@ -13,6 +13,7 @@ interface BrandCardProps {
 
 const BrandCard: React.FC<BrandCardProps> = ({ brand }) => {
   const navigate = useNavigate();
+  const alternativesCount = brand.alternatives?.length || 0;
   
   return (
     <Card className="h-full flex flex-col hover:shadow-md transition-shadow border-gray-200 overflow-hidden group">
@@ -37,12 +38,14 @@ const BrandCard: React.FC<BrandCardProps> = ({ brand }) => {
           </ul>
         </div>
         
-        {brand.alternatives && brand.alternatives.length > 0 && (
+        {alternativesCount > 0 && (
           <div className="mt-3 pt-3 border-t border-dashed border-gray-200">
-            <p className="text-xs font-medium text-palestinian-green mb-1.5">ALTERNATIVES:</p>
+            <p className="text-xs font-medium text-palestinian-green mb-1.5">
+              ALTERNATIVES: <span className="text-muted-foreground">({alternativesCount} available)</span>
+            </p>
             <p className="text-sm text-palestinian-black">
               {brand.alternatives[0].name}
-              {brand.alternatives.length > 1 && ` +${brand.alternatives.length - 1} more`}
+              {alternativesCount > 1 && ` +${alternativesCount - 1} more`}
             </p>
           </div>
         )}
