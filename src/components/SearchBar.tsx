@@ -68,7 +68,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
           placeholder="Search brands or products..."
           value={searchQuery}
           onChange={handleSearch}
-          className={`pl-10 pr-10 w-full border-2 transition-colors ${isFocused ? 'border-palestinian-red/50' : 'border-input'}`}
+          className={`pl-10 pr-10 w-full ${isFocused ? 'ring-2 ring-palestinian-red/50 border-transparent' : 'border-input'} transition-all`}
           onFocus={() => {
             setIsFocused(true);
             if (searchQuery.length > 1) setIsOpen(true);
