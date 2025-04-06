@@ -2,7 +2,8 @@
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
-import { Info, HandHeart, Star, Github, Twitter } from 'lucide-react';
+import { Info, HandHeart, Star } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const AboutPage: React.FC = () => {
   return (
@@ -66,22 +67,18 @@ const AboutPage: React.FC = () => {
             <h2 className="text-xl font-bold mb-4 text-palestinian-black">Contact Us</h2>
             <p className="mb-4">
               If you have suggestions for additional companies to add to our database, corrections to existing 
-              information, or any other feedback, please reach out to us through one of the following channels:
+              information, or any other feedback, please use our suggestion form.
             </p>
             
-            <div className="space-y-3 mt-4">
-              <div className="flex items-center gap-2">
-                <Github className="h-5 w-5 text-palestinian-black" />
-                <span>Submit an issue on our <a href="https://github.com/boycott4palestine/database" className="text-palestinian-red hover:underline">GitHub repository</a></span>
-              </div>
-              
-              <div className="flex items-center gap-2">
-                <Twitter className="h-5 w-5 text-palestinian-black" />
-                <span>Message us on <a href="https://twitter.com/boycott4pal" className="text-palestinian-red hover:underline">Twitter/X @boycott4pal</a></span>
-              </div>
-              
-              <div className="p-3 bg-gray-50 rounded-md mt-2 text-sm">
-                <p>Note: Please include detailed information with any submission, including sources and references when possible.</p>
+            <div className="bg-gray-50 p-4 rounded-md border-l-4 border-l-palestinian-green mt-4">
+              <div className="text-center">
+                <p className="mb-3 font-medium">Have a brand to suggest or feedback to share?</p>
+                <Link 
+                  to="/suggest" 
+                  className="inline-block bg-palestinian-red hover:bg-red-700 text-white font-medium py-2 px-6 rounded-md transition-colors"
+                >
+                  Suggest a Brand
+                </Link>
               </div>
             </div>
           </CardContent>
