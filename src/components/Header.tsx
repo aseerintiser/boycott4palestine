@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Flag, PenLine } from 'lucide-react';
+import { Flag } from 'lucide-react';
 
 const Header: React.FC = () => {
   return (
@@ -19,14 +19,13 @@ const Header: React.FC = () => {
               </Link>
             </li>
             <li>
-              <Link to="/suggest" className="font-medium text-palestinian-black hover:text-palestinian-red transition-colors flex items-center">
-                <PenLine className="h-4 w-4 mr-1" />
-                Suggest a Brand
+              <Link to="/about" className="font-medium text-palestinian-black hover:text-palestinian-red transition-colors">
+                About
               </Link>
             </li>
             <li>
-              <Link to="/about" className="font-medium text-palestinian-black hover:text-palestinian-red transition-colors">
-                About
+              <Link to="/suggest" className="font-medium text-palestinian-black hover:text-palestinian-red transition-colors">
+                Suggest a Brand
               </Link>
             </li>
           </ul>
