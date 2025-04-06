@@ -5,8 +5,8 @@ import { Flag, Ban, Shield } from 'lucide-react';
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-white shadow-sm border-b-2 border-palestinian-red sticky top-0 z-50">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+    <header className="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
+      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <Link to="/" className="flex items-center space-x-2 group">
           <div className="flex items-center p-1.5 transition-all">
             <div className="relative flex items-center justify-center">
@@ -20,14 +20,20 @@ const Header: React.FC = () => {
           </div>
         </Link>
         <nav>
-          <ul className="flex space-x-6">
+          <ul className="flex space-x-8">
             <li>
-              <Link to="/about" className="font-medium text-palestinian-black hover:text-palestinian-red transition-colors">
+              <Link 
+                to="/about" 
+                className="font-medium text-palestinian-black hover:text-palestinian-red px-2 py-1 transition-colors"
+              >
                 About
               </Link>
             </li>
             <li>
-              <Link to="/suggest" className="font-medium text-palestinian-black hover:text-palestinian-green transition-colors">
+              <Link 
+                to="/suggest" 
+                className="font-medium text-palestinian-black hover:text-palestinian-green px-2 py-1 transition-colors"
+              >
                 Suggest a Brand
               </Link>
             </li>
