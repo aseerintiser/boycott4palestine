@@ -17,7 +17,7 @@ const badgeVariants = cva(
           "border-transparent bg-destructive text-destructive-foreground hover:bg-destructive/80",
         outline: "text-foreground",
         palestinian:
-          "border-transparent bg-gray-100 text-gray-800",
+          "border-transparent bg-palestinian-gray text-palestinian-black",
       },
     },
     defaultVariants: {

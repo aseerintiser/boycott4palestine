@@ -23,7 +23,7 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({
             "px-3 py-2 text-sm font-medium rounded-full whitespace-nowrap transition-colors",
             selectedCategory === 'all'
               ? "bg-palestinian-red text-white"
-              : "bg-gray-100 text-gray-800 hover:bg-gray-200"
+              : "bg-palestinian-gray text-palestinian-black hover:bg-palestinian-gray/80"
           )}
         >
           All
@@ -37,7 +37,7 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({
               "px-3 py-2 text-sm font-medium rounded-full whitespace-nowrap transition-colors",
               selectedCategory === category
                 ? "bg-palestinian-red text-white"
-                : "bg-gray-100 text-gray-800 hover:bg-gray-200"
+                : "bg-palestinian-gray text-palestinian-black hover:bg-palestinian-gray/80"
             )}
           >
             {category}

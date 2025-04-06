@@ -64,10 +64,11 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				palestinian: {
-					red: '#E4312B',
+					red: '#D62828',
 					green: '#149954',
-					black: '#000000',
-					white: '#FFFFFF'
+					black: '#111111',
+					white: '#FFFFFF',
+					gray: '#F4F4F4'
 				}
 			},
 			borderRadius: {
@@ -101,3 +102,4 @@ export default {
 	},
 	plugins: [require("tailwindcss-animate")],
 } satisfies Config;
+
