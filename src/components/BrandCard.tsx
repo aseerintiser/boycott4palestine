@@ -41,7 +41,7 @@ const BrandCard: React.FC<BrandCardProps> = ({ brand }) => {
         {alternativesCount > 0 && (
           <div className="mt-3 pt-3 border-t border-dashed border-gray-200">
             <p className="text-xs font-medium text-palestinian-green mb-1.5">
-              ALTERNATIVES: <span className="text-muted-foreground">({alternativesCount} available)</span>
+              ALTERNATIVES
             </p>
             <p className="text-sm text-palestinian-black">
               {brand.alternatives[0].name}

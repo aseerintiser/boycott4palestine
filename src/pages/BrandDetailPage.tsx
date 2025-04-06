@@ -63,10 +63,7 @@ const BrandDetailPage: React.FC = () => {
 
         <div>
           <h2 className="text-xl font-semibold mb-4 text-palestinian-green">
-            Ethical Alternatives 
-            <span className="text-sm font-normal ml-2 text-muted-foreground">
-              ({brand.alternatives.length} options available)
-            </span>
+            Ethical Alternatives
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {brand.alternatives.map((alternative) => (
