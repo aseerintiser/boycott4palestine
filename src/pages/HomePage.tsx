@@ -9,6 +9,7 @@ import {
   searchBrands, 
   Category 
 } from '@/data/brands/index';
+import { AlertCircle } from 'lucide-react';
 
 const HomePage: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -51,16 +52,16 @@ const HomePage: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-6">
+    <div className="container mx-auto px-4 py-8">
       <div className="max-w-4xl mx-auto">
-        <div className="mb-8 text-center">
-          <h1 className="text-2xl md:text-3xl font-bold mb-2 text-palestinian-black">Boycott4Palestine</h1>
-          <p className="text-muted-foreground max-w-xl mx-auto">
+        <div className="mb-10 text-center">
+          <h1 className="text-3xl md:text-4xl font-bold mb-3 text-palestinian-black">Boycott4Palestine</h1>
+          <p className="text-muted-foreground max-w-xl mx-auto text-base">
             Discover which brands to avoid and find ethical alternatives
           </p>
         </div>
         
-        <div className="mb-6">
+        <div className="mb-8">
           <SearchBar onSearch={handleSearch} />
         </div>
         
@@ -69,15 +70,25 @@ const HomePage: React.FC = () => {
           onSelectCategory={handleSelectCategory} 
         />
         
-        <div className="flex justify-between items-center mb-4">
-          {!isLoading && (
+        {filteredBrands.length === 0 && !isLoading && (
+          <div className="my-6 p-4 bg-amber-50 border border-amber-200 rounded-lg flex items-start gap-3">
+            <AlertCircle className="h-5 w-5 text-amber-600 flex-shrink-0 mt-0.5" />
+            <div>
+              <p className="text-amber-800">No brands found for your search criteria.</p>
+              <p className="text-sm text-amber-700 mt-1">Try adjusting your search or browse through different categories.</p>
+            </div>
+          </div>
+        )}
+        
+        <div className="flex justify-between items-center mb-6 mt-6">
+          {!isLoading && filteredBrands.length > 0 && (
             <>
-              <p className="text-sm text-palestinian-black">
+              <p className="text-sm font-medium text-palestinian-black">
                 {filteredBrands.length} {filteredBrands.length === 1 ? 'brand' : 'brands'} found
               </p>
               
               <p className="text-sm text-muted-foreground">
-                Total: {getAllBrands().length} brands
+                Total: {getAllBrands().length} brands in database
               </p>
             </>
           )}

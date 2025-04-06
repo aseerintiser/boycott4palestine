@@ -23,19 +23,15 @@ const BrandList: React.FC<BrandListProps> = ({ brands, isLoading = false }) => {
   
   if (isLoading) {
     return (
-      <div className="flex items-center justify-center p-12">
+      <div className="flex flex-col items-center justify-center p-12 space-y-3">
         <Loader2 className="h-10 w-10 text-palestinian-red animate-spin" />
-        <span className="ml-3 text-muted-foreground">Loading brands...</span>
+        <span className="text-muted-foreground">Loading brands...</span>
       </div>
     );
   }
   
   if (brands.length === 0) {
-    return (
-      <div className="text-center p-8 border border-dashed border-gray-200 rounded-lg bg-gray-50">
-        <p className="text-muted-foreground">No brands found. Try a different search.</p>
-      </div>
-    );
+    return null; // We're handling the empty state in HomePage now
   }
 
   // Calculate pagination
@@ -82,8 +78,8 @@ const BrandList: React.FC<BrandListProps> = ({ brands, isLoading = false }) => {
   const pageNumbers = getPageNumbers();
 
   return (
-    <div className="space-y-6">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+    <div className="space-y-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {currentBrands.map((brand) => (
           <div key={brand.id} className="h-full">
             <BrandCard brand={brand} />
@@ -92,7 +88,7 @@ const BrandList: React.FC<BrandListProps> = ({ brands, isLoading = false }) => {
       </div>
       
       {totalPages > 1 && (
-        <Pagination className="mt-8">
+        <Pagination className="mt-10">
           <PaginationContent>
             {currentPage > 1 && (
               <PaginationItem>
