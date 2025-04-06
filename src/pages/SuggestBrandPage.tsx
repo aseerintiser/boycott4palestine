@@ -69,7 +69,7 @@ const SuggestBrandPage: React.FC = () => {
             <div className="space-y-2">
               <h3 className="font-medium">Step 3: Create an Email Template</h3>
               <p>Click "Email Templates" → "Create New Template"</p>
-              <p>Design your template using these variables: {{'{{'}}brand_name{{'}}'}}, {{'{{'}}reason{{'}}'}}, {{'{{'}}supporting_link{{'}}'}}, {{'{{'}}contact_email{{'}}'}}, {{'{{'}}submission_date{{'}}'}}</p>
+              <p>Design your template using these variables: {"{{brand_name}}"}, {"{{reason}}"}, {"{{supporting_link}}"}, {"{{contact_email}}"}, {"{{submission_date}}"}</p>
               <p>Save the template and copy the "Template ID"</p>
             </div>
             

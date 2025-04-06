@@ -3,13 +3,12 @@ import React, { useState } from 'react';
 import { z } from 'zod';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
-import { SendIcon, CheckCircle2, Loader2, AlertTriangle } from 'lucide-react';
-import { Alert, AlertTitle, AlertDescription } from '@/components/ui/alert';
+import { SendIcon, Loader2 } from 'lucide-react';
 import emailjs from 'emailjs-com';
 
 const formSchema = z.object({
@@ -25,16 +24,14 @@ const formSchema = z.object({
 
 type FormValues = z.infer<typeof formSchema>;
 
-// EmailJS configuration
-const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID || "YOUR_SERVICE_ID";
-const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "YOUR_TEMPLATE_ID";
-const EMAILJS_USER_ID = import.meta.env.VITE_EMAILJS_USER_ID || "YOUR_USER_ID";
+// Simple direct configuration - replace with your own values
+const EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID"; // Replace with your Service ID
+const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID"; // Replace with your Template ID
+const EMAILJS_USER_ID = "YOUR_USER_ID"; // Replace with your User ID
 
 const SuggestBrandForm = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitSuccess, setSubmitSuccess] = useState(false);
-  const [error, setError] = useState<string | null>(null);
   
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -50,16 +47,8 @@ const SuggestBrandForm = () => {
   const onSubmit = async (data: FormValues) => {
     try {
       setIsSubmitting(true);
-      setError(null);
       
       console.log('Form data submitted:', data);
-      
-      // Check if EmailJS credentials are configured
-      if (EMAILJS_SERVICE_ID === "YOUR_SERVICE_ID" || 
-          EMAILJS_TEMPLATE_ID === "YOUR_TEMPLATE_ID" || 
-          EMAILJS_USER_ID === "YOUR_USER_ID") {
-        throw new Error("EmailJS is not properly configured. Please set up your EmailJS credentials.");
-      }
       
       // Format data for EmailJS
       const templateParams = {
@@ -71,34 +60,27 @@ const SuggestBrandForm = () => {
       };
       
       // Send the email using EmailJS
-      const response = await emailjs.send(
+      await emailjs.send(
         EMAILJS_SERVICE_ID,
         EMAILJS_TEMPLATE_ID,
         templateParams,
         EMAILJS_USER_ID
       );
       
-      console.log('Email sent successfully:', response);
+      console.log('Email sent successfully');
       
       toast({
         title: "Suggestion Sent!",
         description: "Thank you for your suggestion. Our team will review it soon.",
       });
       
-      setSubmitSuccess(true);
       form.reset();
-      
-      setTimeout(() => {
-        setSubmitSuccess(false);
-      }, 3000);
       
     } catch (error) {
       console.error("Error submitting form:", error);
-      const errorMessage = error instanceof Error ? error.message : "There was an error sending your suggestion. Please try again later.";
-      setError(errorMessage);
       toast({
         title: "Submission Failed",
-        description: "Unable to submit your suggestion at this time. Please try again later.",
+        description: "Unable to submit your suggestion. Please replace the EmailJS IDs with your own values.",
         variant: "destructive",
       });
     } finally {
@@ -109,14 +91,6 @@ const SuggestBrandForm = () => {
   return (
     <div className="p-6 bg-white rounded-lg shadow-md border border-gray-200">
       <h2 className="text-xl font-bold mb-4 text-palestinian-black">Suggest a Brand to Boycott</h2>
-      
-      {error && (
-        <Alert variant="destructive" className="mb-4">
-          <AlertTriangle className="h-4 w-4" />
-          <AlertTitle>Error</AlertTitle>
-          <AlertDescription>{error}</AlertDescription>
-        </Alert>
-      )}
       
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
@@ -161,9 +135,6 @@ const SuggestBrandForm = () => {
                 <FormControl>
                   <Input placeholder="https://example.com/evidence" {...field} />
                 </FormControl>
-                <FormDescription>
-                  Provide a link to an article or source that supports your suggestion.
-                </FormDescription>
                 <FormMessage />
               </FormItem>
             )}
@@ -178,9 +149,6 @@ const SuggestBrandForm = () => {
                 <FormControl>
                   <Input placeholder="your.email@example.com" {...field} />
                 </FormControl>
-                <FormDescription>
-                  Provide your email if you'd like to be notified when your suggestion is reviewed.
-                </FormDescription>
                 <FormMessage />
               </FormItem>
             )}
@@ -190,17 +158,12 @@ const SuggestBrandForm = () => {
             type="submit" 
             className="w-full" 
             variant="default"
-            disabled={isSubmitting || submitSuccess}
+            disabled={isSubmitting}
           >
             {isSubmitting ? (
               <>
                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />
                 Submitting...
-              </>
-            ) : submitSuccess ? (
-              <>
-                <CheckCircle2 className="mr-2 h-4 w-4" />
-                Submitted Successfully!
               </>
             ) : (
               <>
