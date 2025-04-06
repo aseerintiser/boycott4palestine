@@ -61,7 +61,6 @@ const SuggestBrandForm = () => {
       console.log('Form data submitted:', data);
       
       // Prepare template parameters based on the EmailJS template variables
-      // From the screenshots, we can see the template is using variables like {{name}}, {{title}}, etc.
       const templateParams = {
         name: data.email || "Anonymous Submitter", // For the recipient name greeting
         title: `New brand boycott suggestion: ${data.brandName}`, // For the request subject/title
@@ -73,10 +72,10 @@ const SuggestBrandForm = () => {
         date: new Date().toLocaleString(), // Submission date
       };
       
-      // Send email notification using EmailJS
+      // Send email notification using EmailJS with the correct template ID
       const result = await emailjs.send(
         "service_y9e4hrq", // EmailJS service ID 
-        "template_boycott4palestine", // EmailJS template ID from your screenshots
+        "template_tzhle3w", // Using the correct template ID from user
         templateParams
       );
       

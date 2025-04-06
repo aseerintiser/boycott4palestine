@@ -31,16 +31,16 @@ const SuggestBrandPage: React.FC = () => {
             <h3 className="font-medium text-blue-800">EmailJS Template Setup</h3>
             <p className="text-blue-700 text-sm mt-1">
               In your EmailJS account, create a template with ID 
-              <code className="mx-1 p-1 bg-blue-100 rounded">template_boycott4palestine</code>
-              and ensure it contains these variables in the template: 
-              <code className="mx-1 p-1 bg-blue-100 rounded">{{name}}</code>
-              <code className="mx-1 p-1 bg-blue-100 rounded">{{title}}</code>
-              <code className="mx-1 p-1 bg-blue-100 rounded">{{email}}</code>
-              <code className="mx-1 p-1 bg-blue-100 rounded">{{brand_name}}</code>
-              <code className="mx-1 p-1 bg-blue-100 rounded">{{reason}}</code>
-              <code className="mx-1 p-1 bg-blue-100 rounded">{{link}}</code>
-              <code className="mx-1 p-1 bg-blue-100 rounded">{{submitter_email}}</code>
-              <code className="mx-1 p-1 bg-blue-100 rounded">{{date}}</code>
+              <code className="mx-1 p-1 bg-blue-100 rounded">template_tzhle3w</code>
+              and ensure it contains these variables:
+              <code className="mx-1 p-1 bg-blue-100 rounded">&#123;&#123;name&#125;&#125;</code>
+              <code className="mx-1 p-1 bg-blue-100 rounded">&#123;&#123;title&#125;&#125;</code>
+              <code className="mx-1 p-1 bg-blue-100 rounded">&#123;&#123;email&#125;&#125;</code>
+              <code className="mx-1 p-1 bg-blue-100 rounded">&#123;&#123;brand_name&#125;&#125;</code>
+              <code className="mx-1 p-1 bg-blue-100 rounded">&#123;&#123;reason&#125;&#125;</code>
+              <code className="mx-1 p-1 bg-blue-100 rounded">&#123;&#123;link&#125;&#125;</code>
+              <code className="mx-1 p-1 bg-blue-100 rounded">&#123;&#123;submitter_email&#125;&#125;</code>
+              <code className="mx-1 p-1 bg-blue-100 rounded">&#123;&#123;date&#125;&#125;</code>
             </p>
           </div>
         </div>
