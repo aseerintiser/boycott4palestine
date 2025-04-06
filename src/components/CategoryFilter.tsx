@@ -16,13 +16,13 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({
   
   return (
     <div className="w-full overflow-x-auto pb-2 mb-4 scrollbar-thin">
-      <div className="flex space-x-2 min-w-max pb-1">
+      <div className="flex space-x-2 min-w-max py-2">
         <button
           onClick={() => onSelectCategory('all')}
           className={cn(
-            "px-3 py-1.5 text-sm font-medium rounded-full whitespace-nowrap transition-colors focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-palestinian-red",
+            "px-4 py-2 text-sm font-medium rounded-full whitespace-nowrap transition-colors focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-palestinian-red",
             selectedCategory === 'all'
-              ? "bg-palestinian-red text-white shadow-sm"
+              ? "bg-palestinian-red text-white shadow-md"
               : "bg-white border border-gray-200 text-palestinian-black hover:bg-palestinian-gray hover:border-palestinian-green"
           )}
         >
@@ -34,9 +34,9 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({
             key={category}
             onClick={() => onSelectCategory(category)}
             className={cn(
-              "px-3 py-1.5 text-sm font-medium rounded-full whitespace-nowrap transition-colors focus:outline-none focus:ring-2 focus:ring-offset-1",
+              "px-4 py-2 text-sm font-medium rounded-full whitespace-nowrap transition-colors focus:outline-none focus:ring-2 focus:ring-offset-1",
               selectedCategory === category
-                ? "bg-palestinian-red text-white shadow-sm focus:ring-palestinian-red"
+                ? "bg-palestinian-red text-white shadow-md focus:ring-palestinian-red"
                 : "bg-white border border-gray-200 text-palestinian-black hover:bg-palestinian-gray hover:border-palestinian-green focus:ring-palestinian-green"
             )}
           >
