@@ -177,7 +177,12 @@ const ImpactPage: React.FC = () => {
               <CardTitle>Distribution of Alternatives</CardTitle>
             </CardHeader>
             <CardContent>
-              <ChartContainer className="h-80">
+              <ChartContainer 
+                className="h-80"
+                config={{
+                  alternatives: { color: '#8B5CF6' },
+                }}
+              >
                 <PieChart>
                   <Pie
                     data={alternativeData}
