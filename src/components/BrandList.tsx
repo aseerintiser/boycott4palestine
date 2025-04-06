@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Brand } from '@/data/brands';
+import { Brand } from '@/data/brands/types';
 import BrandCard from '@/components/BrandCard';
 import { 
   Pagination, 

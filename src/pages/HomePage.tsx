@@ -8,7 +8,7 @@ import {
   getBrandsByCategory, 
   searchBrands, 
   Category 
-} from '@/data/brands';
+} from '@/data/brands/index';
 
 const HomePage: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');

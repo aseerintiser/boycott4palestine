@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Brand } from '@/data/brands';
+import { Brand } from '@/data/brands/types';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';

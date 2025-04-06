@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Category, getCategories } from '@/data/brands';
+import { Category, getCategories } from '@/data/brands/index';
 import { cn } from '@/lib/utils';
 
 interface CategoryFilterProps {
