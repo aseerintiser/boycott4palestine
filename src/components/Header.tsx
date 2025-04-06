@@ -27,34 +27,28 @@ const Header: React.FC = () => {
         </Link>
         <nav>
           <ul className="flex space-x-8">
-            <li className="relative">
+            <li>
               <Link 
                 to="/about" 
-                className={`font-medium px-2 py-1 transition-colors ${
+                className={`font-medium px-3 py-2 rounded-md transition-colors ${
                   isActive('/about') 
-                    ? 'text-palestinian-red' 
-                    : 'text-palestinian-black hover:text-palestinian-red'
+                    ? 'bg-gray-100 text-palestinian-red' 
+                    : 'text-palestinian-black hover:bg-gray-50 hover:text-palestinian-red'
                 }`}
               >
                 About
-                {isActive('/about') && (
-                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-palestinian-red rounded-full"></span>
-                )}
               </Link>
             </li>
-            <li className="relative">
+            <li>
               <Link 
                 to="/suggest" 
-                className={`font-medium px-2 py-1 transition-colors ${
+                className={`font-medium px-3 py-2 rounded-md transition-colors ${
                   isActive('/suggest') 
-                    ? 'text-palestinian-green' 
-                    : 'text-palestinian-black hover:text-palestinian-green'
+                    ? 'bg-gray-100 text-palestinian-green' 
+                    : 'text-palestinian-black hover:bg-gray-50 hover:text-palestinian-green'
                 }`}
               >
                 Suggest a Brand
-                {isActive('/suggest') && (
-                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-palestinian-green rounded-full"></span>
-                )}
               </Link>
             </li>
           </ul>
