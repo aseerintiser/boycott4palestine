@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { getBrandById } from '@/data/brands';
+import { getBrandById } from '@/data/brands/index';
 import { ArrowLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -19,7 +19,7 @@ const BrandDetailPage: React.FC = () => {
       <div className="container mx-auto px-4 py-12 text-center">
         <h2 className="text-2xl font-bold mb-4">Brand not found</h2>
         <p className="mb-6">The brand you're looking for doesn't exist in our database.</p>
-        <Button onClick={() => navigate('/')}>
+        <Button onClick={() => navigate('/')} className="bg-palestinian-green hover:bg-palestinian-green/90">
           Return to Home
         </Button>
       </div>
@@ -32,7 +32,7 @@ const BrandDetailPage: React.FC = () => {
         <Button
           variant="ghost"
           size="sm"
-          className="mb-4 flex items-center"
+          className="mb-4 flex items-center text-palestinian-black hover:text-palestinian-green hover:bg-transparent"
           onClick={() => navigate('/')}
         >
           <ArrowLeft className="h-4 w-4 mr-2" />
@@ -47,13 +47,13 @@ const BrandDetailPage: React.FC = () => {
           <p className="text-lg text-muted-foreground">{brand.description}</p>
         </div>
 
-        <Card className="mb-8">
+        <Card className="mb-8 border-palestinian-red/20">
           <CardContent className="pt-6">
-            <h2 className="text-xl font-semibold mb-4">Why avoid this brand?</h2>
+            <h2 className="text-xl font-semibold mb-4 text-palestinian-red">Why avoid this brand?</h2>
             <ul className="space-y-2">
               {brand.reasons.map((reason, index) => (
                 <li key={index} className="flex items-start">
-                  <span className="text-destructive mr-2">•</span>
+                  <span className="text-palestinian-red mr-2">•</span>
                   <span>{reason}</span>
                 </li>
               ))}
@@ -62,7 +62,7 @@ const BrandDetailPage: React.FC = () => {
         </Card>
 
         <div>
-          <h2 className="text-xl font-semibold mb-4">Ethical Alternatives</h2>
+          <h2 className="text-xl font-semibold mb-4 text-palestinian-green">Ethical Alternatives</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {brand.alternatives.map((alternative) => (
               <AlternativeCard 
