@@ -1,7 +1,7 @@
 
 import React from 'react';
 import SuggestBrandForm from '@/components/SuggestBrandForm';
-import { AlertCircle } from 'lucide-react';
+import { AlertCircle, Info } from 'lucide-react';
 
 const SuggestBrandPage: React.FC = () => {
   return (
@@ -21,6 +21,18 @@ const SuggestBrandPage: React.FC = () => {
             <p className="text-amber-700 text-sm mt-1">
               When you submit this form, your suggestion will be sent directly to our review team via email. 
               If approved, the brand will be added to our database. If you provide your email, we'll notify you when your suggestion is reviewed.
+            </p>
+          </div>
+        </div>
+        
+        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6 flex items-start gap-3">
+          <Info className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
+          <div>
+            <h3 className="font-medium text-blue-800">Important Setup Required</h3>
+            <p className="text-blue-700 text-sm mt-1">
+              To make the form fully functional, you need to create an EmailJS template with ID 
+              <code className="mx-1 p-1 bg-blue-100 rounded">template_boycott4palestine</code>
+              in your EmailJS account. This template should include the variables: brand_name, reason, link, submitter_email, and date.
             </p>
           </div>
         </div>

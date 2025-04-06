@@ -8,7 +8,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
-import { SendIcon, CheckCircle2, Loader2 } from 'lucide-react';
+import { SendIcon, CheckCircle2, Loader2, AlertTriangle } from 'lucide-react';
 import emailjs from 'emailjs-com';
 
 const formSchema = z.object({
@@ -28,10 +28,17 @@ const SuggestBrandForm = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   
   // Initialize EmailJS once when component mounts
   useEffect(() => {
-    emailjs.init("WbjGKgtIZn-MNUF77"); // EmailJS User ID
+    try {
+      emailjs.init("WbjGKgtIZn-MNUF77"); // EmailJS User ID
+      console.log("EmailJS initialized successfully");
+    } catch (err) {
+      console.error("Error initializing EmailJS:", err);
+      setError("Failed to initialize email service");
+    }
   }, []);
   
   const form = useForm<FormValues>({
@@ -48,6 +55,8 @@ const SuggestBrandForm = () => {
   const onSubmit = async (data: FormValues) => {
     try {
       setIsSubmitting(true);
+      setError(null);
+      
       // Log form submission
       console.log('Form data submitted:', data);
       
@@ -79,6 +88,7 @@ const SuggestBrandForm = () => {
       }, 3000);
     } catch (error) {
       console.error("Error submitting form:", error);
+      setError("There was an error submitting your suggestion. Please make sure you have created the EmailJS template 'template_boycott4palestine' in your EmailJS account.");
       toast({
         title: "Error",
         description: "There was an error submitting your suggestion. Please try again.",
@@ -92,6 +102,14 @@ const SuggestBrandForm = () => {
   return (
     <div className="p-6 bg-white rounded-lg shadow-md border border-gray-200">
       <h2 className="text-xl font-bold mb-4 text-palestinian-black">Suggest a Brand to Boycott</h2>
+      
+      {error && (
+        <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded-md flex items-start gap-2">
+          <AlertTriangle className="h-5 w-5 text-red-500 flex-shrink-0 mt-0.5" />
+          <div className="text-sm text-red-700">{error}</div>
+        </div>
+      )}
+      
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
           <FormField
