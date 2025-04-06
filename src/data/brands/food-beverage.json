@@ -1,4 +1,3 @@
-
 [
   {
     "id": "1",
@@ -237,6 +236,102 @@
         "name": "Seventh Generation",
         "description": "Sustainable and ethical consumer goods",
         "link": "https://example.com/seventhgeneration"
+      }
+    ]
+  },
+  {
+    "id": "61",
+    "name": "Heinz",
+    "category": "Food & Beverage",
+    "description": "Food processing company with operations in Israel.",
+    "reasons": [
+      "Manufacturing facilities in Israel",
+      "Continued operations despite ethical concerns"
+    ],
+    "alternatives": [
+      {
+        "id": "a121",
+        "name": "Sir Kensington's",
+        "description": "Ethical condiment brand with transparent sourcing",
+        "link": "https://example.com/sirkensington"
+      },
+      {
+        "id": "a122",
+        "name": "Primal Kitchen",
+        "description": "Clean ingredient condiments with ethical practices",
+        "link": "https://example.com/primalkitchen"
+      }
+    ]
+  },
+  {
+    "id": "62",
+    "name": "Kellogg's",
+    "category": "Food & Beverage",
+    "description": "Breakfast cereal company with operations in Israel.",
+    "reasons": [
+      "Manufacturing and distribution networks in Israel",
+      "Business ties to controversial entities"
+    ],
+    "alternatives": [
+      {
+        "id": "a123",
+        "name": "Nature's Path",
+        "description": "Organic breakfast cereals with ethical sourcing",
+        "link": "https://example.com/naturespath"
+      },
+      {
+        "id": "a124",
+        "name": "One Degree Organic Foods",
+        "description": "Transparent supply chain organic cereals",
+        "link": "https://example.com/onedegree"
+      }
+    ]
+  },
+  {
+    "id": "63",
+    "name": "Mondelez",
+    "category": "Food & Beverage",
+    "description": "Snack food company with operations in Israel.",
+    "reasons": [
+      "Manufacturing facilities in Israel",
+      "Products distributed in settlements"
+    ],
+    "alternatives": [
+      {
+        "id": "a125",
+        "name": "Annie's Homegrown",
+        "description": "Organic snacks with ethical production practices",
+        "link": "https://example.com/annies"
+      },
+      {
+        "id": "a126",
+        "name": "Simple Mills",
+        "description": "Clean ingredient snacks with transparent sourcing",
+        "link": "https://example.com/simplemills"
+      }
+    ]
+  },
+  {
+    "id": "64",
+    "name": "Häagen-Dazs",
+    "category": "Food & Beverage",
+    "description": "Ice cream brand with operations in Israel.",
+    "reasons": [
+      "Production facilities in Israel",
+      "Parent company General Mills has operations in contested areas"
+    ],
+    "alternatives": [
+      {
+        "id": "a127",
+        "name": "Van Leeuwen",
+        "description": "Artisanal ice cream with ethical sourcing practices",
+        "link": "https://example.com/vanleeuwen"
+      },
+      {
+        "id": "a128",
+        "name": "Coconut Bliss",
+        "description": "Plant-based ice cream with fair trade ingredients",
+        "link": "https://example.com/coconutbliss"
       }
     ]
   }

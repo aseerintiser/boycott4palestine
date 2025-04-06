@@ -1,4 +1,3 @@
-
 [
   {
     "id": "5",
@@ -213,6 +212,126 @@
         "name": "Pact",
         "description": "Organic cotton athletic and casual wear",
         "link": "https://example.com/pact"
+      }
+    ]
+  },
+  {
+    "id": "71",
+    "name": "Gap",
+    "category": "Fashion & Apparel",
+    "description": "Clothing retailer with stores in Israel.",
+    "reasons": [
+      "Stores in shopping centers built on contested land",
+      "Supply chain partnerships with controversial entities"
+    ],
+    "alternatives": [
+      {
+        "id": "a141",
+        "name": "Alternative Apparel",
+        "description": "Sustainable basics with ethical manufacturing",
+        "link": "https://example.com/alternativeapparel"
+      },
+      {
+        "id": "a142",
+        "name": "Kotn",
+        "description": "Ethical cotton essentials with transparent supply chain",
+        "link": "https://example.com/kotn"
+      }
+    ]
+  },
+  {
+    "id": "72",
+    "name": "Forever 21",
+    "category": "Fashion & Apparel",
+    "description": "Fast fashion retailer with operations in Israel.",
+    "reasons": [
+      "Stores in malls built on contested land",
+      "Sourcing practices connected to controversial areas"
+    ],
+    "alternatives": [
+      {
+        "id": "a143",
+        "name": "Raven + Lily",
+        "description": "Ethical fashion with female artisan partnerships",
+        "link": "https://example.com/ravenandlily"
+      },
+      {
+        "id": "a144",
+        "name": "Vetta",
+        "description": "Sustainable capsule wardrobes with ethical manufacturing",
+        "link": "https://example.com/vetta"
+      }
+    ]
+  },
+  {
+    "id": "73",
+    "name": "Levi's",
+    "category": "Fashion & Apparel",
+    "description": "Denim company with retail operations in Israel.",
+    "reasons": [
+      "Stores in contested areas",
+      "Manufacturing connections to controversial regions"
+    ],
+    "alternatives": [
+      {
+        "id": "a145",
+        "name": "Nudie Jeans",
+        "description": "Organic denim with fair labor practices",
+        "link": "https://example.com/nudiejeans"
+      },
+      {
+        "id": "a146",
+        "name": "Mud Jeans",
+        "description": "Circular economy denim with ethical manufacturing",
+        "link": "https://example.com/mudjeans"
+      }
+    ]
+  },
+  {
+    "id": "74",
+    "name": "American Eagle",
+    "category": "Fashion & Apparel",
+    "description": "Clothing retailer with operations in Israel.",
+    "reasons": [
+      "Stores in shopping centers in contested territories",
+      "Supply chain connected to controversial regions"
+    ],
+    "alternatives": [
+      {
+        "id": "a147",
+        "name": "Organic Basics",
+        "description": "Sustainable basics with ethical manufacturing",
+        "link": "https://example.com/organicbasics"
+      },
+      {
+        "id": "a148",
+        "name": "Outerknown",
+        "description": "Sustainable clothing with fair labor practices",
+        "link": "https://example.com/outerknown"
+      }
+    ]
+  },
+  {
+    "id": "75",
+    "name": "The North Face",
+    "category": "Fashion & Apparel",
+    "description": "Outdoor clothing company with operations in Israel.",
+    "reasons": [
+      "Retail presence in controversial areas",
+      "Parent company VF Corporation's ties to contested regions"
+    ],
+    "alternatives": [
+      {
+        "id": "a149",
+        "name": "Patagonia",
+        "description": "Ethical outdoor clothing with environmental activism",
+        "link": "https://example.com/patagonia"
+      },
+      {
+        "id": "a150",
+        "name": "Cotopaxi",
+        "description": "Outdoor gear with ethical manufacturing and social mission",
+        "link": "https://example.com/cotopaxi"
       }
     ]
   }

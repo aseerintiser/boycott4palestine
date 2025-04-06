@@ -1,4 +1,3 @@
-
 [
   {
     "id": "4",
@@ -199,7 +198,7 @@
     "description": "Personal care products company with operations in Israel.",
     "reasons": [
       "R&D center in Rehovot, Israel",
-      "Manufacturing ties to contested regions"
+      "Manufacturing ties to controversial regions"
     ],
     "alternatives": [
       {
@@ -236,6 +235,126 @@
         "id": "a120",
         "name": "Ilia Beauty",
         "description": "Clean makeup with sustainable packaging",
+        "link": "https://example.com/iliabeauty"
+      }
+    ]
+  },
+  {
+    "id": "76",
+    "name": "Dove",
+    "category": "Cosmetics & Personal Care",
+    "description": "Personal care brand owned by Unilever with operations in Israel.",
+    "reasons": [
+      "Parent company Unilever has manufacturing in Israel",
+      "Products sold in settlements in occupied territories"
+    ],
+    "alternatives": [
+      {
+        "id": "a151",
+        "name": "Ethique",
+        "description": "Plastic-free personal care with ethical sourcing",
+        "link": "https://example.com/ethique"
+      },
+      {
+        "id": "a152",
+        "name": "Alaffia",
+        "description": "Fair trade personal care with social mission",
+        "link": "https://example.com/alaffia"
+      }
+    ]
+  },
+  {
+    "id": "77",
+    "name": "Head & Shoulders",
+    "category": "Cosmetics & Personal Care",
+    "description": "Hair care brand owned by P&G with operations in Israel.",
+    "reasons": [
+      "Parent company P&G has significant operations in Israel",
+      "Manufacturing ties to controversial regions"
+    ],
+    "alternatives": [
+      {
+        "id": "a153",
+        "name": "Acure",
+        "description": "Natural hair care with ethical sourcing",
+        "link": "https://example.com/acure"
+      },
+      {
+        "id": "a154",
+        "name": "Giovanni",
+        "description": "Eco-friendly hair care with ethical manufacturing",
+        "link": "https://example.com/giovanni"
+      }
+    ]
+  },
+  {
+    "id": "78",
+    "name": "NYX Cosmetics",
+    "category": "Cosmetics & Personal Care",
+    "description": "Makeup brand owned by L'Oréal with operations in Israel.",
+    "reasons": [
+      "Parent company L'Oréal has significant presence in Israel",
+      "Products sold in stores in occupied territories"
+    ],
+    "alternatives": [
+      {
+        "id": "a155",
+        "name": "Elate Cosmetics",
+        "description": "Sustainable and ethical makeup brand",
+        "link": "https://example.com/elate"
+      },
+      {
+        "id": "a156",
+        "name": "Kjaer Weis",
+        "description": "Luxury organic makeup with sustainable packaging",
+        "link": "https://example.com/kjaerweis"
+      }
+    ]
+  },
+  {
+    "id": "79",
+    "name": "Nivea",
+    "category": "Cosmetics & Personal Care",
+    "description": "Skin care brand with operations in Israel.",
+    "reasons": [
+      "Distribution networks in contested territories",
+      "Manufacturing connections to controversial regions"
+    ],
+    "alternatives": [
+      {
+        "id": "a157",
+        "name": "Weleda",
+        "description": "Natural skin care with ethical practices",
+        "link": "https://example.com/weleda"
+      },
+      {
+        "id": "a158",
+        "name": "Dr. Hauschka",
+        "description": "Biodynamic skin care with ethical sourcing",
+        "link": "https://example.com/drhauschka"
+      }
+    ]
+  },
+  {
+    "id": "80",
+    "name": "MAC Cosmetics",
+    "category": "Cosmetics & Personal Care",
+    "description": "Makeup brand owned by Estée Lauder with operations in Israel.",
+    "reasons": [
+      "Parent company Estée Lauder has significant presence in Israel",
+      "Retail locations in contested areas"
+    ],
+    "alternatives": [
+      {
+        "id": "a159",
+        "name": "Ere Perez",
+        "description": "Natural cosmetics with ethical practices",
+        "link": "https://example.com/ereperez"
+      },
+      {
+        "id": "a160",
+        "name": "Ilia Beauty",
+        "description": "Clean makeup with transparent supply chain",
         "link": "https://example.com/iliabeauty"
       }
     ]

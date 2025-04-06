@@ -1,4 +1,3 @@
-
 [
   {
     "id": "9",
@@ -237,6 +236,126 @@
         "name": "Film Movement",
         "description": "Independent and international film distributor",
         "link": "https://example.com/filmmovement"
+      }
+    ]
+  },
+  {
+    "id": "86",
+    "name": "Ticketmaster",
+    "category": "Entertainment",
+    "description": "Ticket sales company with operations in Israel.",
+    "reasons": [
+      "Parent company Live Nation has significant operations in Israel",
+      "Sells tickets for events in contested territories"
+    ],
+    "alternatives": [
+      {
+        "id": "a171",
+        "name": "DICE",
+        "description": "Ethical ticket platform with transparent fees",
+        "link": "https://example.com/dice"
+      },
+      {
+        "id": "a172",
+        "name": "Eventbrite",
+        "description": "Event platform with better ethical standards",
+        "link": "https://example.com/eventbrite"
+      }
+    ]
+  },
+  {
+    "id": "87",
+    "name": "Spotify",
+    "category": "Entertainment",
+    "description": "Music streaming service with operations in Israel.",
+    "reasons": [
+      "R&D center in Tel Aviv",
+      "Content partnerships with controversial entities"
+    ],
+    "alternatives": [
+      {
+        "id": "a173",
+        "name": "Bandcamp",
+        "description": "Artist-supportive music platform with ethical practices",
+        "link": "https://example.com/bandcamp"
+      },
+      {
+        "id": "a174",
+        "name": "Tidal",
+        "description": "Music streaming service with better artist compensation",
+        "link": "https://example.com/tidal"
+      }
+    ]
+  },
+  {
+    "id": "88",
+    "name": "Paramount",
+    "category": "Entertainment",
+    "description": "Media company with operations and productions in Israel.",
+    "reasons": [
+      "Film and TV productions in contested territories",
+      "Content partnerships with controversial entities"
+    ],
+    "alternatives": [
+      {
+        "id": "a175",
+        "name": "Independent Cinema",
+        "description": "Support independent film producers and directors",
+        "link": "https://example.com/independentcinema"
+      },
+      {
+        "id": "a176",
+        "name": "MUBI",
+        "description": "Curated film platform with ethical standards",
+        "link": "https://example.com/mubi"
+      }
+    ]
+  },
+  {
+    "id": "89",
+    "name": "Hilton Hotels",
+    "category": "Entertainment",
+    "description": "Hotel chain with locations in Israel including in contested areas.",
+    "reasons": [
+      "Hotels built on disputed land",
+      "Expansion plans in contested territories"
+    ],
+    "alternatives": [
+      {
+        "id": "a177",
+        "name": "Responsible Travel",
+        "description": "Ethical travel booking platform",
+        "link": "https://example.com/responsibletravel"
+      },
+      {
+        "id": "a178",
+ "name": "Local Guesthouses",
+        "description": "Support locally-owned accommodations",
+        "link": "https://example.com/localguesthouses"
+      }
+    ]
+  },
+  {
+    "id": "90",
+    "name": "TripAdvisor",
+    "category": "Entertainment",
+    "description": "Travel review website listing attractions in occupied territories as Israel.",
+    "reasons": [
+      "Lists attractions in occupied territories under Israeli jurisdiction",
+      "Normalizes occupation through tourism promotion"
+    ],
+    "alternatives": [
+      {
+        "id": "a179",
+        "name": "Ethical Travel Portal",
+        "description": "Travel information with ethical considerations",
+        "link": "https://example.com/ethicaltravel"
+      },
+      {
+        "id": "a180",
+        "name": "Green Suitcase Travel",
+        "description": "Sustainable travel planning with ethical standards",
+        "link": "https://example.com/greensuitcase"
       }
     ]
   }

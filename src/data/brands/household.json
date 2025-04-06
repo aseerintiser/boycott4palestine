@@ -1,4 +1,3 @@
-
 [
   {
     "id": "10",
@@ -237,6 +236,126 @@
         "name": "Menards",
         "description": "Family-owned hardware chain with better ethical standards",
         "link": "https://example.com/menards"
+      }
+    ]
+  },
+  {
+    "id": "81",
+    "name": "Dyson",
+    "category": "Household",
+    "description": "Appliance manufacturer with operations in Israel.",
+    "reasons": [
+      "R&D partnerships with Israeli institutions",
+      "Business ties to controversial entities"
+    ],
+    "alternatives": [
+      {
+        "id": "a161",
+        "name": "Shark",
+        "description": "Appliance manufacturer with better ethical standards",
+        "link": "https://example.com/shark"
+      },
+      {
+        "id": "a162",
+        "name": "Miele",
+        "description": "Appliance manufacturer with transparent supply chain",
+        "link": "https://example.com/miele"
+      }
+    ]
+  },
+  {
+    "id": "82",
+    "name": "Rubbermaid",
+    "category": "Household",
+    "description": "Household products company with operations in Israel.",
+    "reasons": [
+      "Manufacturing connections to controversial regions",
+      "Parent company Newell Brands has operations in Israel"
+    ],
+    "alternatives": [
+      {
+        "id": "a163",
+        "name": "Stasher",
+        "description": "Reusable silicone storage with ethical manufacturing",
+        "link": "https://example.com/stasher"
+      },
+      {
+        "id": "a164",
+        "name": "U Konserve",
+        "description": "Sustainable food storage with ethical practices",
+        "link": "https://example.com/ukonserve"
+      }
+    ]
+  },
+  {
+    "id": "83",
+    "name": "Pyrex",
+    "category": "Household",
+    "description": "Kitchenware brand with distribution in Israel.",
+    "reasons": [
+      "Parent company Corning has operations in Israel",
+      "Products sold in retail locations in contested areas"
+    ],
+    "alternatives": [
+      {
+        "id": "a165",
+        "name": "Duralex",
+        "description": "Glass kitchen products with better ethical standards",
+        "link": "https://example.com/duralex"
+      },
+      {
+        "id": "a166",
+        "name": "Weck",
+        "description": "Glass containers with ethical manufacturing",
+        "link": "https://example.com/weck"
+      }
+    ]
+  },
+  {
+    "id": "84",
+    "name": "Calphalon",
+    "category": "Household",
+    "description": "Cookware manufacturer with operations in Israel.",
+    "reasons": [
+      "Parent company Newell Brands has business ties to Israel",
+      "Distribution in contested regions"
+    ],
+    "alternatives": [
+      {
+        "id": "a167",
+        "name": "Lodge",
+        "description": "American-made cookware with ethical practices",
+        "link": "https://example.com/lodge"
+      },
+      {
+        "id": "a168",
+        "name": "GreenPan",
+        "description": "Non-toxic cookware with sustainable manufacturing",
+        "link": "https://example.com/greenpan"
+      }
+    ]
+  },
+  {
+    "id": "85",
+    "name": "OXO",
+    "category": "Household",
+    "description": "Kitchen utensil company with operations in Israel.",
+    "reasons": [
+      "Parent company Helen of Troy has business ties to Israel",
+      "Products sold in settlements"
+    ],
+    "alternatives": [
+      {
+        "id": "a169",
+        "name": "Full Circle",
+        "description": "Sustainable kitchen tools with ethical manufacturing",
+        "link": "https://example.com/fullcircle"
+      },
+      {
+        "id": "a170",
+        "name": "Bambu",
+        "description": "Organic bamboo kitchenware with ethical practices",
+        "link": "https://example.com/bambu"
       }
     ]
   }

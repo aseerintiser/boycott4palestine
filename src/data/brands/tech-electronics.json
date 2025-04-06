@@ -1,4 +1,3 @@
-
 [
   {
     "id": "3",
@@ -261,6 +260,150 @@
         "name": "Sony",
         "description": "Electronics company with fewer controversial ties",
         "link": "https://example.com/sony"
+      }
+    ]
+  },
+  {
+    "id": "65",
+    "name": "Cisco",
+    "category": "Tech & Electronics",
+    "description": "Networking technology company with operations in Israel.",
+    "reasons": [
+      "R&D center in Tel Aviv",
+      "Technologies used for surveillance infrastructure"
+    ],
+    "alternatives": [
+      {
+        "id": "a129",
+        "name": "Ubiquiti",
+        "description": "Networking equipment with more ethical practices",
+        "link": "https://example.com/ubiquiti"
+      },
+      {
+        "id": "a130",
+        "name": "Mikrotik",
+        "description": "European networking equipment manufacturer",
+        "link": "https://example.com/mikrotik"
+      }
+    ]
+  },
+  {
+    "id": "66",
+    "name": "Nvidia",
+    "category": "Tech & Electronics",
+    "description": "Semiconductor company with R&D centers in Israel.",
+    "reasons": [
+      "Major R&D facility in Tel Aviv",
+      "Technology used in military applications"
+    ],
+    "alternatives": [
+      {
+        "id": "a131",
+        "name": "AMD GPUs",
+        "description": "Graphics processing units with fewer controversial ties",
+        "link": "https://example.com/amd"
+      },
+      {
+        "id": "a132",
+        "name": "Intel Arc",
+        "description": "Alternative graphics processors",
+        "link": "https://example.com/intelarc"
+      }
+    ]
+  },
+  {
+    "id": "67",
+    "name": "Qualcomm",
+    "category": "Tech & Electronics",
+    "description": "Mobile chip manufacturer with R&D center in Israel.",
+    "reasons": [
+      "Research facility in Haifa",
+      "Partnerships with Israeli defense tech companies"
+    ],
+    "alternatives": [
+      {
+        "id": "a133",
+        "name": "MediaTek",
+        "description": "Mobile processors with ethical manufacturing",
+        "link": "https://example.com/mediatek"
+      },
+      {
+        "id": "a134",
+        "name": "Samsung Exynos",
+        "description": "Mobile chipsets with fewer controversial ties",
+        "link": "https://example.com/exynos"
+      }
+    ]
+  },
+  {
+    "id": "68",
+    "name": "Check Point",
+    "category": "Tech & Electronics",
+    "description": "Cybersecurity company headquartered in Israel.",
+    "reasons": [
+      "Headquartered in Tel Aviv",
+      "Ties to Israeli military intelligence"
+    ],
+    "alternatives": [
+      {
+        "id": "a135",
+        "name": "Palo Alto Networks",
+        "description": "Network security with more ethical practices",
+        "link": "https://example.com/paloalto"
+      },
+      {
+        "id": "a136",
+        "name": "Fortinet",
+        "description": "Security solutions with fewer controversial ties",
+        "link": "https://example.com/fortinet"
+      }
+    ]
+  },
+  {
+    "id": "69",
+    "name": "Western Digital",
+    "category": "Tech & Electronics",
+    "description": "Storage technology company with operations in Israel.",
+    "reasons": [
+      "Manufacturing facilities in Israel",
+      "R&D activities in controversial regions"
+    ],
+    "alternatives": [
+      {
+        "id": "a137",
+        "name": "Crucial",
+        "description": "Storage solutions with more ethical practices",
+        "link": "https://example.com/crucial"
+      },
+      {
+        "id": "a138",
+        "name": "Kingston",
+        "description": "Storage manufacturer with ethical supply chain",
+        "link": "https://example.com/kingston"
+      }
+    ]
+  },
+  {
+    "id": "70",
+    "name": "Akamai",
+    "category": "Tech & Electronics",
+    "description": "Content delivery network with operations in Israel.",
+    "reasons": [
+      "Development center in Tel Aviv",
+      "Technology used by Israeli government entities"
+    ],
+    "alternatives": [
+      {
+        "id": "a139",
+        "name": "Cloudflare",
+        "description": "CDN with more transparent policies",
+        "link": "https://example.com/cloudflare"
+      },
+      {
+        "id": "a140",
+        "name": "Fastly",
+        "description": "CDN with ethical business practices",
+        "link": "https://example.com/fastly"
       }
     ]
   }
