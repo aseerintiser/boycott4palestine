@@ -53,8 +53,10 @@ const SuggestBrandForm = () => {
       
       // Format data for EmailJS - Make sure parameter names match EXACTLY with template variables
       const templateParams = {
-        to_name: "Admin", // The name of the recipient in the template
+        // These should match EXACTLY with your EmailJS template variables
+        name: data.email ? data.email : "Anonymous User", // For {{name}} in template
         from_name: data.email ? data.email : "Anonymous User",
+        title: `New Brand Suggestion: ${data.brandName}`, // For {{title}} in template
         brand_name: data.brandName,
         reason: data.reason,
         supporting_link: data.link || "Not provided",
