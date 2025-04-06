@@ -3,10 +3,12 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 import Header from '@/components/Header';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
+import PageTransition from '@/components/PageTransition';
 
 const MainLayout: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col bg-white">
+      <PageTransition />
       <Header />
       <main className="flex-1 animate-fade-in">
         <Outlet />
