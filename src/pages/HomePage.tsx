@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import SearchBar from '@/components/SearchBar';
 import CategoryFilter from '@/components/CategoryFilter';
 import BrandList from '@/components/BrandList';
-import SuggestBrandForm from '@/components/SuggestBrandForm';
 import { 
   getAllBrands, 
   getBrandsByCategory, 
@@ -62,13 +61,6 @@ const HomePage: React.FC = () => {
         />
         
         <BrandList brands={filteredBrands} />
-        
-        <div className="mt-12 mb-6">
-          <h2 className="text-xl font-bold mb-4 text-center text-palestinian-black">
-            Help Us Expand Our Database
-          </h2>
-          <SuggestBrandForm />
-        </div>
       </div>
     </div>
   );
