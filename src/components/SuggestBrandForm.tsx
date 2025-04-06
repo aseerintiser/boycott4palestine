@@ -59,20 +59,20 @@ const SuggestBrandForm = () => {
       
       console.log('Form data submitted:', data);
       
-      // Simply send all data from the form directly
+      // Create a simpler format to ensure compatibility with any EmailJS template
       const emailData = {
+        to_name: "Admin", // Default recipient name
+        from_name: data.email || "Anonymous User",
         brand_name: data.brandName,
         reason: data.reason,
         link: data.link || "No link provided",
-        submitter_email: data.email || "Not provided",
-        date: new Date().toLocaleString(),
-        // Include all data in a single field for easier viewing
-        submission_details: `
-          Brand: ${data.brandName}
-          Reason: ${data.reason}
-          Link: ${data.link || "None provided"}
-          Submitter: ${data.email || "Anonymous"}
-          Date: ${new Date().toLocaleString()}
+        email: data.email || "Not provided",
+        message: `
+Brand: ${data.brandName}
+Reason: ${data.reason}
+Link: ${data.link || "None provided"}
+Submitter: ${data.email || "Anonymous"}
+Date: ${new Date().toLocaleString()}
         `
       };
       
