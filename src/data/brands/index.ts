@@ -9,14 +9,22 @@ import cosmeticsAndPersonalCare from './cosmetics-personal-care.json';
 import household from './household.json';
 import entertainment from './entertainment.json';
 
+// Type assertion to ensure the JSON data conforms to the Brand type
+const typedFoodAndBeverage = foodAndBeverage as Brand[];
+const typedTechAndElectronics = techAndElectronics as Brand[];
+const typedFashionAndApparel = fashionAndApparel as Brand[];
+const typedCosmeticsAndPersonalCare = cosmeticsAndPersonalCare as Brand[];
+const typedHousehold = household as Brand[];
+const typedEntertainment = entertainment as Brand[];
+
 // Combine all brands into a single array
 export const brands: Brand[] = [
-  ...foodAndBeverage,
-  ...techAndElectronics,
-  ...fashionAndApparel,
-  ...cosmeticsAndPersonalCare,
-  ...household,
-  ...entertainment
+  ...typedFoodAndBeverage,
+  ...typedTechAndElectronics,
+  ...typedFashionAndApparel,
+  ...typedCosmeticsAndPersonalCare,
+  ...typedHousehold,
+  ...typedEntertainment
 ];
 
 export const getAllBrands = () => brands;
