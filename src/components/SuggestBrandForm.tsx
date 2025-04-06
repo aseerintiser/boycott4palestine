@@ -28,6 +28,7 @@ type FormValues = z.infer<typeof formSchema>;
 const EMAILJS_SERVICE_ID = "service_y9e4hrq";
 const EMAILJS_TEMPLATE_ID = "template_tzhle3w";
 const EMAILJS_USER_ID = "O_pxAKKL-fpUTzN6v"; // This is the public key
+const RECIPIENT_EMAIL = "brands@boycott4palestine.org"; // Add a default recipient email
 
 const SuggestBrandForm = () => {
   const { toast } = useToast();
@@ -56,7 +57,8 @@ const SuggestBrandForm = () => {
         reason: data.reason,
         supporting_link: data.link || "Not provided",
         contact_email: data.email || "Not provided",
-        submission_date: new Date().toLocaleString()
+        submission_date: new Date().toLocaleString(),
+        to_email: RECIPIENT_EMAIL // Add recipient email parameter
       };
       
       console.log('Sending email with params:', templateParams);
