@@ -31,7 +31,7 @@ const SuggestBrandForm = () => {
   
   // Initialize EmailJS once when component mounts
   useEffect(() => {
-    emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS user ID
+    emailjs.init("WbjGKgtIZn-MNUF77"); // EmailJS User ID
   }, []);
   
   const form = useForm<FormValues>({
@@ -52,9 +52,9 @@ const SuggestBrandForm = () => {
       console.log('Form data submitted:', data);
       
       // Send email notification to the admin
-      await emailjs.send(
-        "YOUR_SERVICE_ID", // Replace with your EmailJS service ID
-        "YOUR_TEMPLATE_ID", // Replace with your EmailJS template ID
+      const result = await emailjs.send(
+        "service_y9e4hrq", // EmailJS service ID provided by user
+        "template_boycott4palestine", // EmailJS template ID
         {
           to_email: "aseerniloy@gmail.com", // Your email address
           brand_name: data.brandName,
@@ -64,6 +64,8 @@ const SuggestBrandForm = () => {
           date: new Date().toLocaleString(),
         }
       );
+      
+      console.log('EmailJS result:', result);
       
       toast({
         title: "Suggestion received",
