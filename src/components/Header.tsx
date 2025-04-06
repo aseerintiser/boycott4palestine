@@ -22,11 +22,6 @@ const Header: React.FC = () => {
         <nav>
           <ul className="flex space-x-6">
             <li>
-              <Link to="/" className="font-medium text-palestinian-black hover:text-palestinian-red transition-colors">
-                Home
-              </Link>
-            </li>
-            <li>
               <Link to="/about" className="font-medium text-palestinian-black hover:text-palestinian-red transition-colors">
                 About
               </Link>
