@@ -1,0 +1,51 @@
+
+[
+  {
+    "id": "3",
+    "name": "HP (Hewlett-Packard)",
+    "category": "Tech & Electronics",
+    "description": "Technology company that provides services to Israeli checkpoints and military.",
+    "reasons": [
+      "Provides biometric ID systems used at Israeli checkpoints",
+      "Technology services to Israeli military"
+    ],
+    "alternatives": [
+      {
+        "id": "a5",
+        "name": "Lenovo",
+        "description": "Computer manufacturer with less controversial ties",
+        "link": "https://example.com/lenovo"
+      },
+      {
+        "id": "a6",
+        "name": "ASUS",
+        "description": "Computer and phone manufacturer with ethical manufacturing",
+        "link": "https://example.com/asus"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "name": "Motorola",
+    "category": "Tech & Electronics",
+    "description": "Communications technology used in surveillance of Palestinian territories.",
+    "reasons": [
+      "Provides surveillance equipment for settlements and the separation wall",
+      "Military communications equipment to Israeli forces"
+    ],
+    "alternatives": [
+      {
+        "id": "a13",
+        "name": "OnePlus",
+        "description": "Smartphone manufacturer with ethical supply chain",
+        "link": "https://example.com/oneplus"
+      },
+      {
+        "id": "a14",
+        "name": "Fairphone",
+        "description": "Ethical smartphone made with fair materials and labor practices",
+        "link": "https://example.com/fairphone"
+      }
+    ]
+  }
+]

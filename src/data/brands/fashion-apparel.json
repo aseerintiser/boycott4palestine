@@ -1,0 +1,27 @@
+
+[
+  {
+    "id": "5",
+    "name": "Puma",
+    "category": "Fashion & Apparel",
+    "description": "Sportswear manufacturer with sponsorship ties to Israeli sports.",
+    "reasons": [
+      "Sponsors the Israel Football Association, which includes teams in settlements",
+      "Manufacturing ties to controversial regions"
+    ],
+    "alternatives": [
+      {
+        "id": "a9",
+        "name": "Brooks",
+        "description": "Athletic footwear with transparent supply chain",
+        "link": "https://example.com/brooks"
+      },
+      {
+        "id": "a10",
+        "name": "Etiko",
+        "description": "Fair trade certified athletic wear and footwear",
+        "link": "https://example.com/etiko"
+      }
+    ]
+  }
+]

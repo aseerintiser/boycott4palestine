@@ -1,0 +1,51 @@
+
+[
+  {
+    "id": "4",
+    "name": "Ahava",
+    "category": "Cosmetics & Personal Care",
+    "description": "Cosmetics company that sources materials from the Dead Sea in occupied territories.",
+    "reasons": [
+      "Sources minerals from occupied Dead Sea territory",
+      "Manufacturing facility in West Bank settlement"
+    ],
+    "alternatives": [
+      {
+        "id": "a7",
+        "name": "Pacifica",
+        "description": "Vegan and cruelty-free beauty products with ethical sourcing",
+        "link": "https://example.com/pacifica"
+      },
+      {
+        "id": "a8",
+        "name": "Lush",
+        "description": "Handmade cosmetics with ethical ingredient sourcing and manufacturing",
+        "link": "https://example.com/lush"
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "name": "L'Oréal",
+    "category": "Cosmetics & Personal Care",
+    "description": "Beauty company with manufacturing and R&D facilities in Israel.",
+    "reasons": [
+      "Manufacturing and research facilities in Israel",
+      "Acquisition of Israeli beauty brands"
+    ],
+    "alternatives": [
+      {
+        "id": "a15",
+        "name": "Beautycounter",
+        "description": "Clean beauty brand with transparent ingredient sourcing",
+        "link": "https://example.com/beautycounter"
+      },
+      {
+        "id": "a16",
+        "name": "Elate Cosmetics",
+        "description": "Sustainable makeup with ethical manufacturing",
+        "link": "https://example.com/elate"
+      }
+    ]
+  }
+]

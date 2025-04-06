@@ -1,0 +1,27 @@
+
+[
+  {
+    "id": "10",
+    "name": "Caterpillar",
+    "category": "Household",
+    "description": "Heavy equipment manufacturer whose bulldozers are used in demolitions of Palestinian homes.",
+    "reasons": [
+      "Equipment used in demolition of Palestinian homes and infrastructure",
+      "Military-grade equipment sold to Israeli forces"
+    ],
+    "alternatives": [
+      {
+        "id": "a19",
+        "name": "Kubota",
+        "description": "Equipment manufacturer with ethical business practices",
+        "link": "https://example.com/kubota"
+      },
+      {
+        "id": "a20",
+        "name": "John Deere",
+        "description": "Equipment manufacturer with transparent supply chain",
+        "link": "https://example.com/johndeere"
+      }
+    ]
+  }
+]
