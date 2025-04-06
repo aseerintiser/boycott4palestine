@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import SuggestBrandForm from '@/components/SuggestBrandForm';
 import { AlertCircle } from 'lucide-react';
 
@@ -21,6 +21,7 @@ const SuggestBrandPage: React.FC = () => {
             <p className="text-amber-700 text-sm mt-1">
               Your suggestion is sent to our review team via email. Each submission is carefully evaluated
               before being added to our database. Please provide detailed information to help with verification.
+              All form fields are included in the email, with a summary in the message section.
             </p>
           </div>
         </div>

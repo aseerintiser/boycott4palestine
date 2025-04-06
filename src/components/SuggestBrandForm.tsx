@@ -53,15 +53,15 @@ const SuggestBrandForm = () => {
       
       // Format data for EmailJS - Make sure parameter names match EXACTLY with template variables
       const templateParams = {
-        // These should match EXACTLY with your EmailJS template variables
-        name: data.email ? data.email : "Anonymous User", // For {{name}} in template
+        name: data.email ? data.email : "Anonymous User",
         from_name: data.email ? data.email : "Anonymous User",
-        title: `New Brand Suggestion: ${data.brandName}`, // For {{title}} in template
+        title: `New Brand Suggestion: ${data.brandName}`,
         brand_name: data.brandName,
         reason: data.reason,
         supporting_link: data.link || "Not provided",
         contact_email: data.email || "Not provided",
         reply_to: data.email || RECIPIENT_EMAIL,
+        // The message field is a formatted summary of all data for convenience
         message: `Brand Name: ${data.brandName}\n\nReason for Boycott: ${data.reason}\n\nSupporting Link: ${data.link || "Not provided"}\n\nContact Email: ${data.email || "Not provided"}\n\nSubmission Date: ${new Date().toLocaleString()}`
       };
       
