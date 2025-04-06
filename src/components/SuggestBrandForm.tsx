@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { z } from 'zod';
 import { useForm } from 'react-hook-form';
@@ -57,7 +58,9 @@ const SuggestBrandForm = () => {
         supporting_link: data.link || "Not provided",
         contact_email: data.email || "Not provided",
         submission_date: new Date().toLocaleString(),
-        to_email: RECIPIENT_EMAIL // Add recipient email parameter
+        to_email: RECIPIENT_EMAIL, // Include recipient email directly
+        from_name: "Boycott System", // Add from_name parameter
+        reply_to: data.email || RECIPIENT_EMAIL // Add reply_to parameter
       };
       
       console.log('Sending email with params:', templateParams);
