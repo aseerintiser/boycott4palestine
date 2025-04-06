@@ -7,13 +7,13 @@ const AboutPage: React.FC = () => {
   return (
     <div className="container mx-auto px-4 py-6">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-2xl md:text-3xl font-bold mb-6">About Ethical Choice Guide</h1>
+        <h1 className="text-2xl md:text-3xl font-bold mb-6">About Boycott4Palestine</h1>
         
         <Card className="mb-8">
           <CardContent className="pt-6">
             <h2 className="text-xl font-semibold mb-2">Our Mission</h2>
             <p className="mb-4">
-              Ethical Choice Guide aims to empower consumers with knowledge about the ethical implications 
+              Boycott4Palestine aims to empower consumers with knowledge about the ethical implications 
               of their purchasing decisions. We provide information about companies and brands that may have 
               ties to controversial business practices, and offer ethical alternatives to help you align your 
               spending with your values.
@@ -46,8 +46,8 @@ const AboutPage: React.FC = () => {
             <p>
               If you have suggestions for additional companies to add to our database, corrections to existing 
               information, or any other feedback, please reach out to us at 
-              <a href="mailto:contact@ethicalchoiceguide.org" className="text-primary ml-1">
-                contact@ethicalchoiceguide.org
+              <a href="mailto:contact@boycott4palestine.org" className="text-primary ml-1">
+                contact@boycott4palestine.org
               </a>
             </p>
           </CardContent>

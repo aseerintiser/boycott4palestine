@@ -12,7 +12,7 @@ const MainLayout: React.FC = () => {
       </main>
       <footer className="py-4 bg-white shadow-sm mt-auto">
         <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Ethical Choice Guide. Information provided for educational purposes.
+          © {new Date().getFullYear()} Boycott4Palestine. Information provided for educational purposes.
         </div>
       </footer>
     </div>

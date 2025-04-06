@@ -45,7 +45,7 @@ const HomePage: React.FC = () => {
     <div className="container mx-auto px-4 py-6">
       <div className="max-w-4xl mx-auto">
         <div className="mb-8 text-center">
-          <h1 className="text-2xl md:text-3xl font-bold mb-2">Ethical Choice Guide</h1>
+          <h1 className="text-2xl md:text-3xl font-bold mb-2">Boycott4Palestine</h1>
           <p className="text-muted-foreground">
             Discover which brands to avoid and find ethical alternatives
           </p>
