@@ -30,10 +30,15 @@ const SuggestBrandForm = () => {
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [error, setError] = useState<string | null>(null);
   
-  // Initialize EmailJS once when component mounts
+  // Initialize EmailJS
   useEffect(() => {
-    emailjs.init("WbjGKgtIZn-MNUF77");
-    console.log("EmailJS initialized successfully");
+    try {
+      emailjs.init("WbjGKgtIZn-MNUF77");
+      console.log("EmailJS initialized successfully");
+    } catch (error) {
+      console.error("EmailJS initialization error:", error);
+      setError("Email service initialization failed. Please try again later.");
+    }
   }, []);
   
   const form = useForm<FormValues>({
@@ -54,49 +59,42 @@ const SuggestBrandForm = () => {
       
       console.log('Form data submitted:', data);
       
-      // Create a simpler message string
-      const messageBody = `
-Brand Name: ${data.brandName}
-Reason: ${data.reason}
-Link: ${data.link || "None provided"}
-Email: ${data.email || "Not provided"}
-Submitted: ${new Date().toLocaleString()}
-      `;
-      
-      // Simplify the email data structure 
-      const emailData = {
-        to_email: "admin@example.com", // This should match a variable in your EmailJS template
-        from_name: data.email || "Anonymous",
-        message: messageBody,
+      // Create very simple template params that match the EmailJS template variables
+      const templateParams = {
+        from_name: data.email || "Anonymous User",
+        to_name: "Admin",
         brand_name: data.brandName,
         reason: data.reason,
-        link: data.link || "None provided"
+        link: data.link || "No link provided",
+        user_email: data.email || "No email provided",
+        message: `Brand suggestion submitted: ${data.brandName}`
       };
       
-      console.log('Sending email with data:', emailData);
+      console.log('Sending email with template params:', templateParams);
       
-      // Send email using EmailJS
+      // Use the correct service ID and template ID
       const result = await emailjs.send(
         "service_y9e4hrq", 
         "template_tzhle3w", 
-        emailData
+        templateParams
       );
       
       console.log('EmailJS response:', result);
       
       if (result.status === 200) {
         toast({
-          title: "Success!",
-          description: "Your brand suggestion has been submitted for review.",
+          title: "Suggestion Received!",
+          description: "Thank you for your suggestion. Our team will review it soon.",
         });
         
         setSubmitSuccess(true);
+        form.reset();
+        
         setTimeout(() => {
-          form.reset();
           setSubmitSuccess(false);
         }, 3000);
       } else {
-        throw new Error("Email service returned non-200 status");
+        throw new Error(`Email service returned status: ${result.status}`);
       }
     } catch (error) {
       console.error("Error submitting form:", error);
