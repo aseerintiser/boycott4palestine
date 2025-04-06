@@ -1,4 +1,7 @@
 
+import { Brand, Alternative, Category } from '@/data/brands/types';
+import { findAlternativesInBoycottList } from '@/utils/brandUtils';
+
 export interface Brand {
   id: string;
   name: string;
@@ -288,4 +291,17 @@ export const searchBrands = (query: string) => {
       brand.name.toLowerCase().includes(lowercaseQuery) ||
       brand.description.toLowerCase().includes(lowercaseQuery)
   );
+};
+
+/**
+ * Validate that no alternatives are also in the boycott list
+ * This can be used during development to catch potential conflicts
+ */
+export const validateAlternatives = () => {
+  const conflicts = findAlternativesInBoycottList(brands);
+  if (conflicts.length > 0) {
+    console.warn('Found alternatives that are also in the boycott list:', conflicts);
+    return false;
+  }
+  return true;
 };

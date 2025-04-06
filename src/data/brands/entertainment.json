@@ -1,4 +1,3 @@
-
 [
   {
     "id": "9",
@@ -19,9 +18,9 @@
       },
       {
         "id": "a18",
-        "name": "Booking.com",
-        "description": "Travel site with ethical listing policies",
-        "link": "https://example.com/booking"
+        "name": "Vrbo",
+        "description": "Vacation rental platform with less controversial policies",
+        "link": "https://example.com/vrbo"
       }
     ]
   },
@@ -115,9 +114,9 @@
       },
       {
         "id": "a68",
-        "name": "Culture Trip",
-        "description": "Travel content platform with ethical travel guides",
-        "link": "https://example.com/culturetrip"
+        "name": "WikiVoyage",
+        "description": "Free, community-driven travel guide with accurate territorial designations",
+        "link": "https://example.com/wikivoyage"
       }
     ]
   },
@@ -163,9 +162,9 @@
       },
       {
         "id": "a72",
-        "name": "Expedia",
-        "description": "Travel booking with more transparent location listings",
-        "link": "https://example.com/expedia"
+        "name": "Agoda",
+        "description": "Travel booking with more transparent location policies",
+        "link": "https://example.com/agoda"
       }
     ]
   },
@@ -211,9 +210,9 @@
       },
       {
         "id": "a108",
-        "name": "Green Suitcase Travel",
-        "description": "Sustainable travel planning with ethical considerations",
-        "link": "https://example.com/greensuitcase"
+        "name": "Direct Bookings",
+        "description": "Bypass middlemen by booking directly with locally-owned accommodations",
+        "link": "https://example.com/directbookings"
       }
     ]
   },
@@ -331,7 +330,7 @@
       },
       {
         "id": "a178",
- "name": "Local Guesthouses",
+        "name": "Local Guesthouses",
         "description": "Support locally-owned accommodations",
         "link": "https://example.com/localguesthouses"
       }
@@ -349,15 +348,15 @@
     "alternatives": [
       {
         "id": "a179",
-        "name": "Ethical Travel Portal",
-        "description": "Travel information with ethical considerations",
-        "link": "https://example.com/ethicaltravel"
+        "name": "Lonely Planet",
+        "description": "Travel guides with more accurate territorial information",
+        "link": "https://example.com/lonelyplanet"
       },
       {
         "id": "a180",
-        "name": "Green Suitcase Travel",
-        "description": "Sustainable travel planning with ethical standards",
-        "link": "https://example.com/greensuitcase"
+        "name": "Culture Trip",
+        "description": "Travel content with focus on local cultural experiences",
+        "link": "https://example.com/culturetrip"
       }
     ]
   }
