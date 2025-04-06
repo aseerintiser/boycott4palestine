@@ -23,9 +23,14 @@ const BrandList: React.FC<BrandListProps> = ({ brands, isLoading = false }) => {
   
   if (isLoading) {
     return (
-      <div className="flex flex-col items-center justify-center p-12 space-y-3">
-        <Loader2 className="h-10 w-10 text-palestinian-red animate-spin" />
-        <span className="text-muted-foreground">Loading brands...</span>
+      <div className="flex flex-col items-center justify-center p-12 space-y-4 min-h-[400px] animate-fade-in">
+        <div className="relative">
+          <Loader2 className="h-12 w-12 text-palestinian-red animate-spin" />
+          <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+            <div className="h-8 w-8 rounded-full bg-white"></div>
+          </div>
+        </div>
+        <span className="text-muted-foreground text-lg">Gathering brand information...</span>
       </div>
     );
   }
@@ -76,12 +81,17 @@ const BrandList: React.FC<BrandListProps> = ({ brands, isLoading = false }) => {
   };
 
   const pageNumbers = getPageNumbers();
+  
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   return (
     <div className="space-y-8">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {currentBrands.map((brand) => (
-          <div key={brand.id} className="h-full">
+          <div key={brand.id} className="h-full transform transition-transform hover:translate-y-[-5px] duration-300">
             <BrandCard brand={brand} />
           </div>
         ))}
@@ -96,9 +106,9 @@ const BrandList: React.FC<BrandListProps> = ({ brands, isLoading = false }) => {
                   href="#" 
                   onClick={(e) => {
                     e.preventDefault();
-                    setCurrentPage(currentPage - 1);
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    handlePageChange(currentPage - 1);
                   }} 
+                  className="transition-colors hover:bg-palestinian-gray/50"
                 />
               </PaginationItem>
             )}
@@ -119,9 +129,9 @@ const BrandList: React.FC<BrandListProps> = ({ brands, isLoading = false }) => {
                     isActive={currentPage === number}
                     onClick={(e) => {
                       e.preventDefault();
-                      setCurrentPage(number as number);
-                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                      handlePageChange(number as number);
                     }}
+                    className={currentPage === number ? "bg-palestinian-green text-white hover:bg-palestinian-green/90" : "hover:bg-palestinian-gray/30"}
                   >
                     {number}
                   </PaginationLink>
@@ -135,9 +145,9 @@ const BrandList: React.FC<BrandListProps> = ({ brands, isLoading = false }) => {
                   href="#" 
                   onClick={(e) => {
                     e.preventDefault();
-                    setCurrentPage(currentPage + 1);
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    handlePageChange(currentPage + 1);
                   }} 
+                  className="transition-colors hover:bg-palestinian-gray/50"
                 />
               </PaginationItem>
             )}
