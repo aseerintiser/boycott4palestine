@@ -1,3 +1,4 @@
+
 [
   {
     "id": "1",
@@ -5,8 +6,9 @@
     "category": "Food & Beverage",
     "description": "Home carbonation product company that operates a factory in the West Bank.",
     "reasons": [
-      "Factory located in occupied West Bank territory",
-      "Parent company (PepsiCo) has continuing operations in Israel"
+      "Previously operated a factory in Mishor Adumim industrial zone in the occupied West Bank until 2015",
+      "Now operates in Lehavim, in the Naqab (Negev) where Palestinian Bedouins face forced displacement",
+      "Parent company PepsiCo continues to profit from business activities in Israel despite human rights concerns"
     ],
     "alternatives": [
       {
@@ -29,8 +31,9 @@
     "category": "Food & Beverage",
     "description": "Hummus and dip manufacturer partially owned by the Strauss Group.",
     "reasons": [
-      "Partially owned by Strauss Group which has provided support to Israeli military units",
-      "Manufacturing facilities in contested regions"
+      "50% owned by Strauss Group, an Israeli food company that provides support to the Golani Brigade of the Israeli military",
+      "The Golani Brigade has been documented committing human rights abuses in Gaza and the West Bank",
+      "Manufacturing facilities operate on land with disputed ownership claims"
     ],
     "alternatives": [
       {
@@ -53,8 +56,9 @@
     "category": "Food & Beverage",
     "description": "Food company with manufacturing in Israeli settlements.",
     "reasons": [
-      "Factory located in occupied East Jerusalem industrial zone",
-      "Parent company (General Mills) continued operations in controversial areas"
+      "Operates a factory in the Atarot Industrial Zone in occupied East Jerusalem on confiscated Palestinian land",
+      "Parent company General Mills has continued operations in illegal settlements despite international criticism",
+      "Products are manufactured using resources from occupied territory in violation of international law"
     ],
     "alternatives": [
       {
@@ -77,8 +81,9 @@
     "category": "Food & Beverage",
     "description": "Beverage company with operations and investments in Israel.",
     "reasons": [
-      "Major operations in Israel including a bottling plant in Ashkelon",
-      "Substantial investments in Israeli markets despite human rights concerns"
+      "Operates a bottling plant in Ashkelon on land that previously belonged to the Palestinian village of al-Jura",
+      "Subsidiary Coca-Cola Israel operates in illegal Israeli settlements and maintains distribution centers on occupied land",
+      "Has invested over $85 million in Israel despite international calls for divestment due to human rights concerns"
     ],
     "alternatives": [
       {
@@ -101,8 +106,9 @@
     "category": "Food & Beverage",
     "description": "Food conglomerate with significant operations in Israel.",
     "reasons": [
-      "Major factory near Sderot in Israel",
-      "Continued expansion of operations in contested regions"
+      "Operates a major factory near Sderot in Israel on land that belonged to the Palestinian village of Najd",
+      "Continues to expand operations in Israel including partnerships with Israeli tech companies in disputed territories",
+      "Sources ingredients from farms on illegally occupied Palestinian land"
     ],
     "alternatives": [
       {

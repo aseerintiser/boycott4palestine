@@ -1,3 +1,4 @@
+
 [
   {
     "id": "3",
@@ -5,8 +6,9 @@
     "category": "Tech & Electronics",
     "description": "Technology company that provides services to Israeli checkpoints and military.",
     "reasons": [
-      "Provides biometric ID systems used at Israeli checkpoints",
-      "Technology services to Israeli military"
+      "Provides biometric identification technology for Israeli checkpoints that restrict Palestinian freedom of movement",
+      "Supplies servers and technology to the Israeli military used in operations in Gaza and the West Bank",
+      "Provides IT infrastructure to Israeli settlements and supports the population registry that enforces segregation"
     ],
     "alternatives": [
       {
@@ -29,8 +31,9 @@
     "category": "Tech & Electronics",
     "description": "Communications technology used in surveillance of Palestinian territories.",
     "reasons": [
-      "Provides surveillance equipment for settlements and the separation wall",
-      "Military communications equipment to Israeli forces"
+      "Supplies the MotoEagle surveillance system used at checkpoints and the separation wall in the West Bank",
+      "Provides communication equipment to Israeli military units involved in operations in Gaza",
+      "Developed the Mountain Rose communication system used by Israeli forces in operations against Palestinians"
     ],
     "alternatives": [
       {
@@ -53,8 +56,9 @@
     "category": "Tech & Electronics",
     "description": "Semiconductor manufacturer with major investments in Israel.",
     "reasons": [
-      "Major R&D facilities in Haifa and Jerusalem",
-      "$10+ billion investment in chip manufacturing in Israel"
+      "Operates major R&D facilities in Haifa and Jerusalem built on historically Palestinian lands",
+      "Invested over $10 billion in chip manufacturing facilities in Israel including a $10 billion expansion in 2021",
+      "Received $380 million in Israeli government grants for expansion in disputed areas"
     ],
     "alternatives": [
       {

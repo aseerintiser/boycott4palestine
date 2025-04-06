@@ -1,3 +1,4 @@
+
 [
   {
     "id": "5",
@@ -5,8 +6,9 @@
     "category": "Fashion & Apparel",
     "description": "Sportswear manufacturer with sponsorship ties to Israeli sports.",
     "reasons": [
-      "Sponsors the Israel Football Association, which includes teams in settlements",
-      "Manufacturing ties to controversial regions"
+      "Sponsors the Israel Football Association (IFA) which includes teams based in illegal settlements in occupied Palestinian territories",
+      "The IFA violates FIFA's own statutes by allowing settlement teams to play in Israel's national leagues",
+      "Continued sponsorship despite international calls to end the relationship with IFA due to human rights concerns"
     ],
     "alternatives": [
       {
@@ -29,8 +31,9 @@
     "category": "Fashion & Apparel",
     "description": "Fashion retailer with stores in Israel including contested areas.",
     "reasons": [
-      "Multiple retail locations in Israel including mall on occupied land",
-      "Continued expansion despite human rights concerns"
+      "Operates multiple retail locations in Israel including in the Malha Mall in Jerusalem, built on land confiscated from Palestinian villages",
+      "Sources products from factories in industrial zones in illegal settlements",
+      "Continued expansion in Israel despite documented human rights concerns in occupied territories"
     ],
     "alternatives": [
       {
@@ -53,8 +56,9 @@
     "category": "Fashion & Apparel",
     "description": "Clothing retailer with significant presence in Israel.",
     "reasons": [
-      "Multiple stores in Israeli settlements",
-      "Parent company Inditex's continued expansion despite ethical concerns"
+      "Operates stores in Israeli settlements including in Haifa, built on land where Palestinians were displaced",
+      "Parent company Inditex has been expanding operations in Israel despite human rights concerns",
+      "Manufactures clothing in industrial zones built on confiscated Palestinian land"
     ],
     "alternatives": [
       {
@@ -77,8 +81,9 @@
     "category": "Fashion & Apparel",
     "description": "Lingerie retailer with operations in Israel.",
     "reasons": [
-      "Stores in contested areas and settlements",
-      "Products made with raw materials from disputed territories"
+      "Operates stores in contested areas including the Mamilla Mall in Jerusalem, built on historically Palestinian land",
+      "Sources cotton and textiles from Israeli companies operating in occupied territories",
+      "Parent company L Brands has significant investment ties to Israeli businesses in disputed territories"
     ],
     "alternatives": [
       {
@@ -101,8 +106,9 @@
     "category": "Fashion & Apparel",
     "description": "Sportswear company with stores and operations in Israel.",
     "reasons": [
-      "Flagship stores in Tel Aviv and Jerusalem",
-      "Sponsorships of Israeli sports teams including in settlements"
+      "Maintains flagship stores in Tel Aviv and Jerusalem on land with disputed ownership claims",
+      "Sponsors Israeli sports teams and athletes including those from settlements in occupied territories",
+      "Manufactures products in industrial zones built on confiscated Palestinian land"
     ],
     "alternatives": [
       {
@@ -125,8 +131,9 @@
     "category": "Fashion & Apparel",
     "description": "Fashion brand with retail operations in Israel.",
     "reasons": [
-      "Stores in malls built on disputed territories",
-      "Parent company PVH's continued expansion in the region"
+      "Operates stores in malls built on disputed territories including the Azrieli Mall in Tel Aviv",
+      "Parent company PVH Corp continues expansion in Israel despite human rights concerns",
+      "Sources materials from manufacturers operating in illegal settlements"
     ],
     "alternatives": [
       {
@@ -149,8 +156,9 @@
     "category": "Fashion & Apparel",
     "description": "Sportswear company with operations in Israel.",
     "reasons": [
-      "Stores in contested territories",
-      "Sponsorships of Israeli sports events"
+      "Operates retail stores in contested territories including Jerusalem's Mamilla Mall, built on historic Palestinian land",
+      "Sponsors the Jerusalem Marathon which runs through occupied East Jerusalem",
+      "Provides equipment and sponsorship to sports clubs in illegal settlements"
     ],
     "alternatives": [
       {
@@ -173,8 +181,9 @@
     "category": "Fashion & Apparel",
     "description": "Fashion brand with retail operations in Israel.",
     "reasons": [
-      "Stores in malls in contested territories",
-      "Parent company PVH's operations in Israel"
+      "Operates stores in malls built on contested territories including the Jerusalem Mall",
+      "Parent company PVH Corp maintains significant operations in Israel despite international criticism",
+      "Sources materials from factories in industrial zones built on expropriated Palestinian land"
     ],
     "alternatives": [
       {
@@ -197,8 +206,9 @@
     "category": "Fashion & Apparel",
     "description": "Sportswear company with operations in Israel.",
     "reasons": [
-      "Retail presence in Israeli malls built on contested land",
-      "Collaborations with Israeli sports organizations"
+      "Maintains retail presence in Israeli malls built on contested land including locations in Tel Aviv",
+      "Collaborations with Israeli sports organizations that include teams from illegal settlements",
+      "Provides athletic wear to Israeli military personnel through partnership programs"
     ],
     "alternatives": [
       {
@@ -221,8 +231,9 @@
     "category": "Fashion & Apparel",
     "description": "Clothing retailer with stores in Israel.",
     "reasons": [
-      "Stores in shopping centers built on contested land",
-      "Supply chain partnerships with controversial entities"
+      "Operates stores in shopping centers built on contested land including the Ramat Aviv Mall",
+      "Sources products from factories in industrial zones established on expropriated Palestinian land",
+      "Parent company has investments in Israeli tech companies with military connections"
     ],
     "alternatives": [
       {
@@ -245,8 +256,9 @@
     "category": "Fashion & Apparel",
     "description": "Fast fashion retailer with operations in Israel.",
     "reasons": [
-      "Stores in malls built on contested land",
-      "Sourcing practices connected to controversial areas"
+      "Operates stores in malls built on contested land including Jerusalem Mall and Dizengoff Center",
+      "Sources materials from manufacturers in industrial zones on occupied land",
+      "Continues expansion in Israel despite calls for divestment due to human rights concerns"
     ],
     "alternatives": [
       {
@@ -269,8 +281,9 @@
     "category": "Fashion & Apparel",
     "description": "Denim company with retail operations in Israel.",
     "reasons": [
-      "Stores in contested areas",
-      "Manufacturing connections to controversial regions"
+      "Maintains stores in contested areas including the Mamilla Mall in Jerusalem built on Palestinian land",
+      "Sources cotton and materials from suppliers in disputed territories",
+      "Has manufacturing facilities in industrial zones established on confiscated Palestinian land"
     ],
     "alternatives": [
       {
@@ -293,8 +306,9 @@
     "category": "Fashion & Apparel",
     "description": "Clothing retailer with operations in Israel.",
     "reasons": [
-      "Stores in shopping centers in contested territories",
-      "Supply chain connected to controversial regions"
+      "Operates stores in shopping centers in contested territories including the Jerusalem Mall",
+      "Sources products from factories in industrial zones on occupied Palestinian land",
+      "Continued expansion in Israel despite international criticism over human rights concerns"
     ],
     "alternatives": [
       {
@@ -317,8 +331,9 @@
     "category": "Fashion & Apparel",
     "description": "Outdoor clothing company with operations in Israel.",
     "reasons": [
-      "Retail presence in controversial areas",
-      "Parent company VF Corporation's ties to contested regions"
+      "Maintains retail presence in controversial areas including Tel Aviv's Azrieli Center",
+      "Parent company VF Corporation has significant business operations in Israel and disputed territories",
+      "Products sold in stores in illegal settlements despite calls for boycott"
     ],
     "alternatives": [
       {
