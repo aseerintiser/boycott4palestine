@@ -51,17 +51,16 @@ const SuggestBrandForm = () => {
       
       console.log('Form data submitted:', data);
       
-      // Format data for EmailJS - DO NOT use to_email in templateParams 
-      // EmailJS uses the template configuration for recipient address
+      // Format data for EmailJS - Make sure parameter names match EXACTLY with template variables
       const templateParams = {
+        to_name: "Admin", // The name of the recipient in the template
+        from_name: data.email ? data.email : "Anonymous User",
         brand_name: data.brandName,
         reason: data.reason,
         supporting_link: data.link || "Not provided",
         contact_email: data.email || "Not provided",
-        submission_date: new Date().toLocaleString(),
-        from_name: "Boycott System",
-        reply_to: data.email || RECIPIENT_EMAIL
-        // Remove to_email parameter - this should be configured in the EmailJS template itself
+        reply_to: data.email || RECIPIENT_EMAIL,
+        message: `Brand Name: ${data.brandName}\n\nReason for Boycott: ${data.reason}\n\nSupporting Link: ${data.link || "Not provided"}\n\nContact Email: ${data.email || "Not provided"}\n\nSubmission Date: ${new Date().toLocaleString()}`
       };
       
       console.log('Sending email with params:', templateParams);
