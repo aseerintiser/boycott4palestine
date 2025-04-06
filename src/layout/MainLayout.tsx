@@ -14,15 +14,8 @@ const MainLayout: React.FC = () => {
         <Outlet />
       </main>
       <footer className="py-6 bg-palestinian-gray bg-opacity-30 mt-auto border-t border-gray-100">
-        <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-sm text-palestinian-black">
-          <div>
-            © {new Date().getFullYear()} Boycott4Palestine. Information provided for educational purposes.
-          </div>
-          <div className="mt-3 md:mt-0 flex gap-4">
-            <a href="/about" className="hover:text-palestinian-red transition-colors hover:underline">About</a>
-            <a href="/suggest" className="hover:text-palestinian-red transition-colors hover:underline">Suggest a Brand</a>
-            <a href="/about#contact" className="hover:text-palestinian-red transition-colors hover:underline">Contact</a>
-          </div>
+        <div className="container mx-auto px-4 text-sm text-palestinian-black text-center">
+          © {new Date().getFullYear()} Boycott4Palestine. Information provided for educational purposes.
         </div>
       </footer>
       <ScrollToTopButton />
