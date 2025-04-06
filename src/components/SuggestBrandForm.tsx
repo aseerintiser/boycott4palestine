@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { z } from 'zod';
 import { useForm } from 'react-hook-form';
@@ -28,7 +27,7 @@ type FormValues = z.infer<typeof formSchema>;
 const EMAILJS_SERVICE_ID = "service_y9e4hrq";
 const EMAILJS_TEMPLATE_ID = "template_tzhle3w";
 const EMAILJS_USER_ID = "O_pxAKKL-fpUTzN6v"; // This is the public key
-const RECIPIENT_EMAIL = "brands@boycott4palestine.org"; // Add a default recipient email
+const RECIPIENT_EMAIL = "aseerniloy@gmail.com"; // Updated recipient email
 
 const SuggestBrandForm = () => {
   const { toast } = useToast();
