@@ -5,7 +5,7 @@ import { Flag } from 'lucide-react';
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-white shadow-md border-b-2 border-palestinian-red">
+    <header className="bg-white shadow-sm border-b-2 border-palestinian-red">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link to="/" className="flex items-center space-x-2">
           <Flag className="h-7 w-7 text-palestinian-red" strokeWidth={2.5} />
@@ -24,7 +24,7 @@ const Header: React.FC = () => {
               </Link>
             </li>
             <li>
-              <Link to="/suggest" className="font-medium text-palestinian-black hover:text-palestinian-red transition-colors">
+              <Link to="/suggest" className="font-medium text-palestinian-black hover:text-palestinian-green transition-colors">
                 Suggest a Brand
               </Link>
             </li>

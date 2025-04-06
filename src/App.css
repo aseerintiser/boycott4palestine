@@ -9,6 +9,16 @@
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   letter-spacing: -0.025em;
+  color: #111111; /* Palestinian black */
+}
+
+a {
+  color: #007A3D; /* Palestinian green */
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #D62828; /* Palestinian red */
 }
 
 .logo {
@@ -17,11 +27,13 @@ h1, h2, h3, h4, h5, h6 {
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #D62828aa); /* Palestinian red */
 }
+
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #007A3Daa); /* Palestinian green */
 }
 
 @keyframes logo-spin {
@@ -41,6 +53,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .card {
   padding: 2em;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  background-color: white;
 }
 
 .read-the-docs {

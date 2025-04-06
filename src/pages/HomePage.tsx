@@ -45,7 +45,7 @@ const HomePage: React.FC = () => {
     <div className="container mx-auto px-4 py-6">
       <div className="max-w-4xl mx-auto">
         <div className="mb-8 text-center">
-          <h1 className="text-2xl md:text-3xl font-bold mb-2">Boycott4Palestine</h1>
+          <h1 className="text-2xl md:text-3xl font-bold mb-2 text-palestinian-black">Boycott4Palestine</h1>
           <p className="text-muted-foreground">
             Discover which brands to avoid and find ethical alternatives
           </p>
@@ -61,7 +61,7 @@ const HomePage: React.FC = () => {
         />
         
         <div className="flex justify-between items-center mb-4">
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-palestinian-black">
             {filteredBrands.length} {filteredBrands.length === 1 ? 'brand' : 'brands'} found
           </p>
           

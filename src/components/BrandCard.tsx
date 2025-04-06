@@ -14,15 +14,15 @@ const BrandCard: React.FC<BrandCardProps> = ({ brand }) => {
   const navigate = useNavigate();
   
   return (
-    <Card className="h-full flex flex-col hover:shadow-md transition-shadow">
+    <Card className="h-full flex flex-col hover:shadow-md transition-shadow border-gray-200">
       <CardContent className="pt-6 flex-grow">
         <div className="flex justify-between items-start mb-2">
-          <h3 className="text-lg font-semibold">{brand.name}</h3>
-          <Badge variant="outline" className="ml-2">{brand.category}</Badge>
+          <h3 className="text-lg font-semibold text-palestinian-black">{brand.name}</h3>
+          <Badge variant="palestinian" className="ml-2">{brand.category}</Badge>
         </div>
         <p className="text-sm text-muted-foreground mb-3">{brand.description}</p>
         <div className="mt-2">
-          <h4 className="text-xs font-medium text-muted-foreground mb-1">WHY AVOID:</h4>
+          <h4 className="text-xs font-medium text-palestinian-red mb-1">WHY AVOID:</h4>
           <ul className="text-sm list-disc list-inside">
             {brand.reasons.slice(0, 1).map((reason, i) => (
               <li key={i} className="text-foreground">{reason}</li>
@@ -37,7 +37,7 @@ const BrandCard: React.FC<BrandCardProps> = ({ brand }) => {
         <Button 
           variant="outline" 
           size="sm" 
-          className="w-full"
+          className="w-full text-palestinian-green hover:text-white hover:bg-palestinian-green border-palestinian-green"
           onClick={() => navigate(`/brand/${brand.id}`)}
         >
           View Details
