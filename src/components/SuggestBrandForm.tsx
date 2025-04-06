@@ -28,7 +28,7 @@ type FormValues = z.infer<typeof formSchema>;
 const EMAILJS_SERVICE_ID = "service_y9e4hrq";
 const EMAILJS_TEMPLATE_ID = "template_tzhle3w";
 const EMAILJS_USER_ID = "O_pxAKKL-fpUTzN6v"; // This is the public key
-const RECIPIENT_EMAIL = "aseerniloy@gmail.com"; // Updated recipient email
+const RECIPIENT_EMAIL = "aseerniloy@gmail.com"; // Recipient email
 
 const SuggestBrandForm = () => {
   const { toast } = useToast();
@@ -51,16 +51,17 @@ const SuggestBrandForm = () => {
       
       console.log('Form data submitted:', data);
       
-      // Format data for EmailJS
+      // Format data for EmailJS - DO NOT use to_email in templateParams 
+      // EmailJS uses the template configuration for recipient address
       const templateParams = {
         brand_name: data.brandName,
         reason: data.reason,
         supporting_link: data.link || "Not provided",
         contact_email: data.email || "Not provided",
         submission_date: new Date().toLocaleString(),
-        to_email: RECIPIENT_EMAIL, // Include recipient email directly
-        from_name: "Boycott System", // Add from_name parameter
-        reply_to: data.email || RECIPIENT_EMAIL // Add reply_to parameter
+        from_name: "Boycott System",
+        reply_to: data.email || RECIPIENT_EMAIL
+        // Remove to_email parameter - this should be configured in the EmailJS template itself
       };
       
       console.log('Sending email with params:', templateParams);
