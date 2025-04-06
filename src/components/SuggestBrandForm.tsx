@@ -32,13 +32,8 @@ const SuggestBrandForm = () => {
   
   // Initialize EmailJS once when component mounts
   useEffect(() => {
-    try {
-      emailjs.init("WbjGKgtIZn-MNUF77"); // EmailJS User ID
-      console.log("EmailJS initialized successfully");
-    } catch (err) {
-      console.error("Error initializing EmailJS:", err);
-      setError("Failed to initialize email service");
-    }
+    emailjs.init("WbjGKgtIZn-MNUF77");
+    console.log("EmailJS initialized successfully");
   }, []);
   
   const form = useForm<FormValues>({
@@ -59,15 +54,26 @@ const SuggestBrandForm = () => {
       
       console.log('Form data submitted:', data);
       
-      // Use a very simple flat structure for the email data
+      // Create a simpler message string
+      const messageBody = `
+Brand Name: ${data.brandName}
+Reason: ${data.reason}
+Link: ${data.link || "None provided"}
+Email: ${data.email || "Not provided"}
+Submitted: ${new Date().toLocaleString()}
+      `;
+      
+      // Simplify the email data structure 
       const emailData = {
+        to_email: "admin@example.com", // This should match a variable in your EmailJS template
         from_name: data.email || "Anonymous",
+        message: messageBody,
         brand_name: data.brandName,
         reason: data.reason,
-        link: data.link || "None",
-        email: data.email || "None",
-        message: `A new brand suggestion has been submitted!\n\nBrand: ${data.brandName}\nReason: ${data.reason}\nLink: ${data.link || "None"}\nSubmitter: ${data.email || "Anonymous"}\nDate: ${new Date().toLocaleString()}`
+        link: data.link || "None provided"
       };
+      
+      console.log('Sending email with data:', emailData);
       
       // Send email using EmailJS
       const result = await emailjs.send(
@@ -76,24 +82,28 @@ const SuggestBrandForm = () => {
         emailData
       );
       
-      console.log('EmailJS result:', result);
+      console.log('EmailJS response:', result);
       
-      toast({
-        title: "Suggestion received",
-        description: "Thank you for your suggestion. We'll review it soon.",
-      });
-      
-      setSubmitSuccess(true);
-      setTimeout(() => {
-        form.reset();
-        setSubmitSuccess(false);
-      }, 3000);
+      if (result.status === 200) {
+        toast({
+          title: "Success!",
+          description: "Your brand suggestion has been submitted for review.",
+        });
+        
+        setSubmitSuccess(true);
+        setTimeout(() => {
+          form.reset();
+          setSubmitSuccess(false);
+        }, 3000);
+      } else {
+        throw new Error("Email service returned non-200 status");
+      }
     } catch (error) {
       console.error("Error submitting form:", error);
       setError("There was an error sending your suggestion. Please try again later.");
       toast({
-        title: "Error",
-        description: "There was an error submitting your suggestion. Please try again.",
+        title: "Submission Failed",
+        description: "Unable to submit your suggestion at this time. Please try again later.",
         variant: "destructive",
       });
     } finally {

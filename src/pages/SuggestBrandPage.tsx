@@ -19,8 +19,8 @@ const SuggestBrandPage: React.FC = () => {
           <div>
             <h3 className="font-medium text-amber-800">How suggestion submissions work</h3>
             <p className="text-amber-700 text-sm mt-1">
-              Your suggestion will be sent directly to our review team. Once reviewed, the brand may be added to our database.
-              Please ensure all information is accurate before submitting.
+              Your suggestion will be emailed directly to our review team. We'll carefully evaluate each submission
+              before adding it to our database. Please provide as much information as possible to help us verify.
             </p>
           </div>
         </div>
