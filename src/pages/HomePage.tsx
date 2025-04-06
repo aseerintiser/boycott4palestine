@@ -53,7 +53,7 @@ const HomePage: React.FC = () => {
   return (
     <div className="container mx-auto px-4 py-6">
       <div className="max-w-4xl mx-auto">
-        <div className="mb-8 text-center">
+        <div className="mb-6 text-center">
           <h1 className="text-2xl md:text-3xl font-bold mb-2 text-palestinian-black">Boycott4Palestine</h1>
           <p className="text-muted-foreground max-w-xl mx-auto">
             Discover which brands to avoid and find ethical alternatives that don't support occupation
@@ -64,10 +64,13 @@ const HomePage: React.FC = () => {
           <SearchBar onSearch={handleSearch} />
         </div>
         
-        <CategoryFilter 
-          selectedCategory={selectedCategory} 
-          onSelectCategory={handleSelectCategory} 
-        />
+        <div className="mb-2">
+          <h2 className="text-sm font-medium text-palestinian-black mb-3">Filter by Category</h2>
+          <CategoryFilter 
+            selectedCategory={selectedCategory} 
+            onSelectCategory={handleSelectCategory} 
+          />
+        </div>
         
         <div className="flex justify-between items-center mb-4">
           {!isLoading && (
