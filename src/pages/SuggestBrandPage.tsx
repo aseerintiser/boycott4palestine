@@ -23,10 +23,6 @@ const SuggestBrandPage: React.FC = () => {
               before being added to our database. Please provide detailed information to help with verification.
               All form fields are included in the email, with a summary in the message section.
             </p>
-            <p className="text-amber-700 text-sm mt-1">
-              If possible, please include a brand logo to help with visual identification. This improves
-              accessibility and makes it easier for users to recognize brands to boycott.
-            </p>
           </div>
         </div>
         

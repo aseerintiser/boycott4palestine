@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Brand } from '@/data/brands/types';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
@@ -5,7 +6,6 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
 import { ShieldAlert, ArrowUpRight } from 'lucide-react';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 interface BrandCardProps {
   brand: Brand;
@@ -15,26 +15,11 @@ const BrandCard: React.FC<BrandCardProps> = ({ brand }) => {
   const navigate = useNavigate();
   const alternativesCount = brand.alternatives?.length || 0;
   
-  const generateFallbackImage = () => {
-    return `https://ui-avatars.com/api/?name=${encodeURIComponent(brand.name)}&background=random&color=fff&size=128`;
-  };
-  
   return (
     <Card className="h-full flex flex-col hover:shadow-md transition-shadow border-gray-200 overflow-hidden group">
       <CardContent className="pt-6 pb-3 flex-grow">
         <div className="flex justify-between items-start mb-3">
-          <div className="flex items-center gap-3">
-            <Avatar className="h-10 w-10 bg-gray-100 border border-gray-200">
-              <AvatarImage 
-                src={brand.logo || generateFallbackImage()} 
-                alt={`${brand.name} logo`} 
-              />
-              <AvatarFallback className="text-xs font-medium text-gray-500">
-                {brand.name.substring(0, 2).toUpperCase()}
-              </AvatarFallback>
-            </Avatar>
-            <h3 className="text-lg font-semibold text-palestinian-black group-hover:text-palestinian-red transition-colors">{brand.name}</h3>
-          </div>
+          <h3 className="text-lg font-semibold text-palestinian-black group-hover:text-palestinian-red transition-colors">{brand.name}</h3>
           <Badge variant="palestinian" className="ml-2 whitespace-nowrap">{brand.category}</Badge>
         </div>
         <p className="text-sm text-muted-foreground mb-4 line-clamp-2">{brand.description}</p>
