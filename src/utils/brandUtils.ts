@@ -37,6 +37,12 @@ export const getSafeAlternatives = (brandName: string): string[] => {
     "TripAdvisor": ["Culture Trip", "Lonely Planet", "WikiVoyage", "Local tourism offices"],
     "Expedia": ["Agoda", "Kayak", "Direct bookings", "Responsible Travel"],
     "Fiverr": ["Upwork", "Freelancer", "PeoplePerHour", "Guru", "Local Freelancers"],
+    "Nike": ["New Balance", "Brooks", "Saucony", "Local athletic wear brands"],
+    "Adidas": ["Puma", "Brooks", "New Balance", "Ethical athletic wear brands"],
+    "McDonald's": ["Local restaurants", "Independent food shops", "Homemade meals"],
+    "Starbucks": ["Local coffee shops", "Independent cafes", "Fair trade coffee brands"],
+    "Microsoft": ["Linux alternatives", "Open source software", "Alternative tech solutions"],
+    "Google": ["DuckDuckGo", "Brave Search", "Proton services", "Ethical tech alternatives"],
     // Add more as needed
   };
   
@@ -67,4 +73,57 @@ export const getDataSources = () => {
       }
     ]
   };
+};
+
+/**
+ * Brands that might be missing from our current database but are on official boycott lists
+ * This helps identify potential gaps in our data
+ */
+export const getMissingHighPriorityBrands = () => {
+  return [
+    {
+      name: "Coca-Cola",
+      reason: "Operates production facilities and invests in Israel"
+    },
+    {
+      name: "Nestlé",
+      reason: "Major investments and operations in Israel"
+    },
+    {
+      name: "Amazon",
+      reason: "Provides cloud services to Israeli military and government"
+    },
+    {
+      name: "McDonald's",
+      reason: "Operations in Israeli settlements and ties to occupation"
+    },
+    {
+      name: "Disney",
+      reason: "Investments in Israel and media bias"
+    },
+    {
+      name: "Starbucks",
+      reason: "Financial support to Israel and operations in contested areas"
+    },
+    {
+      name: "Airbnb",
+      reason: "Lists properties in illegal settlements"
+    },
+    {
+      name: "Microsoft",
+      reason: "Investments in Israeli tech and military companies"
+    },
+    {
+      name: "Google",
+      reason: "Partnerships with Israeli military and surveillance projects"
+    },
+    {
+      name: "Nike",
+      reason: "Sponsors Israeli sports teams and events"
+    },
+    {
+      name: "Adidas",
+      reason: "Sponsors Israeli sports and maintains operations in Israel"
+    }
+  ];
 };
