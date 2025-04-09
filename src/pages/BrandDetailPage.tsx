@@ -8,6 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import AlternativeCard from '@/components/AlternativeCard';
 import { Separator } from '@/components/ui/separator';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 const BrandDetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -40,11 +41,24 @@ const BrandDetailPage: React.FC = () => {
         </Button>
 
         <div className="mb-6">
-          <div className="flex flex-wrap items-center gap-2 mb-2">
-            <h1 className="text-2xl md:text-3xl font-bold">{brand.name}</h1>
-            <Badge variant="palestinian">{brand.category}</Badge>
+          <div className="flex items-start gap-4 mb-4">
+            <Avatar className="h-16 w-16 bg-gray-100 border border-gray-200">
+              {brand.logo ? (
+                <AvatarImage src={brand.logo} alt={`${brand.name} logo`} />
+              ) : (
+                <AvatarFallback className="text-xl font-medium text-gray-500">
+                  {brand.name.substring(0, 2).toUpperCase()}
+                </AvatarFallback>
+              )}
+            </Avatar>
+            <div>
+              <div className="flex flex-wrap items-center gap-2 mb-2">
+                <h1 className="text-2xl md:text-3xl font-bold">{brand.name}</h1>
+                <Badge variant="palestinian">{brand.category}</Badge>
+              </div>
+              <p className="text-lg text-muted-foreground">{brand.description}</p>
+            </div>
           </div>
-          <p className="text-lg text-muted-foreground">{brand.description}</p>
         </div>
 
         <Card className="mb-8 border-palestinian-red/20">
