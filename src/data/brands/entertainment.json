@@ -295,6 +295,49 @@
     ]
   },
   {
+    "id": "fiverr-01",
+    "name": "Fiverr",
+    "category": "Entertainment",
+    "description": "Freelance services marketplace founded and headquartered in Israel.",
+    "reasons": [
+      "Founded and headquartered in Tel Aviv, Israel",
+      "Maintains significant operations in Israel",
+      "Pays taxes that support Israeli military operations"
+    ],
+    "alternatives": [
+      {
+        "id": "fiverr-alt-1",
+        "name": "Upwork",
+        "description": "Global freelancing platform with diverse talent pool",
+        "link": "https://example.com/upwork"
+      },
+      {
+        "id": "fiverr-alt-2",
+        "name": "Freelancer",
+        "description": "International freelance marketplace",
+        "link": "https://example.com/freelancer"
+      },
+      {
+        "id": "fiverr-alt-3",
+        "name": "PeoplePerHour",
+        "description": "Freelance platform based in the UK",
+        "link": "https://example.com/peopleperhour"
+      },
+      {
+        "id": "fiverr-alt-4",
+        "name": "Guru",
+        "description": "Freelance marketplace connecting businesses with independent professionals",
+        "link": "https://example.com/guru"
+      },
+      {
+        "id": "fiverr-alt-5",
+        "name": "Local Freelancers",
+        "description": "Hire local independent professionals in your community",
+        "link": "https://example.com/local-freelancers"
+      }
+    ]
+  },
+  {
     "id": "53",
     "name": "Universal Music Group",
     "category": "Entertainment",

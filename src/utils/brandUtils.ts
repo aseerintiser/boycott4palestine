@@ -36,6 +36,7 @@ export const getSafeAlternatives = (brandName: string): string[] => {
     "Booking.com": ["Agoda", "Hostelworld", "Direct hotel bookings", "Independent travel agents"],
     "TripAdvisor": ["Culture Trip", "Lonely Planet", "WikiVoyage", "Local tourism offices"],
     "Expedia": ["Agoda", "Kayak", "Direct bookings", "Responsible Travel"],
+    "Fiverr": ["Upwork", "Freelancer", "PeoplePerHour", "Guru", "Local Freelancers"],
     // Add more as needed
   };
   
