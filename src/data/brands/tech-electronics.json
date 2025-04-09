@@ -1,3 +1,4 @@
+
 [
   {
     "id": "3",
@@ -12,33 +13,33 @@
     "alternatives": [
       {
         "id": "a5",
-        "name": "Lenovo",
-        "description": "Computer manufacturer with less controversial ties",
-        "link": "https://example.com/lenovo"
+        "name": "Framework",
+        "description": "Ethically designed modular laptop with right to repair focus",
+        "link": "https://example.com/framework"
       },
       {
         "id": "a6",
-        "name": "ASUS",
-        "description": "Computer and phone manufacturer with ethical manufacturing",
-        "link": "https://example.com/asus"
-      },
-      {
-        "id": "a6b",
-        "name": "Acer",
-        "description": "Computer manufacturer with sustainability initiatives",
-        "link": "https://example.com/acer"
-      },
-      {
-        "id": "a6c",
         "name": "System76",
-        "description": "Open-source focused computer manufacturer with transparent practices",
+        "description": "Computer manufacturer with Linux focus and transparent practices",
         "link": "https://example.com/system76"
       },
       {
+        "id": "a6b",
+        "name": "Tuxedo Computers",
+        "description": "Linux-focused computer manufacturer with ethical standards",
+        "link": "https://example.com/tuxedo"
+      },
+      {
+        "id": "a6c",
+        "name": "Purism",
+        "description": "Privacy-focused hardware manufacturer with ethical supply chain",
+        "link": "https://example.com/purism"
+      },
+      {
         "id": "a6d",
-        "name": "Framework",
-        "description": "Modular, repairable laptop designed with sustainability in mind",
-        "link": "https://example.com/framework"
+        "name": "Pine64",
+        "description": "Open source hardware with transparent manufacturing",
+        "link": "https://example.com/pine64"
       }
     ]
   },
@@ -344,9 +345,9 @@
       },
       {
         "id": "a132",
-        "name": "Intel Arc",
-        "description": "Alternative graphics processors",
-        "link": "https://example.com/intelarc"
+        "name": "Open-source graphics solutions",
+        "description": "Community-developed graphics technologies",
+        "link": "https://example.com/opensource-graphics"
       }
     ]
   },
@@ -368,9 +369,9 @@
       },
       {
         "id": "a134",
-        "name": "Samsung Exynos",
+        "name": "Unisoc",
         "description": "Mobile chipsets with fewer controversial ties",
-        "link": "https://example.com/exynos"
+        "link": "https://example.com/unisoc"
       }
     ]
   },

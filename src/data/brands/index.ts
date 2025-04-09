@@ -1,5 +1,6 @@
 
 import type { Brand, Category } from './types';
+import { findAlternativesInBoycottList } from '@/utils/brandUtils';
 
 // Import all brand category files
 import foodAndBeverage from './food-beverage.json';
@@ -27,6 +28,12 @@ export const brands: Brand[] = [
   ...typedEntertainment
 ];
 
+// Validate that there are no alternatives that are also in the boycott list
+const conflicts = findAlternativesInBoycottList(brands);
+if (conflicts.length > 0) {
+  console.warn('Found alternatives that are also in the boycott list:', conflicts);
+}
+
 export const getAllBrands = () => brands;
 
 export const getBrandById = (id: string) => {
@@ -48,6 +55,19 @@ export const searchBrands = (query: string) => {
       brand.name.toLowerCase().includes(lowercaseQuery) ||
       brand.description.toLowerCase().includes(lowercaseQuery)
   );
+};
+
+/**
+ * Validate that no alternatives are also in the boycott list
+ * This can be used during development to catch potential conflicts
+ */
+export const validateAlternatives = () => {
+  const conflicts = findAlternativesInBoycottList(brands);
+  if (conflicts.length > 0) {
+    console.warn('Found alternatives that are also in the boycott list:', conflicts);
+    return false;
+  }
+  return true;
 };
 
 // Export types
