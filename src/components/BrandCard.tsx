@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Brand } from '@/data/brands/types';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
@@ -16,19 +15,23 @@ const BrandCard: React.FC<BrandCardProps> = ({ brand }) => {
   const navigate = useNavigate();
   const alternativesCount = brand.alternatives?.length || 0;
   
+  const generateFallbackImage = () => {
+    return `https://ui-avatars.com/api/?name=${encodeURIComponent(brand.name)}&background=random&color=fff&size=128`;
+  };
+  
   return (
     <Card className="h-full flex flex-col hover:shadow-md transition-shadow border-gray-200 overflow-hidden group">
       <CardContent className="pt-6 pb-3 flex-grow">
         <div className="flex justify-between items-start mb-3">
           <div className="flex items-center gap-3">
             <Avatar className="h-10 w-10 bg-gray-100 border border-gray-200">
-              {brand.logo ? (
-                <AvatarImage src={brand.logo} alt={`${brand.name} logo`} />
-              ) : (
-                <AvatarFallback className="text-xs font-medium text-gray-500">
-                  {brand.name.substring(0, 2).toUpperCase()}
-                </AvatarFallback>
-              )}
+              <AvatarImage 
+                src={brand.logo || generateFallbackImage()} 
+                alt={`${brand.name} logo`} 
+              />
+              <AvatarFallback className="text-xs font-medium text-gray-500">
+                {brand.name.substring(0, 2).toUpperCase()}
+              </AvatarFallback>
             </Avatar>
             <h3 className="text-lg font-semibold text-palestinian-black group-hover:text-palestinian-red transition-colors">{brand.name}</h3>
           </div>
