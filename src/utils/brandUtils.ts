@@ -41,3 +41,29 @@ export const getSafeAlternatives = (brandName: string): string[] => {
   
   return safeAlternativesMap[brandName] || [];
 };
+
+/**
+ * Information about data sources used in the application
+ */
+export const getDataSources = () => {
+  return {
+    primary: {
+      name: "BDS Movement",
+      description: "The Boycott, Divestment, Sanctions (BDS) movement works to end international support for Israel's oppression of Palestinians and pressure Israel to comply with international law.",
+      url: "https://bdsmovement.net/",
+      citation: "This list is based on information from the BDS Movement, the Palestinian-led global movement for freedom, justice and equality."
+    },
+    supplementary: [
+      {
+        name: "Who Profits Research Center",
+        url: "https://whoprofits.org/",
+        description: "Research center dedicated to exposing the commercial involvement of companies in the occupation."
+      },
+      {
+        name: "American Muslims for Palestine",
+        url: "https://www.ampalestine.org/boycott-list",
+        description: "Organization that provides educational resources on Palestine and companies to boycott."
+      }
+    ]
+  };
+};

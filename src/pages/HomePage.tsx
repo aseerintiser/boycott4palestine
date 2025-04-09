@@ -9,8 +9,9 @@ import {
   searchBrands, 
   Category 
 } from '@/data/brands/index';
-import { AlertCircle } from 'lucide-react';
+import { AlertCircle, ExternalLink } from 'lucide-react';
 import { toast } from '@/components/ui/use-toast';
+import { getDataSources } from '@/utils/brandUtils';
 
 const HomePage: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -18,6 +19,7 @@ const HomePage: React.FC = () => {
   const [filteredBrands, setFilteredBrands] = useState(getAllBrands());
   const [isLoading, setIsLoading] = useState(true);
   const [previousSearches, setPreviousSearches] = useState<string[]>([]);
+  const { primary: primarySource } = getDataSources();
 
   useEffect(() => {
     // Simulate a loading delay for data fetching
@@ -79,6 +81,18 @@ const HomePage: React.FC = () => {
           <p className="text-muted-foreground max-w-xl mx-auto text-base">
             Discover which brands to avoid and find ethical alternatives
           </p>
+          <div className="mt-3 text-xs text-muted-foreground flex items-center justify-center gap-1">
+            <span>Based on data from</span>
+            <a 
+              href={primarySource.url} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-0.5 hover:text-palestinian-red"
+            >
+              {primarySource.name} 
+              <ExternalLink className="h-3 w-3 ml-0.5" />
+            </a>
+          </div>
         </div>
         
         <div className="mb-8">
@@ -118,6 +132,23 @@ const HomePage: React.FC = () => {
         </div>
         
         <BrandList brands={filteredBrands} isLoading={isLoading} />
+        
+        <div className="mt-12 p-5 bg-slate-50 rounded-lg text-sm text-muted-foreground">
+          <p className="mb-2 font-medium">About our data:</p>
+          <p>{primarySource.description}</p>
+          <div className="mt-4 flex items-center gap-1">
+            <a 
+              href={primarySource.url} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-palestinian-red hover:underline inline-flex items-center"
+            >
+              Visit {primarySource.name} 
+              <ExternalLink className="h-3 w-3 ml-1" />
+            </a>
+            <span>for the complete, authoritative list of companies to boycott.</span>
+          </div>
+        </div>
       </div>
     </div>
   );
